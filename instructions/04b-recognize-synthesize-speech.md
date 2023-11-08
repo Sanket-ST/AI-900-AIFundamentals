@@ -1,4 +1,4 @@
-# Module 4a: Explore Speech
+# Module 4b: Explore Speech
 
 ## Lab overview
 
