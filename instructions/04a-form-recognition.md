@@ -1,4 +1,4 @@
-# Module 04: Explore form recognition
+# Module 04a: Explore form recognition
 
 ## Lab overview
 
