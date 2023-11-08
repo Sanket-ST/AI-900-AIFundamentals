@@ -1,4 +1,4 @@
-# Module 02b: Explore classification with Azure Machine Learning Designer
+# Module 02c: Explore classification with Azure Machine Learning Designer
 
 ## Lab overview
 
