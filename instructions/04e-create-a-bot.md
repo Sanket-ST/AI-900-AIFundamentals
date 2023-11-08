@@ -1,4 +1,4 @@
-# Module 04d: Explore question answering 
+# Module 04e: Explore question answering 
 
 ## Lab overview
 
