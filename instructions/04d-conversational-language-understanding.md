@@ -1,4 +1,4 @@
-# Module 04c: Explore language understanding
+# Module 04d: Explore language understanding
 
 ## Lab overview
 
