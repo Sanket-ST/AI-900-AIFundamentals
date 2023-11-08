@@ -1,4 +1,4 @@
-# Module 02c: Explore clustering with Azure Machine Learning Designer
+# Module 02d: Explore clustering with Azure Machine Learning Designer
 
 ## Lab overview
 
