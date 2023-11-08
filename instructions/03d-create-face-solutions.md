@@ -1,4 +1,4 @@
-# Module 03c: Explore face recognition
+# Module 03d: Explore face recognition
 
 ## Lab overview
 
