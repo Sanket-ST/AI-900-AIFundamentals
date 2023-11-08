@@ -1,4 +1,4 @@
-# Module 04b: Explore translation
+# Module 04c: Explore translation
 
 ## Lab overview
 
