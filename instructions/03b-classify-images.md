@@ -1,4 +1,4 @@
-# Module 3a: Explore Image Classification​
+# Module 3b: Explore Image Classification​
 
 ## Lab overview
 
