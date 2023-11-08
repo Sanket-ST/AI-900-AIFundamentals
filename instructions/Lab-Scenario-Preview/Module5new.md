@@ -8,9 +8,9 @@ In this lab, you will learn about generative AI, a technology that can create co
 ## Objectives
   
 After completing this lab, you will be able to:
-- Use prompts to generate responses
-- Try image generation
-- Try code generation
+- Use AI with Bing Copilot prompts to generate responses
+- Try image generation using AI with Bing Copilot
+- Try code generation using AI with Bing Copilot
 
 ## Architecture Diagram
 
