@@ -1,4 +1,4 @@
-# Module 03d: Explore optical character recognition
+# Module 03e: Explore optical character recognition
 
 ## Lab overview
 
