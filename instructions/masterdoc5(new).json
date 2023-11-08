@@ -1,0 +1,17 @@
+[
+    {
+      "Name": "AI 900 AI Fundamentals-Module-05-Explore knowledge mining",
+      "Language": "English",
+      "Files": [
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/prod/instructions/0-GettingStarted.md",
+          "Order": 1
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/prod-new/instructions/05-module-05.md",
+          "Order": 2
+        }
+      ]
+    }
+  ]
+  

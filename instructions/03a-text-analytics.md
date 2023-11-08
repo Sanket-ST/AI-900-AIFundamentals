@@ -1,4 +1,4 @@
-# Module 04: Explore text analytics
+# Module 03: Explore text analytics
 
 ## Lab overview
 

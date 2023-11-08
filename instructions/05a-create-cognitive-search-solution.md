@@ -1,4 +1,4 @@
-# Module 05: Explore Knowledge Mining
+# Module 05a: Explore Knowledge Mining
 
 ## Lab overview
 
@@ -12,6 +12,7 @@ In this lab, you will perform:
 ## Estimated timing: 60 minutes
 
 ## Architecture Diagram
+
 ![](media/Module0005.png)
  
 ## Pre-requisites Required
