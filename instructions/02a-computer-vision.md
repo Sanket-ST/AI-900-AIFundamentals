@@ -1,4 +1,4 @@
-# Module 02: Explore Computer Vision
+# Module 02a: Explore Computer Vision
 
 ## Lab overview
 
