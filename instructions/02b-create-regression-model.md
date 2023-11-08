@@ -1,4 +1,4 @@
-# Module 02a: Explore regression with Azure Machine Learning Designer
+# Module 02b: Explore regression with Azure Machine Learning Designer
 
 ## Lab overview
 
