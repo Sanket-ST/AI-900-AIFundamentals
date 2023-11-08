@@ -1,4 +1,4 @@
-# Module 03b: Explore object detection
+# Module 03c: Explore object detection
 
 ## Lab overview
 
