@@ -14,5 +14,5 @@ After completing this lab, you will be able to:
 
 ## Architecture Diagram
 
-  ![](../media/ai900module5.png)
+  ![](../media/module05new.png)
    
