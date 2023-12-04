@@ -33,7 +33,7 @@ If you haven't already done so, create a **Azure AI Services** resource in your 
 
      ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/Aimodule4a.png)
      
-1. On Azure AI Services page, click on **Create**. 
+1. On the Azure AI Services page, click on **Create**. 
      
      ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/Aimodule4b.png)
 
@@ -52,7 +52,7 @@ If you haven't already done so, create a **Azure AI Services** resource in your 
    
 1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page, and wait for deployment to complete. Then go to the deployed resource.
    
-1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Azure AI Service.
+1. Wait for deployment to complete (it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Azure AI Service.
 
 1. View the **Keys and Endpoint** page for your resource. You will need the **location/Region** and **key** to connect from client applications.
 
@@ -64,7 +64,7 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/powershell-portal-guide-1.png)
 
-1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
+1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.
 
 1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AI-900-Module-04b-<inject key="DeploymentID" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
 
@@ -102,10 +102,10 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The editor containing code to use the Translator service](media/translate-code-4b.png)
 
-1. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Azure AI Services resource. Copy the values of **KEY 1** and **Location/Region** value from *Keys and Endpoints* page for your resource from the Azure portal and paste them into the code editor.
+1. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Azure AI Services resource. Copy the values of **KEY 1** and **Location/Region** value from the *Keys and Endpoints* page for your resource from the Azure portal and paste them into the code editor.
      ![Find the key and endpoint tab in your Cognitive Services resource's left hand pane.](media/lab4b-1.png)
 
-     > **Note:** The Translator service does not require the use of the Azure AI Service endpoint, so there is no need to modify the Translator service endpoint. Instead, a dedicated global endpoint is available specifically for the Translator service. 
+     > **Note:** The Translator service does not require the use of the Azure AI Service endpoint, so there is no need to modify the Translator service endpoint. Instead, a dedicated global endpoint is available specifically for the Translator service.
 
 1. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 
@@ -113,7 +113,7 @@ Now that you have a custom model, you can run a simple client application that u
     - Translate text from English into French, Italian, and Chinese.
     - Translate audio from English into text in French
 
-    Use the below link to hear the input audio which will be processed by this application and translates:
+    Use the below link to hear the input audio which will be processed by this application and translated:
    
        https://www.microsoft.com/videoplayer/embed/RWORN0
 
@@ -131,7 +131,7 @@ Now that you have a custom model, you can run a simple client application that u
 1. Review the output. Did you see the translation from the text in English to French, Italian, and Chinese?  Did you see the English audio "hello" translated into text in French?
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+   > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
    > - Hit the Validate button for the corresponding task.
    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
