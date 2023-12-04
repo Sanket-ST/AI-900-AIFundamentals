@@ -2,17 +2,17 @@
 
 ## Lab overview
 
-The ***Computer Vision*** cognitive service uses pre-trained machine learning models to analyze images and extract information about them.
+The ***Computer Vision*** Azure AI service uses pre-trained machine learning models to analyze images and extract information about them.
 
-For example, suppose the fictitious retailer *Northwind Traders* has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. By using the Computer Vision service, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
+For example, suppose the fictitious retailer *Northwind Traders* has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance and direct employees to help them. By using the Computer Vision service, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
 
-In this lab, you'll use a simple command-line application to see the Computer Vision service in action. The same principles and functionality apply in real-world solutions, such as web sites or phone apps. This includes:
-- Creating Azure Cognitive Services and Azure Storage Account.
-- Configuring and running a client application.
+In this lab, you'll use a simple command-line application to see the Computer Vision service in action. The same principles and functionality apply to real-world solutions, such as websites or phone apps. This includes:
+- Creating Azure AI Services and Azure Storage Accounts
+- Configuring and running a client application
 
 ## Lab objectives
 In this lab, you will perform:
-+ Create a Cognitive Services resource
++ Create an Azure AI Services resource
 + Run Cloud Shell
 + Configure and run a client application
   
@@ -20,31 +20,32 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-![](media/Module3.png)
+![](media/Aimodule2b.png)
  
-### Exercise 1: Create a *Cognitive Services* resource
+### Exercise 1: Create a *Azure AI Services* resource
 
-## Task 1: Create a *Cognitive Services* resource
+## Task 1: Create a *Azure AI Services* resource
 
-You can use the Computer Vision service by creating either a **Computer Vision** resource or a **Cognitive Services** resource.
+You can use the Computer Vision service by creating either a **Computer Vision** resource or a **Azure AI Services** resource.
 
-1. In the Azure Portal, select the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
+1. In the Azure Portal, select the **&#65291;Create a resource** button, search for *Azure AI Services*, and create a **Azure AI Services** resource with the following settings:
+   
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: Select **AI-900-Module-03-<inject key="DeploymentID" enableCopy="false"/>**
     - **Region**:  **<inject key="location" enableCopy="false"/>**
     - **Name**: *Enter **ai900cognitive-<inject key="DeploymentID" enableCopy="false"/>***
     - **Pricing tier**: Standard S0
-    - **By checking this box I acknowledge that I have read and understood all the terms below**: Selected
+    - **By checking this box, I acknowledge that I have read and understood all the terms below**: Selected
 
-1. Click **Review + create** 
+1. Click **Review + create**.
    
-1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
+1. After successfully completing the validation process, click on the **Create** button located in the lower-left corner of the page.
    
-1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Cognitive Services.
+1. Wait for deployment to complete (it can take a few minutes), and then click on the **Go to resource** button; this will take you to your Azure AI Services.
 
-1. View the **Keys and Endpoint** page from the left pane under Resource Management for your Cognitive Services resource. You will need the endpoint and keys to connect from client applications.
+1. View the **Keys and Endpoint** page from the left pane under Resource Management for your Azure AI Services resource. You will need the endpoint and keys to connect to client applications.
 
-   >**Note**: Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications. 
+   > **Note**: Copy and save the **KEY 1** and **Endpoint** values to Notepad for future reference to connect from client applications.
 
 ### Task 2: Run Cloud Shell
 
@@ -54,7 +55,7 @@ To test the capabilities of the Computer Vision service, we'll use a simple comm
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/analyze-images-computer-vision-service/powershell-portal-guide-1(1).png)
 
-1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
+1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.
 
 1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AI-900-Module-03-<inject key="DeploymentID" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
 
@@ -64,7 +65,7 @@ To test the capabilities of the Computer Vision service, we'll use a simple comm
 
     ![How to find the left hand drop down menu to switch to PowerShell](media/analyze-images-computer-vision-service/powershell-portal-guide-3(1).png)
 
-1. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
+1. Wait for PowerShell to start. You should see the following screen in the Azure portal:
 
     ![Wait for PowerShell to start.](media/analyze-images-computer-vision-service/powershell-prompt(1).png)
 
@@ -95,7 +96,7 @@ Now that you have a Cloud Shell environment, you can run a simple application th
 
     ![The editor containing code to analyze an image](media/analyze-images-computer-vision-service/analyze-image-code1.png)
 
-1. Don't worry too much about the code, the important thing is that it needs the endpoint URL and either of the keys for your Cognitive Services resource. Copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Endpoint* placeholder values respectively.
+1. Don't worry too much about the code; the important thing is that it needs the endpoint URL and either of the keys for your Azure AI Services resource. Copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Endpoint* placeholder values respectively.
 
     > **Tip**: You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
     
@@ -151,7 +152,7 @@ Now that you have a Cloud Shell environment, you can run a simple application th
 1. Review the results of the image analysis for the third image.
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
     > - Hit the Validate button for the corresponding task.
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
@@ -162,7 +163,7 @@ This simple app shows only some of the capabilities of the Computer Vision servi
 
 ### Review
 In this lab, you have completed:
-- Create a Cognitive Services resource
+- Create an Azure AI Services resource
 - Run Cloud Shell
 - Configure and run a client application
   
