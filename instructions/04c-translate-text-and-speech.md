@@ -10,7 +10,7 @@ To test the capabilities of the Translator service, we'll use a simple command-l
 
 ## Lab objectives
 In this lab, you will perform:
-+ Create a *Azure AI Services* resource
++ Create an *Azure AI Services* resource
 
 ## Estimated timing: 60 minutes
 
@@ -29,11 +29,11 @@ If you haven't already done so, create a **Azure AI Services** resource in your 
 
      ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img1.png)
    
-1. In the Marketplace page search for **Azure AI Services** and Select **Azure AI Services** 
+1. In the Marketplace page, search for **Azure AI Services** and Select **Azure AI Services** 
 
      ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/Aimodule4a.png)
      
-1. On Azure AI Services Page, click on **Create**. 
+1. On Azure AI Services page, click on **Create**. 
      
      ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/Aimodule4b.png)
 
