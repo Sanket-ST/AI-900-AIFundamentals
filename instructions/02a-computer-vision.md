@@ -20,7 +20,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-![](media/Aimodule2a.png)
+![](media/Aimodule2b.png)
  
 ### Exercise 1: Create a *Azure AI Services* resource
 
