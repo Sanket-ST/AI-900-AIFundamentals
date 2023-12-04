@@ -7,8 +7,8 @@ The ***Computer Vision*** Azure AI service uses pre-trained machine learning mod
 For example, suppose the fictitious retailer *Northwind Traders* has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance and direct employees to help them. By using the Computer Vision service, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
 
 In this lab, you'll use a simple command-line application to see the Computer Vision service in action. The same principles and functionality apply to real-world solutions, such as websites or phone apps. This includes:
-- Creating Azure AI Services and Azure Storage Account.
-- Configuring and running a client application.
+- Creating Azure AI Services and Azure Storage Accounts
+- Configuring and running a client application
 
 ## Lab objectives
 In this lab, you will perform:
@@ -20,7 +20,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-![](media/Module3.png)
+![](media/Aimodule2a.png)
  
 ### Exercise 1: Create a *Azure AI Services* resource
 
@@ -35,17 +35,17 @@ You can use the Computer Vision service by creating either a **Computer Vision**
     - **Region**:  **<inject key="location" enableCopy="false"/>**
     - **Name**: *Enter **ai900cognitive-<inject key="DeploymentID" enableCopy="false"/>***
     - **Pricing tier**: Standard S0
-    - **By checking this box I acknowledge that I have read and understood all the terms below**: Selected
+    - **By checking this box, I acknowledge that I have read and understood all the terms below**: Selected
 
 1. Click **Review + create**.
    
 1. After successfully completing the validation process, click on the **Create** button located in the lower-left corner of the page.
    
-1. Wait for deployment to complete (it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Azure AI Services.
+1. Wait for deployment to complete (it can take a few minutes), and then click on the **Go to resource** button; this will take you to your Azure AI Services.
 
 1. View the **Keys and Endpoint** page from the left pane under Resource Management for your Azure AI Services resource. You will need the endpoint and keys to connect to client applications.
 
-   > **Note**: Copy and save the **KEY 1** and **Endpoint** values to NotePad for future reference to connect from client applications. 
+   > **Note**: Copy and save the **KEY 1** and **Endpoint** values to NotePad for future reference to connect from client applications.
 
 ### Task 2: Run Cloud Shell
 
@@ -65,7 +65,7 @@ To test the capabilities of the Computer Vision service, we'll use a simple comm
 
     ![How to find the left hand drop down menu to switch to PowerShell](media/analyze-images-computer-vision-service/powershell-portal-guide-3(1).png)
 
-1. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
+1. Wait for PowerShell to start. You should see the following screen in the Azure portal.
 
     ![Wait for PowerShell to start.](media/analyze-images-computer-vision-service/powershell-prompt(1).png)
 
