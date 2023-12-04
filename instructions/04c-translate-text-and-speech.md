@@ -10,34 +10,34 @@ To test the capabilities of the Translator service, we'll use a simple command-l
 
 ## Lab objectives
 In this lab, you will perform:
-+ Create a *Cognitive Services* resource
++ Create a *Azure AI Services* resource
 
 ## Estimated timing: 60 minutes
 
 ## Architecture Diagram
-![](media/Module4b.png)
+![](media/Aimodule2b.png)
 
-## Exercise 1: Create a *Cognitive Services* resource
+## Exercise 1: Create a *Azure AI Services* resource
 
-### Task 1: Create a *Cognitive Services* resource
+### Task 1: Create a *Azure AI Services* resource
 
-You can use the Computer Vision service by creating either a **Translator** resource or a **Cognitive Services** resource.
+You can use the Computer Vision service by creating either a **Translator** resource or a **Azure AI Services** resource.
 
-If you haven't already done so, create a **Cognitive Services** resource in your Azure subscription.
+If you haven't already done so, create a **Azure AI Services** resource in your Azure subscription.
 
 1. In the Azure Portal click the **&#65291;Create a resource** button.
 
      ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod1img1.png)
    
-1. In the Marketplace page search for **Cognitive Services** and Select **Cognitive Services** 
+1. In the Marketplace page search for **Azure AI Services** and Select **Azure AI Services** 
 
-     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod3bimg1.png)
+     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/Aimodule4a.png)
      
-1. On Cognitive Services Page Click on **Create**. 
+1. On Azure AI Services Page, click on **Create**. 
      
-     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/ai900mod3bimg2.png)
+     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/Aimodule4b.png)
 
-1. Create a **Cognitive Services** resource with the following settings:
+1. Create a **Azure AI Services** resource with the following settings:
 
     - **Subscription**: Retain the Existing Subscription **(1)**.
     - **Resource group**: Select **AI-900-Module-04b-<inject key="DeploymentID" enableCopy="false"/> (2)**
@@ -48,13 +48,13 @@ If you haven't already done so, create a **Cognitive Services** resource in your
 
 1. Click on **Review + Create (7)**.
    
-     ![](media/ai900mod4bimg.png)
+     ![](media/Aimodule4c.png)
    
 1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page, and wait for deployment to complete. Then go to the deployed resource.
    
-1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Cognitive Service.
+1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Azure AI Service.
 
-1. View the **Keys and Endpoint** page for your resource. You will need the **location/region** and **key** to connect from client applications.
+1. View the **Keys and Endpoint** page for your resource. You will need the **location/Region** and **key** to connect from client applications.
 
 ### Task 2: Run Cloud Shell
 
@@ -102,10 +102,10 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The editor containing code to use the Translator service](media/translate-code-4b.png)
 
-1. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Cognitive Services resource. Copy the values of **KEY 1** and **Location/Region** value from *Keys and Endpoints* page for your resource from the Azure portal and paste them into the code editor.
+1. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Azure AI Services resource. Copy the values of **KEY 1** and **Location/Region** value from *Keys and Endpoints* page for your resource from the Azure portal and paste them into the code editor.
      ![Find the key and endpoint tab in your Cognitive Services resource's left hand pane.](media/lab4b-1.png)
 
-     > **Note:** The Translator service does not require the use of the Cognitive Service endpoint, so there is no need to modify the Translator service endpoint. Instead, a dedicated global endpoint is available specifically for the Translator service. 
+     > **Note:** The Translator service does not require the use of the Azure AI Service endpoint, so there is no need to modify the Translator service endpoint. Instead, a dedicated global endpoint is available specifically for the Translator service. 
 
 1. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 
@@ -142,6 +142,6 @@ This simple app shows only some of the capabilities of the Translator service. T
 
 ### Review
 In this lab, you have completed:
-- Create a *Cognitive Services* resource
+- Create a *Azure AI Services* resource
   
 ## You have successfully completed this lab.
