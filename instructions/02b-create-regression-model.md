@@ -46,7 +46,7 @@ In this lab, you will perform:
 
 1. Select **Review + create**.
    
-1. After successfully completing the validation process, click on the "Create" button located in the lower left corner of the page.
+1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
 
 1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your workspace resource.
 
@@ -108,15 +108,9 @@ In this lab, you will perform:
 
     ![Picture1](media/ai900mod2cimg8.png)
 
-1. At the top right-hand side of the screen, select **Settings**. If the **Settings** pane is not visible, select the wheel icon next to the pipeline name at the top.
+1. Click on **Edit (1)** next to Pipeline-Created-on-date the draft name (**Pipeline-Created-on-*date***) to **Auto Price Training(2)** and click on **Save (3)**.
 
-1. In **Settings**, you must specify a compute target on which to run the pipeline. Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML compute cluster**, select the compute cluster you created previously.
-
-1. In **Settings**, under **Draft details**, change the draft name (**Pipeline-Created-on-*date***) to **Auto Price Training**.
-
-1. Select the *close* icon on the top right of the **Settings** pane to close the pane. 
-
-    ![Picture1](media/ai900mod2aimg1.png)
+   ![Picture1](media/pipelinename.png)
 
 ### Task 4: Add and explore a dataset
 
@@ -209,15 +203,23 @@ To apply your data transformations, you must run the pipeline.
 
     ![Screenshot of dataset with data transformation modules.](media/data-transforms-2a.png)
 
-1. Select **Submit**, and create a new experiment named **mslearn-auto-training** on your compute cluster.
+1. Select **Review + Submit**, and create a new experiment, on the basics page enter New experiment name as **mslearn-auto-training**  and enter Job display name as **Auto Price Training**.
+
+   ![Picture1](media/submit1.png)
+
+1. On the Runtime settings page Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML compute cluster**, select the compute cluster you created previously.
+
+   ![Picture1](media/submit2.png)
+
+1. Then review and **Submit**.
+
+    ![Picture1](media/submit3.png)
 
 1. Wait for the run to finish, which might take 5 minutes or more.
 
-    ![Screenshot of designer asset library with the completed job and job details button below.](media/completed-job-2c.png)
-
     >**Note**: Notice that the left hand panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**. 
 
-1. When the run has completed, click on **Job detail**. A new tab will open, and you will see the components that have completed with check marks like this:
+1. When the run has completed, click on **view detail**. A new tab will open, and you will see the components that have completed with check marks like this:
 
     ![Screenshot of dataset with modules in completed job state.](media/normalize-complete-2a.png)
 
@@ -264,9 +266,11 @@ After you've used data transformations to prepare the data, you can use it to tr
 
 Now you're ready to run the training pipeline and train the model.
 
-1. Select **Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**.
+1. Select **Review + Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**. Review and then click on **Submit**.
 
-1. The experiment run will take 5 minutes or more to complete. When the experiment run has completed, click on **Job details**. You will be taken to a new tab.
+1. The experiment run will take 5 minutes or more to complete. When the experiment run has completed, click on **view details**. You will be taken to a new tab.
+
+   ![Picture1](media/view.png)
 
 1. In the new window, right click on the **Score Model** module and select **Preview data** and then **Scored dataset** to view the results.
 
@@ -288,13 +292,11 @@ One way to evaluate a regression model is to compare the predicted labels to the
 
     ![Screenshot of adding the Evaluate Model module to Score Model module.](media/evaluate-2a.png)
 
-1. Select **Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**.
+1. Select **Review + Submit**, and run the pipeline using the existing experiment named **mslearn-auto-training**.  Review and then click on **Submit**.
 
 1. Wait for the experiment run to complete.
 
-    ![Screenshot of a complete experiment run.](media/completed-job-2c.png)
-
-1. When the experiment run has completed, select **Job detail**, which will open another tab. Find and right click on the **Evaluate Model** module. Select **Preview data** and then **Evaluation results**.
+1. When the experiment run has completed, select **View detail**, which will open another tab. Find and right click on the **Evaluate Model** module. Select **Preview data** and then **Evaluation results**.
 
     ![Screenshot of location of evaluate model module.](media/evaluate-model-help-1-2a.png)
 
@@ -371,9 +373,9 @@ One way to evaluate a regression model is to compare the predicted labels to the
 
     ![Screenshot of the automobile inference pipeline.](media/inference-pipeline-lab-2a.png)
 
-1. Submit the pipeline as a new experiment named **mslearn-auto-inference** on your compute cluster. The experiment may take a while to run (Make sure you have selected compute cluster).
+1. Review and Submit the pipeline as a new experiment named **mslearn-auto-inference** on your compute cluster and then Submit. The experiment may take a while to run (Make sure you have selected compute cluster).
 
-1. When the pipeline has completed, select **Job detail**. In the new tab, right click on the **Execute Python Script** module. Select **Preview data** and then **Result dataset** to see the predicted prices for the three cars in the input data.
+1. When the pipeline has completed, select **View detail**. In the new tab, right click on the **Execute Python Script** module. Select **Preview data** and then **Result dataset** to see the predicted prices for the three cars in the input data.
 
 1. Close the visualization tab.
 
@@ -397,9 +399,7 @@ After you've created and tested an inference pipeline for real-time inferencing,
 
 1. View the **Predict Auto Price** inference pipeline you created in the previous unit.
 
-1. Select **Job detail** on the left-hand pane, which will open a new tab.
-
-    ![Screenshot of job details next to the completed job. ](media/ai900_mod02a_t12_s2.png)
+1. Select **View detail** on the left-hand pane, which will open a new tab.
 
 1. In the new tab, select **Deploy**.
 
@@ -409,6 +409,8 @@ After you've created and tested an inference pipeline for real-time inferencing,
     -  **Name**: predict-auto-price
     -  **Description**: Auto price regression
     - **Compute type**: Azure Container Instance
+
+    ![Picture1](media/deploy.png)
 
 1. Wait for the service to be deployed - this can take upto **30 minutes** to get the deployment state to **Healthy**. The deployment status is shown at the top left of the designer interface.
 
