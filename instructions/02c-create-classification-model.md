@@ -97,15 +97,9 @@ To get started with Azure Machine Learning Designer, first you must create a pip
 
     ![Picture1](media/ai900mod2cimg8.png)
 
-1. At the top right-hand side of the screen, select **Settings**. If the **Settings** pane is not visible, select the wheel icon next to the pipeline name at the top.
+1. Click on **Edit** next to Pipeline-Created-on-date the draft name (**Pipeline-Created-on-*date***) to **Diabetes Training(1)** and click on **Save (2)**.
 
-1. In **Settings**, you must specify a compute target on which to run the pipeline. Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML compute cluster**, select the compute cluster you created previously.
-
-1. In **Settings**, under **Draft Details**, change the draft name (**Pipeline-Created-on-*date***) to **Diabetes Training**.
-
-1. Select **Save**, then select close icon on the top right of the **Settings** pane to close the pane.
-
-    ![Screenshot of the Machine Learning Studio Settings pane.](media/create-classification-model/ai-900-settings1.png)
+   ![Picture1](media/pipelinename1.png)
 
 ### Task 4: Create a dataset
 
@@ -202,19 +196,20 @@ Before you can train a model, you typically need to apply some pre-processing tr
 
 To apply your data transformations, you need to run the pipeline as an experiment.
 
-1. Select **Submit**, under the Experiment name select **Create new** and in New experiment name field enter **mslearn-diabetes-training** on your compute cluster and click on **Submit**.
+1. Select **Review + Submit**, and create a new experiment, on the basics page enter New experiment name as **mslearn-diabetes-training**  and enter Job display name as **Diabetes Training**.
+
+1. On the Runtime settings page Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML compute cluster**, select the compute cluster you created previously.
+
+1. Then review and **Submit**.
 
 1. Wait a few minutes for the run to finish.
 
-    ![Screenshot of designer asset library with the completed job and job details button below.](media/create-classification-model/completed-job1.png)
-
-    >**Note**: Notice that the left-handd panel is now on the **Submitted Jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**.
 
     >**Note**: If the error occurs and states that the data type is already in the collection, submit the pipeline again and re-run it.
 
 ### Task 8: View the transformed data
 
-1. When the run has been completed, the dataset is now prepared for model training. Click on **Job detail**. You will be taken to a new tab.
+1. When the run has been completed, the dataset is now prepared for model training. Click on **View detail**. You will be taken to a new tab.
 
 1. Right-click (Ctrl+click on a Mac) the **Normalize Data** module on the canvas, and click on **Preview data**. Select **Transformed dataset**.
 
@@ -264,11 +259,11 @@ Follow the steps below, using the image above for reference as you add and confi
 
 Now you're ready to run the training pipeline and train the model.
 
-1. Select **Submit**, and run the pipeline using the existing experiment named **mslearn-diabetes-training**.
+1. Select **Review + Submit**, and run the pipeline using the existing experiment named **mslearn-diabetes-training**.
 
 1. Wait for the experiment run to finish. This may take 5 minutes or more.
 
-1. When the experiment run has finished, select **Job detail**. You'll be directed to a new tab.
+1. When the experiment run has finished, select **View detail**. You'll be directed to a new tab.
 
 1. On the new tab, right-click (Ctrl+click on a Mac) the **Score Model** module on the canvas, and click on **Preview data**. Select **Scored dataset** to view the results.
 
@@ -290,11 +285,11 @@ The validation data you held back and used to score the model includes the known
 
     ![Screenshot of the Evaluate Model module added to Score Model module.](media/create-classification-model/evaluate-pipeline1.png)
 
-1. Select **Submit**, and run the pipeline using the existing experiment named **mslearn-diabetes-training**.
+1. Select **Review + Submit**, and run the pipeline using the existing experiment named **mslearn-diabetes-training**.
 
 1. Wait for the experiment run to finish.
 
-1. When the experiment run has finished, select **Job detail**. You'll be directed to a new tab.
+1. When the experiment run has finished, select **View detail**. You'll be directed to a new tab.
 
 1. On the new tab, right-click (Ctrl+click on a Mac) the **Evaluate Model** module on the canvas, and click on **Preview data**. Select **Evaluation results** to view the performance metrics. These metrics can help data scientists assess how well the model predicts based on the validation data.
 
