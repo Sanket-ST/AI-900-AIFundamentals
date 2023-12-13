@@ -383,13 +383,9 @@ The performance of this model isn't all that great, partly because we performed 
 
 1. View the **Predict Diabetes** inference pipeline you created in the previous unit.
 
-1. Select **Job detail** on the left-hand pane. This will open another window.
-
-    ![Screenshot of job details next to the completed job.](media/create-classification-model/completed-job-inference1.png)
-
 1. In the new window, select **Deploy**.
 
-    ![Screenshot of the deploy button for your Predict Auto Price inference pipeline.](media/create-classification-model/deploy-screenshot1.png)
+    ![Screenshot of the deploy button for your Predict Auto Price inference pipeline.](media/create-classification-model/deploy-screenshot10.png)
 
 1. At the top right, select **Deploy**, and deploy a **new real-time endpoint**, using the following settings.
     -  **Name**: predict-diabetes
