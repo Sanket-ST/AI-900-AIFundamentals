@@ -354,7 +354,7 @@ Now you're ready to run the training pipeline and train the model.
 
 1. Wait for the experiment run to finish. This may take 5 minutes or more.
 
-1. When the experiment run has finished, select **Job detail**. In the new tab, right click on the **Assign Data to Clusters** module, select **Preview data**, then select **Results dataset** to view the results.
+1. When the experiment run has finished, select **view detail**. In the new tab, right click on the **Assign Data to Clusters** module, select **Preview data**, then select **Results dataset** to view the results.
 
 1. Scroll right, and note the **Assignments** column, which contains the cluster (0, 1, or 2) to which each row is assigned. There are also new columns indicating the distance from the point representing this row to the centers of each of the clusters - the cluster to which the point is closest is the one to which it is assigned.
 
@@ -378,7 +378,7 @@ Now you're ready to run the training pipeline and train the model.
 
 1. Wait for the experiment run to finish.
 
-1. When the experiment run has finished, select **Job detail**. Right-click on the **Evaluate Model** module and select **Preview data**, then select **Evaluation results**. Review the metrics in each row:
+1. When the experiment run has finished, select **view detail**. Right-click on the **Evaluate Model** module and select **Preview data**, then select **Evaluation results**. Review the metrics in each row:
     - **Average Distance to Other Center**
     - **Average Distance to Cluster Center**
     - **Number of Points**
@@ -400,7 +400,7 @@ Now you're ready to run the training pipeline and train the model.
 
 1. In the **Create inference pipeline** drop-down list, click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Train Penguin Clustering-real time inference** will be opened.
 
-1. Navigate to **Settings** on the upper right-hand menu. Under **Draft details**, rename the new pipeline to **Predict Penguin Clusters**, and then review the new pipeline. The transformations and clustering model in your training pipeline are a part of this pipeline. The trained model will be used to score the new data. The pipeline also contains a web service output to return results. 
+1. Select the pencil icon to **Edit**. Under **Draft name**, rename the new pipeline to **Predict Penguin Clusters**, and then review the new pipeline. The transformations and clustering model in your training pipeline are a part of this pipeline. The trained model will be used to score the new data. The pipeline also contains a web service output to return results. 
 
     You're going to make the following changes to the inference pipeline:
 
@@ -434,7 +434,7 @@ Now you're ready to run the training pipeline and train the model.
 
 1. Submit the pipeline as a new experiment named **mslearn-penguin-inference** on your compute cluster. The experiment may take a while to run.
 
-1. When the pipeline has finished, select **Job detail**. In the new tab, right click on **Assign Data to Clusters** module, select **Preview data** and select **Results dataset** to see the predicted cluster assignments and metrics for the three penguin observations in the input data.
+1. When the pipeline has finished, select **view detail**. In the new tab, right click on **Assign Data to Clusters** module, select **Preview data** and select **Results dataset** to see the predicted cluster assignments and metrics for the three penguin observations in the input data.
 
    >**Note**: Your inference pipeline assigns penguin observations to clusters based on their features. Now you're ready to publish the pipeline so that client applications can use it.
 
@@ -444,13 +444,9 @@ Now you're ready to run the training pipeline and train the model.
 
 1. View the **Predict Penguin Clusters** inference pipeline you created in the previous unit.
 
-1. Select **Job detail** on the left hand pane. This will open up another tab.
-
-   ![Screenshot of job details next to the completed job](media/create-classification-model/completed-job1.png)
-
 1. In the new tab, select **Deploy**.
 
-   ![Screenshot of the deploy button for your Predict Auto Price inference pipeline.](media/deploy-2c.png)
+   ![Screenshot of the deploy button for your Predict Auto Price inference pipeline.](media/deploy-2ca.png)
 
 1. Deploy a new real-time endpoint, using the following settings:
     -  **Name**: predict-penguin-clusters
