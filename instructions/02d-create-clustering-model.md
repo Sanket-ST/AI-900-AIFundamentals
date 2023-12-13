@@ -105,7 +105,7 @@ In this lab, you will perform:
 
 To get started with Azure Machine Learning Designer, first, you must create a pipeline.
 
-1. In [Azure Machine Learning Studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the menu icon at the top left of the screen. View the **Designer** page (under **Author**), and select the plus sign to **create a new pipeline**.
+1. In [Azure Machine Learning Studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the menu icon at the top left of the screen. Select the **Designer** page (under **Authoring**), and select the plus sign to **create a new pipeline**.
 
      ![Picture1](media/ai900mod2cimg8.png)
 
