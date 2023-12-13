@@ -93,9 +93,7 @@ The compute cluster will take some time to be created. You can move onto the nex
 
 To get started with Azure Machine Learning Designer, first you must create a pipeline and add the dataset you want to work with.
 
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the menu icon at the top left of the screen. View the **Designer** page (under **Authoring**), and select **+ to create a new pipeline**.
-
-    ![Picture1](media/ai900mod2cimg8.png)
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the menu icon at the top left of the screen. View the **Designer** page (under **Authoring**), scroll down and select **Pipeline-Created-on-*date***.
 
 1. Click on **Edit** next to Pipeline-Created-on-date the draft name (**Pipeline-Created-on-*date***) to **Diabetes Training(1)** and click on **Save (2)**.
 
@@ -190,20 +188,21 @@ Before you can train a model, you typically need to apply some pre-processing tr
 
 1. Click **Save**, then again Click on **Save** icon and close the selection box. 
 
-   >**Note**: The data transformation is normalizing the numeric columns to put them on the same scale, which should help prevent columns with large values from dominating model training. You'd usually apply a whole bunch of pre-processing transformations like this to prepare your data for training, but we'll keep things simple in this exercise.
+       >**Note**: The data transformation is normalizing the numeric columns to put them on the same scale, which should help prevent columns with large values from dominating model training. You'd usually apply a whole bunch of pre-processing transformations like this to prepare your data for training, but we'll keep things simple in this exercise.
 
 ### Task 7: Run the pipeline
 
 To apply your data transformations, you need to run the pipeline as an experiment.
 
-1. Select **Review + Submit**, and create a new experiment, on the basics page enter New experiment name as **mslearn-diabetes-training**  and enter Job display name as **Diabetes Training**.
+1. Select **Configure + Submit**, and create a new experiment, on the basics page select **Create new** under experiment name and then enter New experiment name as **mslearn-diabetes-training**  and enter Job display name as **Diabetes Training** and click on **Next**.
+
+1. On the Input & outputs page, leave the settign as default and click on **Next**.
 
 1. On the Runtime settings page Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML compute cluster**, select the compute cluster you created previously.
 
 1. Then review and **Submit**.
 
 1. Wait a few minutes for the run to finish.
-
 
     >**Note**: If the error occurs and states that the data type is already in the collection, submit the pipeline again and re-run it.
 
@@ -243,7 +242,7 @@ Follow the steps below, using the image above for reference as you add and confi
     * **Random seed**: 123
     * **Stratified split**: False
 
-1. In the **Asset library**, search for and place a **Train Model** module to the canvas, under the **Split Data** module. Then connect the *Results dataset1* (left) output of the **Split Data** module to the *Dataset* (right) input of the **Train Model** module.
+1. In the **Asset library**, search for and place a **Train Model** module to the canvas, under the **Split Data** module. Then connect the *Results dataset1* (left) output of the **Split Data** module to the **Dataset** (right) input of the **Train Model** module.
 
 1. The model we're training will predict the **Diabetic** value, so select the **Train Model** module and modify its settings to set the **Label column** to **Diabetic**, click on **Save**, then select the close icon..
 
@@ -259,11 +258,11 @@ Follow the steps below, using the image above for reference as you add and confi
 
 Now you're ready to run the training pipeline and train the model.
 
-1. Select **Review + Submit**, and run the pipeline using the existing experiment named **mslearn-diabetes-training**.
+1. Select **Configure + Submit**, and run the pipeline using the existing experiment named **mslearn-diabetes-training**.
 
 1. Wait for the experiment run to finish. This may take 5 minutes or more.
 
-1. When the experiment run has finished, select **View detail**. You'll be directed to a new tab.
+1. When the experiment run has finished, select **View detail**. You'll be directed to a new tab and wait for 5 minutes to get pipeline completed.
 
 1. On the new tab, right-click (Ctrl+click on a Mac) the **Score Model** module on the canvas, and click on **Preview data**. Select **Scored dataset** to view the results.
 
@@ -285,7 +284,7 @@ The validation data you held back and used to score the model includes the known
 
     ![Screenshot of the Evaluate Model module added to Score Model module.](media/create-classification-model/evaluate-pipeline1.png)
 
-1. Select **Review + Submit**, and run the pipeline using the existing experiment named **mslearn-diabetes-training**.
+1. Select **Configure + Submit**, and run the pipeline using the existing experiment named **mslearn-diabetes-training**.
 
 1. Wait for the experiment run to finish.
 
@@ -319,7 +318,7 @@ The performance of this model isn't all that great, partly because we performed 
 
 1. In the **Create inference pipeline** drop-down list, click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Diabetes Training-real time inference** will be opened.
 
-1. Navigate to **Settings** on the upper right hand menu. Under **Draft details**, rename the new pipeline to **Predict Diabetes**, and then review the new pipeline. Some of the transformations and training steps are a part of this pipeline. The trained model will be used to score the new data. The pipeline also contains a web service output to return results. 
+1. Selcet pencil icon to **Edit** on the upper right hand menu. Under **Draft name**, rename the new pipeline to **Predict Diabetes**, and then review the new pipeline. Some of the transformations and training steps are a part of this pipeline. The trained model will be used to score the new data. The pipeline also contains a web service output to return results. 
 
     You're going to make the following changes to the inference pipeline:
 
