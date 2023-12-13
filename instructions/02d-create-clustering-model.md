@@ -313,7 +313,7 @@ Follow the steps below, using the image above for reference as you add and confi
 
     >**Tip**: Use the search bar to quickly locate modules. 
 
-1. Select the **Split Data** module, and configure its settings as follows:
+1. Double click the **Split Data** module, and configure its settings as follows and click on Save:
     * **Splitting mode**: Split Rows
     * **Fraction of rows in the first output dataset**: 0.7
     * **Randomized split**: True
