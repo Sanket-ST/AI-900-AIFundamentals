@@ -196,7 +196,7 @@ Network](https://lternet.edu/).
 
 1. Click on **Data**. Search for and place the **penguin-data** dataset onto the canvas.
 
-1. Click on **penguin-data** then click on **Use Data**
+1. Hover on **penguin-data** then click on **Use Data**
 
      ![Picture1](media/ai900mod2cimg18.png)
 
@@ -243,7 +243,7 @@ Network](https://lternet.edu/).
 
     ![Screenshot of how to use the with rules option to select all columns.](media/normalize-columns-2c.png)
 
-1. With the **Clean Missing Data** module still selected, in the settings pane, set the following configuration settings and then close:
+1. With the **Clean Missing Data** module still selected, in the settings pane, set the following configuration settings, then save and close:
     - **Minimum missing value ratio**: 0.0
     - **Maximum missing value ratio**: 1.0
     - **Cleaning mode**: Remove entire row
