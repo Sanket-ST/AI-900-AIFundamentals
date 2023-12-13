@@ -458,12 +458,15 @@ Now you're ready to run the training pipeline and train the model.
 1. To view the deployment status, expand the left pane by selecting the menu icon at the top left of the screen. View the **Endpoints** page (under **Assets**) and select **predict-penguin-clusters**. When the deployment has finished, the **Deployment state** will change to **Healthy**.
 
    >**Note**: The real-time endpoint may be in an unhealthy state, wait for another **30-40 minutes** for the endpoint state to change the deployment state to **Healthy**.
+   
+   ![Screenshot of the location of the Endpoints option on the left-hand pane.](media/endpoints-screenshot-2c1.png)
+   
 
 ### Task 14: Test the service
 
 1. On the **Endpoints** page, open the **predict-penguin-clusters** real-time endpoint, and select the **Test** tab.
 
-    ![Screenshot of the location of the Endpoints option on the left-hand pane.](media/endpoints-screenshot-2c.png)
+    ![Screenshot of the location of the Endpoints option on the left-hand pane.](media/endpoints-screenshot-2c2.png)
     
     >**Note**: You have to Wait for 15-20 minutes for the test code to reflect which can be seen in json format.
 
@@ -489,7 +492,7 @@ Now you're ready to run the training pipeline and train the model.
 
 1. Select **Test**. On the right hand of the screen, you should see the output **'Assignments'**. Notice how the assigned cluster is the one with the shortest distance to the cluster center.
 
-    ![Screenshot of the Test pane with sample test result.](media/test-interface-2c.png)
+    ![Screenshot of the Test pane with sample test result.](media/test-interface-2c3.png)
 
     >**Note**: You have just tested a service that is ready to be connected to a client application using the credentials in the **Consume** tab. We will end the lab here. You are welcome to continue to experiment with the service you just deployed.
 
