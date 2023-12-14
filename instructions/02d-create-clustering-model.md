@@ -35,7 +35,7 @@ In this lab, you will perform:
 
     - **Subscription**: Use existing Azure subscription. **(1)**
     - **Resource group**: Select **AI-900-Module-02c-<inject key="DeploymentID" enableCopy="false" /> (2)**
-    - **Workspace name**: Give name **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" /> (3)**
+    - **Name**: Give name **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" /> (3)**
     - **Region**: Select <inject key="location" enableCopy="false" /> **(4)**
     - **Storage account**: Note the default new storage account that will be created for your workspace. **(5)**
     - **Key vault**: Note the default new key vault that will be created for your workspace. **(6)**
@@ -44,9 +44,9 @@ In this lab, you will perform:
 
 1. Select **Review + create (9)**.
   
-    ![Picture1](media/ai900mod2cimg3.png)
+    ![Picture1](media/task1-1.png)
 
-1. After successfully completing the validation process, click on the "Create" button located in the lower left corner of the page.
+1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
    
 1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your workspace resource.
 
@@ -105,19 +105,30 @@ In this lab, you will perform:
 
 To get started with Azure Machine Learning Designer, first, you must create a pipeline.
 
-1. In [Azure Machine Learning Studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the menu icon at the top left of the screen. View the **Designer** page (under **Author**), and select the plus sign to **create a new pipeline**.
+1. In [Azure Machine Learning Studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the menu icon at the top left of the screen. Select the **Designer** page (under **Authoring**), and select the plus sign to **create a new pipeline**.
 
      ![Picture1](media/ai900mod2cimg8.png)
 
-1. At the top right-hand side of the screen, select **Settings**. If the **Settings** pane is not visible, select the wheel icon next to the pipeline name at the top.
+1. At the top right-hand side of the screen, select **Settings**. If the **Settings** pane is not visible, select the wheel icon next to the pipeline name at the top i.e. **Pipeline interface**.
 
-1. In **Settings**, you must specify a compute target on which to run the pipeline. Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML compute cluster**, select the compute cluster you created previously **ai900-vm-<inject key="DeploymentID" enableCopy="false" />**.
+     ![Picture1](media/1.png)
 
-1. In **Settings**, under **Draft Details**, change the draft name (**Pipeline-Created-on-*date**) to **Train Penguin Clustering**.
+1. Click on the plus sign in the Input section of Pipeline Interface and select **Compute target**.
+
+     ![Picture1](media/2.png)
+
+     ![Picture1](media/3.png)
+
+1. In **Settings**, you must specify a compute target on which to run the pipeline. Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML compute cluster**, select the compute cluster you created previously **ai900-vm-<inject key="DeploymentID" enableCopy="false" />** and Input name as **Train Penguin Clustering**.
+
+   ![Picture1](media/4.png)
+
+1. Click on the Pencil icon(edit) to update the draft details. Under **Draft Details**, change the draft name (**Pipeline-Created-on-*date**) to **Train Penguin Clustering**. Click on **Save**.
+
+   ![Picture1](media/7.png)
 
 1. Select the *close icon* on the top right of the **Settings** pane to close the pane, and then select **Save**.
 
-     ![Picture1](media/ai900mod2cimg10.png)
 
 ### Task 4: Create a dataset
 
@@ -132,7 +143,7 @@ In Azure Machine Learning, data for model training and other operations are usua
         * **Dataset type**: Tabular
     * **Select Next**
      
-       ![Picture1](media/ai900mod2cimg12.png)
+       ![Picture1](media/5-1.png)
      
     * **Data source**: From Web Files
     
@@ -196,9 +207,9 @@ Network](https://lternet.edu/).
 
 1. Click on **Data**. Search for and place the **penguin-data** dataset onto the canvas.
 
-1. Click on **penguin-data** then click on **Use Data**
+1. Hover on **penguin-data** then click on **Use Data**
 
-     ![Picture1](media/ai900mod2cimg18.png)
+     ![Picture1](media/8.png)
 
 1. Right-click (Ctrl+click on a Mac) the **penguin-data** dataset on the canvas, and click on **Preview data**.
 
@@ -243,7 +254,7 @@ Network](https://lternet.edu/).
 
     ![Screenshot of how to use the with rules option to select all columns.](media/normalize-columns-2c.png)
 
-1. With the **Clean Missing Data** module still selected, in the settings pane, set the following configuration settings and then close:
+1. With the **Clean Missing Data** module still selected, in the settings pane, set the following configuration settings, then save and close:
     - **Minimum missing value ratio**: 0.0
     - **Maximum missing value ratio**: 1.0
     - **Cleaning mode**: Remove entire row
@@ -262,11 +273,15 @@ Network](https://lternet.edu/).
 
 To apply your data transformations, you need to run the pipeline as an experiment.
 
-1. Select **Submit**, and run the pipeline as a new experiment click on **Create New** and named it as **mslearn-penguin-training** on your compute cluster. Click on **Submit**
+1. Select **Submit**, and run the pipeline as a new experiment click on **Create New** and named it as **mslearn-penguin-training** on your compute cluster.
 
      >**Note**: If the pipeline failed, then re-submit again.
 
      ![Picture1](media/ai900mod2cimg19.png)
+
+1. Scroll down, In Runtime Settings section Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML compute cluster**, select the compute cluster you created previously **ai900-vm-<inject key="DeploymentID" enableCopy="false" />** and select **workspaceblobstore** in select datastore. Select **Review + Submit** and Click on **Submit**.
+
+     ![Picture1](media/12-1.png)
 
 1. Wait for the run to finish. This may take 5 minutes or more.
 
@@ -313,7 +328,7 @@ Follow the steps below, using the image above for reference as you add and confi
 
     >**Tip**: Use the search bar to quickly locate modules. 
 
-1. Select the **Split Data** module, and configure its settings as follows:
+1. Double click the **Split Data** module, and configure its settings as follows and click on Save:
     * **Splitting mode**: Split Rows
     * **Fraction of rows in the first output dataset**: 0.7
     * **Randomized split**: True
