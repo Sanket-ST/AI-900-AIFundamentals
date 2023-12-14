@@ -44,9 +44,9 @@ In this lab, you will perform:
 
 1. Select **Review + create (9)**.
   
-    ![Picture1](media/ai900mod2cimg3.png)
+    ![Picture1](media/task1-1.png)
 
-1. After successfully completing the validation process, click on the "Create" button located in the lower left corner of the page.
+1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
    
 1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your workspace resource.
 
@@ -109,15 +109,26 @@ To get started with Azure Machine Learning Designer, first, you must create a pi
 
      ![Picture1](media/ai900mod2cimg8.png)
 
-1. At the top right-hand side of the screen, select **Settings**. If the **Settings** pane is not visible, select the wheel icon next to the pipeline name at the top.
+1. At the top right-hand side of the screen, select **Settings**. If the **Settings** pane is not visible, select the wheel icon next to the pipeline name at the top i.e. **Pipeline interface**.
 
-1. In **Settings**, you must specify a compute target on which to run the pipeline. Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML compute cluster**, select the compute cluster you created previously **ai900-vm-<inject key="DeploymentID" enableCopy="false" />**.
+     ![Picture1](media/1.png)
 
-1. In **Settings**, under **Draft Details**, change the draft name (**Pipeline-Created-on-*date**) to **Train Penguin Clustering**.
+1. Click on the plus sign in the Input section of Pipeline Interface and select **Compute target**.
+
+     ![Picture1](media/2.png)
+
+     ![Picture1](media/3.png)
+
+1. In **Settings**, you must specify a compute target on which to run the pipeline. Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML compute cluster**, select the compute cluster you created previously **ai900-vm-<inject key="DeploymentID" enableCopy="false" />** and Input name as **Train Penguin Clustering**.
+
+   ![Picture1](media/4.png)
+
+1. Click on the Pencil icon(edit) to update the draft details. Under **Draft Details**, change the draft name (**Pipeline-Created-on-*date**) to **Train Penguin Clustering**. Click on **Save**.
+
+   ![Picture1](media/7.png)
 
 1. Select the *close icon* on the top right of the **Settings** pane to close the pane, and then select **Save**.
 
-     ![Picture1](media/ai900mod2cimg10.png)
 
 ### Task 4: Create a dataset
 
@@ -132,7 +143,7 @@ In Azure Machine Learning, data for model training and other operations are usua
         * **Dataset type**: Tabular
     * **Select Next**
      
-       ![Picture1](media/ai900mod2cimg12.png)
+       ![Picture1](media/5-1.png)
      
     * **Data source**: From Web Files
     
@@ -198,7 +209,7 @@ Network](https://lternet.edu/).
 
 1. Hover on **penguin-data** then click on **Use Data**
 
-     ![Picture1](media/ai900mod2cimg18.png)
+     ![Picture1](media/8.png)
 
 1. Right-click (Ctrl+click on a Mac) the **penguin-data** dataset on the canvas, and click on **Preview data**.
 
