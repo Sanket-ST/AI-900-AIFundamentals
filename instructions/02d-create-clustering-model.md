@@ -273,11 +273,15 @@ Network](https://lternet.edu/).
 
 To apply your data transformations, you need to run the pipeline as an experiment.
 
-1. Select **Submit**, and run the pipeline as a new experiment click on **Create New** and named it as **mslearn-penguin-training** on your compute cluster. Click on **Submit**
+1. Select **Submit**, and run the pipeline as a new experiment click on **Create New** and named it as **mslearn-penguin-training** on your compute cluster.
 
      >**Note**: If the pipeline failed, then re-submit again.
 
      ![Picture1](media/ai900mod2cimg19.png)
+
+1. Scroll down, In Runtime Settings section Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML compute cluster**, select the compute cluster you created previously **ai900-vm-<inject key="DeploymentID" enableCopy="false" />** and select **workspaceblobstore** in select datastore. Select **Review + Submit** and Click on **Submit**.
+
+     ![Picture1](media/12-1.png)
 
 1. Wait for the run to finish. This may take 5 minutes or more.
 
