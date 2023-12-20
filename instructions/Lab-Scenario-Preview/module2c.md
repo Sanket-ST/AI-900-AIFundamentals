@@ -1,6 +1,6 @@
 # Lab Scenario Preview: AI-900: Explore visual tools for machine learning
 
-## Lab 02c: Explore classification with Azure Machine Learning Designer
+## Lab 02c: Explore clustering with Azure Machine Learning Designer
 
 ### Lab overview
 
