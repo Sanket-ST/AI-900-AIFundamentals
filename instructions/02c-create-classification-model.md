@@ -35,7 +35,7 @@ In this lab, you will perform:
 
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: **select AI-900-Module-02b-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Workspace name**: *Enter **ai900compute-<inject key="DeploymentID" enableCopy="false"/>***
+    - **Workspace name**: *Enter **ai900workspace-<inject key="DeploymentID" enableCopy="false"/>***
     - **Region**: Select **<inject key="location" enableCopy="false"/>**
     - **Storage account**: *Note the default new storage account that will be created for your workspace*
     - **Key vault**: *Note the default new key vault that will be created for your workspace*
@@ -52,7 +52,7 @@ In this lab, you will perform:
 
 1. Close any messages that are displayed.
 
-1. In Azure Machine Learning Studio, you should see your newly created workspace **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false" />**. If that is not the case, select your Entra ID in the left-hand menu. Then from the new left-hand menu select **Workspaces**, where all the workspaces associated with your directory are listed, and select the one you created for this exercise.
+1. In Azure Machine Learning Studio, you should see your newly created workspace **ai900-Workspace-<inject key="DeploymentID" enableCopy="false" />**. If that is not the case, select your Entra ID in the left-hand menu. Then from the new left-hand menu select **Workspaces**, where all the workspaces associated with your directory are listed, and select the one you created for this exercise.
 
    ![Picture1](media/ai900mod2cimg4.png)
 
@@ -114,7 +114,7 @@ To get started with Azure Machine Learning Designer, first you must create a pip
     * Click on **Next**.
     
     * **Web URL**:
-        * **Web URL**: [diabetes.csv](https://github.com/MicrosoftLearning/mslearn-dp100.de-de/blob/main/data/diabetes.csv)
+        * **Web URL**: [diabetes.csv](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-dp100.es-es/main/data/diabetes.csv)
         * **Skip data validation**: *do not select*
     * Click on **Next**.
     
@@ -188,7 +188,7 @@ Before you can train a model, you typically need to apply some pre-processing tr
 
 1. Click **Save**, then again Click on **Save** icon and close the selection box. 
 
-       >**Note**: The data transformation is normalizing the numeric columns to put them on the same scale, which should help prevent columns with large values from dominating model training. You'd usually apply a whole bunch of pre-processing transformations like this to prepare your data for training, but we'll keep things simple in this exercise.
+    >**Note**: The data transformation is normalizing the numeric columns to put them on the same scale, which should help prevent columns with large values from dominating model training. You'd usually apply a whole bunch of pre-processing transformations like this to prepare your data for training, but we'll keep things simple in this exercise.
 
 ### Task 7: Run the pipeline
 
