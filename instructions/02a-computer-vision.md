@@ -47,6 +47,8 @@ You can use the Computer Vision service by creating either a **Computer Vision**
 
    > **Note**: Copy and save the **KEY 1** and **Endpoint** values to Notepad for future reference to connect from client applications.
 
+   ![](media/key.png)
+
 ### Task 2: Run Cloud Shell
 
 To test the capabilities of the Computer Vision service, we'll use a simple command-line application that runs in the Cloud Shell on Azure.
