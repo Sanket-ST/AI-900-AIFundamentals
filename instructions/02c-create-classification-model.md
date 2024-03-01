@@ -35,7 +35,7 @@ In this lab, you will perform:
 
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: **select AI-900-Module-02b-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Workspace name**: *Enter **ai900workspace-<inject key="DeploymentID" enableCopy="false"/>***
+    - **Workspace name**: *Enter **AI-900-Workspace-<inject key="DeploymentID" enableCopy="false"/>***
     - **Region**: Select **<inject key="location" enableCopy="false"/>**
     - **Storage account**: *Note the default new storage account that will be created for your workspace*
     - **Key vault**: *Note the default new key vault that will be created for your workspace*
@@ -114,7 +114,7 @@ To get started with Azure Machine Learning Designer, first you must create a pip
     * Click on **Next**.
     
     * **Web URL**:
-        * **Web URL**: https://aka.ms/diabetes-data
+        * **Web URL**: [diabetes.csv](https://github.com/MicrosoftLearning/mslearn-dp100.de-de/blob/main/data/diabetes.csv)
         * **Skip data validation**: *do not select*
     * Click on **Next**.
     
@@ -200,7 +200,7 @@ To apply your data transformations, you need to run the pipeline as an experimen
 
 1. On the Runtime settings page Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML compute cluster**, select the compute cluster you created previously.
 
-1. Then review and **Submit**.
+1. Then **Review + Submit**.
 
 1. Wait a few minutes for the run to finish.
 
@@ -208,7 +208,7 @@ To apply your data transformations, you need to run the pipeline as an experimen
 
 ### Task 8: View the transformed data
 
-1. When the run has been completed, the dataset is now prepared for model training. Click on **View detail**. You will be taken to a new tab.
+1. When the run has been completed, the dataset is now prepared for model training. Click on **View details**. You will be taken to a new tab.
 
 1. Right-click (Ctrl+click on a Mac) the **Normalize Data** module on the canvas, and click on **Preview data**. Select **Transformed dataset**.
 
@@ -288,7 +288,7 @@ The validation data you held back and used to score the model includes the known
 
 1. Wait for the experiment run to finish.
 
-1. When the experiment run has finished, select **View detail**. You'll be directed to a new tab.
+1. When the experiment run has finished, select **View details**. You'll be directed to a new tab.
 
 1. On the new tab, right-click (Ctrl+click on a Mac) the **Evaluate Model** module on the canvas, and click on **Preview data**. Select **Evaluation results** to view the performance metrics. These metrics can help data scientists assess how well the model predicts based on the validation data.
 
