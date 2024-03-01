@@ -108,7 +108,7 @@ Now that you have a custom model, you can run a simple client application that u
 
      > **Note:** The Translator service does not require the use of the Azure AI Service endpoint, so there is no need to modify the Translator service endpoint. Instead, a dedicated global endpoint is available specifically for the Translator service.
 
-1. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
+1. To save your changes, press **Ctrl + S** on your keyboard to save your changes. To close the editor, press **Ctrl + Q**.
 
     The sample client application will use the Translator service to do several tasks:
     - Translate text from English into French, Italian, and Chinese.
