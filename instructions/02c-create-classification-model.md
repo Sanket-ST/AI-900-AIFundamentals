@@ -114,7 +114,7 @@ To get started with Azure Machine Learning Designer, first you must create a pip
     * Click on **Next**.
     
     * **Web URL**:
-        * **Web URL**: [diabetes.csv](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-dp100.es-es/main/data/diabetes.csv)
+        * **Web URL**: [diabetes.csv](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-dp100.de-de/main/data/diabetes.csv)
         * **Skip data validation**: *do not select*
     * Click on **Next**.
     
