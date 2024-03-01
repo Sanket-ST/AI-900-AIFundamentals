@@ -20,9 +20,9 @@ In this lab, you will perform:
 ## Architecture Diagram
 ![](media/Module3a.png)
 
-### Exercise 1: Create a Cognitive Services resource
+## Exercise 1: Create a Cognitive Services resource
 
-## Task 1: Create a Cognitive Services resource
+### Task 1: Create a Cognitive Services resource
 
 You can use the Custom Vision service by creating either a **Custom Vision** resource or a **Cognitive Services** resource.
 
