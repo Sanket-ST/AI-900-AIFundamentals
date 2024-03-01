@@ -15,6 +15,7 @@ In this lab, you will perform:
 ## Estimated timing: 60 minutes
 
 ## Architecture Diagram
+
 ![](media/Module2a.1.png)
  
 ## Exercise 1: Create an Azure Machine Learning workspace  
