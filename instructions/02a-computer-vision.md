@@ -159,6 +159,10 @@ Now that you have a Cloud Shell environment, you can run a simple application th
     > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
+## validation
+
+<validation step="b213015b-b660-4aa0-810b-ab70b5a7f7f9" />
+
 ### Learn more
 
 This simple app shows only some of the capabilities of the Computer Vision service. To learn more about what you can do with this service, see the [Computer Vision page](https://azure.microsoft.com/services/cognitive-services/computer-vision/).
