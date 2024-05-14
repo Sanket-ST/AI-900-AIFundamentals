@@ -70,7 +70,7 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
     ![Create storage by clicking confirm.](media/create_storage_1.png)
     
-    ![Create storage by clicking confirm.](media/create_storage.png)
+    ![Create storage by clicking confirm.](media/create_storage_9.png)
    
 
 1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
