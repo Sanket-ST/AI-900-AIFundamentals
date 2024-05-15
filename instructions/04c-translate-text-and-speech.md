@@ -66,9 +66,14 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
 1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.
 
-1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AI-900-Module-04b-<inject key="DeploymentID" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
+1. If you are prompted to create storage for your Cloud Shell,  click on **I want to create a storage account (1)** .
 
-    ![Create storage by clicking confirm.](media/translate-text-and-speech/create-a-storage.png)
+    ![Create storage by clicking confirm.](media/create_storage_1.png)
+
+1. Please make sure you have selected and **ensure your subscription is selected (1)** . your resource group **AI-900-Module-04b-<inject key="DeploymentID" enableCopy="false"/> (2)**, make sure you select the **region (3)** and enter **blob<inject key="DeploymentID" enableCopy="false"/> (4)** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/> (5)** For the **File share name**, then click on **Create (6)**.
+
+    ![Create storage by clicking confirm.](media/create_storage_09.png)
+   
 
 1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
 
@@ -88,16 +93,27 @@ Now that you have a custom model, you can run a simple client application that u
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
 
-1. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
+1. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell
 
      ```PowerShell
     code .
     ```
 
-    Notice how this opens up an editor like the one in the image below: 
+ 1. The classic page opens select **confirm**.
+   
+     ![The code editor.](media/classic.png)
+   
+   
+1. Rerun the command 
 
-    ![The code editor.](media/powershell-portal-guide-4.png)
+    ```PowerShell
+    code .
+    ```
 
+  Notice how this opens up an editor like the one in the image below: 
+
+   ![The code editor.](media/powershell-portal-guide-4.png)
+    
 1. In the **Files** pane on the left, expand **ai-900** and select **translator.ps1**. This file contains some code that uses the Translator service:
 
     ![The editor containing code to use the Translator service](media/translate-code-4b.png)
