@@ -103,11 +103,17 @@ Now that you have a custom model, you can run a simple client application that u
    
      ![The code editor.](media/classic.png)
    
-    Notice how this opens up an editor like the one in the image below: 
-
-    ![The code editor.](media/powershell-portal-guide-4.png)
    
+1. Rerun the command 
 
+    ```PowerShell
+    code .
+    ```
+
+  Notice how this opens up an editor like the one in the image below: 
+
+   ![The code editor.](media/powershell-portal-guide-4.png)
+    
 1. In the **Files** pane on the left, expand **ai-900** and select **translator.ps1**. This file contains some code that uses the Translator service:
 
     ![The editor containing code to use the Translator service](media/translate-code-4b.png)
