@@ -10,7 +10,7 @@ In this lab, you will perform:
 
 + Create an Azure Machine Learning workspace in the Azure portal
 
-## Estimated timing: 60 minutes
+## Estimated timing: 180 minutes
 
 ## Architecture Diagram
 ![](media/Module2c.png)
@@ -59,10 +59,11 @@ In this lab, you will perform:
    ![Picture1](media/ai900mod2cimg4.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
    > - Hit the Validate button for the corresponding task.
    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="463480b8-66ff-4ba8-90d1-9acc28a63949" />
 
 ### Task 2: Create compute
 
@@ -96,10 +97,11 @@ In this lab, you will perform:
        >**Note**: The compute cluster will take some time to be created. You can move on to the next step while you wait.
 
        > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-       > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
        > - Hit the Validate button for the corresponding task.
        > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
        > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="6279817f-6618-4122-8858-71c76760a881" />
 
 ### Task 3: Create a pipeline in designer
 
@@ -127,7 +129,7 @@ To get started with Azure Machine Learning Designer, first, you must create a pi
 
    ![Picture1](media/7.png)
 
-1. Select the *close icon* on the top right of the **Settings** pane to close the pane, and then select **Save**.
+1. Select the *close icon* on the top right of the **Settings** pane to close the pane.
 
 
 ### Task 4: Create a dataset
@@ -190,11 +192,12 @@ member of the [Long Term Ecological Research
 Network](https://lternet.edu/).
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
    > - Hit the Validate button for the corresponding task.
    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
   
+<validation step="8daeb45f-f9ff-45e7-8e79-63899d604a81" />
+
 ### Task 5: Load data to a canvas
 
 1. Return to your pipeline by selecting **Designer** on the left-hand menu. On the **Designer** page, select the **Train Penguin Clustering** which is under Pipelines drafts.
@@ -273,21 +276,23 @@ Network](https://lternet.edu/).
 
 To apply your data transformations, you need to run the pipeline as an experiment.
 
-1. Select **Submit**, and run the pipeline as a new experiment click on **Create New** and named it as **mslearn-penguin-training** on your compute cluster.
+1. Select **Configure & submit**, and run the pipeline as a new experiment click on **Create New** and named it as **mslearn-penguin-training** on your compute cluster.
 
      >**Note**: If the pipeline failed, then re-submit again.
 
      ![Picture1](media/ai900mod2cimg19.png)
 
-1. Scroll down, In Runtime Settings section Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML compute cluster**, select the compute cluster you created previously **ai900-vm-<inject key="DeploymentID" enableCopy="false" />** and select **workspaceblobstore** in select datastore. Select **Review + Submit** and Click on **Submit**.
+1. On the Input & outputs page, leave the settign as default and click on **Next**.
+
+1. In Runtime Settings section Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML compute cluster**, select the compute cluster you created previously **ai900-vm-<inject key="DeploymentID" enableCopy="false" />** and select **workspaceblobstore** in select datastore. Select **Review + Submit** and Click on **Submit**.
 
      ![Picture1](media/12-1.png)
 
+1. Then **Review + Submit**.
+
 1. Wait for the run to finish. This may take 5 minutes or more.
 
-    ![Screenshot of designer asset library with the completed job and job details button below.](media/create-classification-model/completed-job1.png)
-
-    >**Note**: Notice that the left-hand panel is now on the **Submitted jobs** pane. You will know when the run is complete because the status of the job will change to **Completed**.
+    >**Note**: If the error occurs and states that the data type is already in the collection, submit the pipeline again and re-run it.
 
 ### Task 8: View the transformed data
 
@@ -308,11 +313,12 @@ To apply your data transformations, you need to run the pipeline as an experimen
    >**Note**: After you've used data transformations to prepare the data, you can use it to train a machine-learning model.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
    > - Hit the Validate button for the corresponding task.
    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the 
  instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="d27d0b7c-676d-49ff-99df-fe56ca995dc6" />
 
 ### Task 9: Add training modules
 
@@ -322,13 +328,13 @@ Work through the following steps to extend the **Train Penguin Clustering** pipe
 
 Follow the steps below, using the image above for reference as you add and configure the required modules.
 
-1. Open the **Train Penguin Clustering** pipeline, if it's not already open.
+1. Open the **Train Penguin Clustering** pipeline you created in previous unit, if it's not already open.
 
 1. In the **Asset library** pane on the left, search for and place a **Split Data** module onto the canvas under the **Normalize Data** module. Then connect the left output of the **Normalize Data** module to the input of the **Split Data** module.
 
     >**Tip**: Use the search bar to quickly locate modules. 
 
-1. Double click the **Split Data** module, and configure its settings as follows and click on Save:
+1. Double click the **Split Data** module, and configure its settings as follows and click on Save, then select the close icon:
     * **Splitting mode**: Split Rows
     * **Fraction of rows in the first output dataset**: 0.7
     * **Randomized split**: True
@@ -415,7 +421,7 @@ Now you're ready to run the training pipeline and train the model.
 
 1. In the **Create inference pipeline** drop-down list, click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Train Penguin Clustering-real time inference** will be opened.
 
-1. Select the pencil icon to **Edit**. Under **Draft name**, rename the new pipeline to **Predict Penguin Clusters**, and then review the new pipeline. The transformations and clustering model in your training pipeline are a part of this pipeline. The trained model will be used to score the new data. The pipeline also contains a web service output to return results. 
+1. Select the pencil icon to **Edit**. Under **Draft name**, rename the new pipeline to **Predict Penguin Clusters**, click on save and then review the new pipeline. The transformations and clustering model in your training pipeline are a part of this pipeline. The trained model will be used to score the new data. The pipeline also contains a web service output to return results. 
 
     You're going to make the following changes to the inference pipeline:
 
@@ -467,7 +473,9 @@ Now you're ready to run the training pipeline and train the model.
     -  **Name**: predict-penguin-clusters
     -  **Description**: Cluster penguins.
     - **Compute type**: Azure Container Instance
-      
+ 
+1. Select **Deploy**.
+     
 1. Wait for the web service to be deployed - this can take several minutes. 
 
 1. To view the deployment status, expand the left pane by selecting the menu icon at the top left of the screen. View the **Endpoints** page (under **Assets**) and select **predict-penguin-clusters**. When the deployment has finished, the **Deployment state** will change to **Healthy**.
