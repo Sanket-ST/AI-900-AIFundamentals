@@ -57,19 +57,22 @@ To test the capabilities of the Computer Vision service, we'll use a simple comm
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](media/analyze-images-computer-vision-service/powershell-portal-guide-1(1).png)
 
-1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.
+1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **Powershell**.  
 
-1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AI-900-Module-03-<inject key="DeploymentID" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
+1. Within the Getting Started pane, select **Mount storage account**, select your **Storage account subscription** from the dropdown and click **Apply**.
 
-    ![Create storage by clicking confirm.](media/analyze-images-computer-vision-service/create-a-storage.png)
+   ![](media/cloudshell-getting-started.png)
 
-1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
+1. Within the **Mount storage account** pane, select **I want to create a storage account** and click **Next**.
 
-    ![How to find the left hand drop down menu to switch to PowerShell](media/analyze-images-computer-vision-service/powershell-portal-guide-3(1).png)
+   ![](media/cloudshell-mount-strg-account.png)
 
-1. Wait for PowerShell to start. You should see the following screen in the Azure portal:
 
-    ![Wait for PowerShell to start.](media/analyze-images-computer-vision-service/powershell-prompt(1).png)
+1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected, Please make sure you have selected your resource group **AI-900-Module-03-<inject key="DeploymentID" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create**.
+
+    ![Create storage by clicking confirm.](media/cloudshell-advanced-settings.png "Create storage advanced settings")
+
+1. Wait for PowerShell terminal to start.
 
 ### Task 3: Configure and run a client application
 
@@ -89,6 +92,11 @@ Now that you have a Cloud Shell environment, you can run a simple application th
     ```PowerShell
     code .
     ```
+   > **NOTE:** If you're prompted to **Switch to Classic Cloud Shell** after running the **code .** command, click on **Confirm**.
+
+   ![](../media/classic-cloudshell-prompt.png)  
+
+   > **Note**: If you get a popup on **Switch to Classic Cloud Shell** while running **code .** command click on **Confirm** and make sure you are in the correct project path.
 
     Notice how this opens up an editor like the one in the image below:
 
