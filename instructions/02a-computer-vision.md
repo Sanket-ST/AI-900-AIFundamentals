@@ -12,9 +12,9 @@ In this lab, you'll use a simple command-line application to see the Computer Vi
 
 ## Lab objectives
 In this lab, you will perform:
-+ Create an Azure AI Services resource
-+ Run Cloud Shell
-+ Configure and run a client application
+- Task 1: Create a *Azure AI Services* resource
+- Task 2: Run Cloud Shell
+- Task 3: Configure and run a client application
   
 ## Estimated timing: 60 minutes
 
@@ -92,11 +92,10 @@ Now that you have a Cloud Shell environment, you can run a simple application th
     ```PowerShell
     code .
     ```
-   > **NOTE:** If you're prompted to **Switch to Classic Cloud Shell** after running the **code .** command, click on **Confirm**.
-
-   ![](../media/classic-cloudshell-prompt.png)  
 
    > **Note**: If you get a popup on **Switch to Classic Cloud Shell** while running **code .** command click on **Confirm** and make sure you are in the correct project path.
+
+   ![](media/classic-cloudshell-prompt.png)  
 
     Notice how this opens up an editor like the one in the image below:
 
@@ -161,16 +160,17 @@ Now that you have a Cloud Shell environment, you can run a simple application th
 
 1. Review the results of the image analysis for the third image.
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
-    > - Hit the Validate button for the corresponding task.
-    > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 ## validation
 
 <validation step="b213015b-b660-4aa0-810b-ab70b5a7f7f9" />
 
+>**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+ > - Click the Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation tab.
+ > - Hit the Validate button for the corresponding task.
+ > - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+ > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   
 ### Learn more
 
 This simple app shows only some of the capabilities of the Computer Vision service. To learn more about what you can do with this service, see the [Computer Vision page](https://azure.microsoft.com/services/cognitive-services/computer-vision/).
