@@ -7,7 +7,20 @@ In this lab, you will train a regression model that predicts the price of an aut
 ## Lab objective
 In this lab, you will perform:
 
-+ Create an Azure Machine Learning workspace in the Azure portal
++ Task 1: Create an Azure Machine Learning workspace.
++ Task 2: Create compute.
++ Task 3: Create a pipeline in Designer.
++ Task 4: Create a dataset.
++ Task 5: Load data to a canvas.
++ Task 6: Add transformations.
++ Task 7: Run the pipeline.
++ Task 8: View the transformed data.
++ Task 9: Add training modules.
++ Task 10: Run the training pipeline.
++ Task 11: Add an Evaluate Model module.
++ Task 12: Create an inference pipeline.
++ Task 13: Deploy a service.
++ Task 14: Test the service.
 
 ## Estimated timing: 180 minutes
 
