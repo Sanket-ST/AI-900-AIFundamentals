@@ -15,16 +15,16 @@ In this lab you'll:
 
 The solution you'll create for Fourth Coffee requires the following resources in your Azure subscription:
 
-- An **Azure Cognitive Search** resource, which will manage indexing and querying.
-- A **Cognitive Services** resource, which provides AI services for skills that your search solution can use to enrich the data in the data source with AI-generated insights.
+- An **Azure AI Search** resource, which will manage indexing and querying.
+- A **AI Services** resource, which provides AI services for skills that your search solution can use to enrich the data in the data source with AI-generated insights.
 
-    >**Note :** Your **Azure Cognitive Search** and **Cognitive Services resources** must be in the **same location!**
+    >**Note :** Your **Azure AI Search** and **Cognitive AI resources** must be in the **Ssame location!**
 
 - A **Storage account** with blob containers, which will store raw documents and other collections of tables, objects, or files.
   
-### Task 1: Create an Azure Cognitive Search resource
+### Task 1: Create an Azure AI Search resource
    
-1. Click the **+ Create a resource** button, search for **Azure Cognitive Search**, and create a **Azure Cognitive Search** resource with the following settings:
+1. Click the **+ Create a resource** button, search for **Azure AI Search**, and create a **Azure AI Search** resource with the following settings:
 
     - **Subscription**: Use exiting Azure subscription.
     - **Resource group**: Select **AI-900-Module-05-<inject key="DeploymentID" enableCopy="false"/>**
@@ -36,11 +36,11 @@ The solution you'll create for Fourth Coffee requires the following resources in
 
 1. After deployment completes, select **Go to resource**. On the Azure Cognitive Search overview page, you can add indexes, import data, and search created indexes.
 
-### Task 2: Create a Cognitive Services resource
+### Task 2: Create a AI Services resource
 
-You'll need to provision a **Cognitive Services** resource that's in the same location as your Azure Cognitive Search resource. Your search solution will use this resource to enrich the data in the datastore with AI-generated insights.
+You'll need to provision a **AI Services** resource that's in the same location as your Azure Cognitive Search resource. Your search solution will use this resource to enrich the data in the datastore with AI-generated insights.
 
-1. Return to the home page of the Azure portal, and then select the **+ Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
+1. Return to the home page of the Azure portal, and then select the **+ Create a resource** button, search for *Cognitive Services*, and create a **AI Services** resource with the following settings:
     - **Subscription**: Use exiting Azure subscription.
     - **Resource group**: Select **AI-900-Module-05-<inject key="DeploymentID" enableCopy="false"/>**
     - **Region**: Select **<inject key="location" enableCopy="false" />**
@@ -97,7 +97,7 @@ You'll need to provision a **Cognitive Services** resource that's in the same lo
 
 Once you have the documents in storage, you can use Azure Cognitive Search to extract insights from the documents. The Azure portal provides an *Import data wizard*. With this wizard, you can automatically create an index and indexer for supported data sources. You'll use the wizard to create an index, and import your search documents from storage into the Azure Cognitive Search index.
 
-1. In the Azure portal, browse to your Azure Cognitive Search resource. On the **Overview** page, select **Import data**.
+1. In the Azure portal, browse to your Azure AI Search resource. On the **Overview** page, select **Import data**.
 
     ![Screenshot that shows the import data wizard.](../media/ai-900-import.png)
 
@@ -114,7 +114,7 @@ Once you have the documents in storage, you can use Azure Cognitive Search to ex
 
 1. Select **Next: Add cognitive skills (Optional)**.
 
-1. In the **Attach Cognitive Services** section, select your Cognitive Services resource.  
+1. In the **Attach AI Services** section, select your Cognitive Services resource.  
 
 1. In the **Add enrichments** section:
     - Change the **Skillset name** to **coffee-skillset**.
@@ -231,7 +231,7 @@ Let's see the power of the knowledge store in action. When you ran the *Import d
 
     ![Screenshot of the skillset container.](../media/create-cognitive-search-solution/ai-900-coffee.png)
 
-1. Select any of the *.jpg* files. Select **Edit** to see the image stored from the document. Notice how all the images from the documents are stored in this manner.
+1. Select any of the *.jpg* files. Select **Edit** to see the image stored in the document. Notice how all the images from the documents are stored in this manner.
 
     ![Screenshot of the saved image.](../media/knowledge-store-blob-3-05.png)
 
