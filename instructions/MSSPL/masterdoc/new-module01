@@ -1,4 +1,33 @@
-# Getting Started with Lab
+# Automated Machine learning using AML
+ 
+## Overall Estimated Duration: 4 Hours
+
+### Overview
+
+In this lab, you'll explore Azure Machine Learning's capabilities by creating a workspace, setting up compute resources, and creating a dataset. You'll run an automated machine learning job to train and identify the best model, then deploy it as a predictive service. Finally, you'll test the deployed service to ensure it delivers accurate results. This lab will demonstrate how Azure Machine Learning can streamline your workflow and enhance productivity.
+
+### Objective
+
+Understand how to create and deploy an Azure Machine Learning workspace, set up compute resources, and create datasets. Gain skills in running automated machine learning jobs, reviewing models, and deploying predictive services. By the end of this lab, you will be able to:
+
+1.*Create and Deploy an Azure Machine Learning Workspace*: Learn how to set up a centralized hub for managing machine learning projects, including creating compute resources and datasets.
+
+2.*Run and Review Automated Machine Learning Jobs*: Understand how to train multiple models, identify the best one, and review its performance.
+Deploy and Test Predictive Services: Gain the ability to deploy models as predictive services and test them to ensure they deliver accurate results.
+
+### Pre-requisites 
+
+- Basic understanding of machine learning concepts and workflows.
+- Basic knowledge of data preparation and processing techniques.
+
+### Architecture
+
+This architecture flow demonstrates how various Azure components work together to handle, process, analyze, and visualize data, providing a comprehensive and intelligent system tailored to business needs. You’ll start by creating an Azure Machine Learning workspace to manage resources, followed by provisioning compute resources for experiments. Next, you’ll create and register datasets, run automated machine learning jobs to identify the best model, and review model performance. The best model is then deployed as a predictive service, which is tested to ensure accuracy. This integrated approach showcases Azure’s AI and data analysis capabilities, enhancing productivity and delivering personalized experiences.
+
+(../media/GettingStarted/ArchD.png)
+
+
+## Getting Started with Lab
 
 1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab. You can see the number on the lab guide bottom area to switch to different exercises of the lab guide.
 
