@@ -26,6 +26,12 @@ This architecture flow demonstrates how various Azure components work together t
 
 ![Architectural Diagram](../media/GettingStarted/archd.png)
 
+### Explanation of Components
+
+- *Azure OpenAI*: This component provides access to advanced AI models from OpenAI, enabling natural language processing and other AI capabilities in applications.
+- *Azure Machine Learning Workspace*: Central hub for managing machine learning resources like datasets, experiments, and models. It supports collaboration and tracks the entire ML lifecycle.
+- *Compute Cluster*: A group of interconnected computers that distribute and speed up machine learning tasks. It scales dynamically based on workload.
+- *Machine Learning Model*: The output of the ML process, representing learned patterns from data. It is used to make predictions or decisions based on new data.
 
 ## Getting Started with Lab
 
