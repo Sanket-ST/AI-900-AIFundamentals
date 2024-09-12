@@ -266,14 +266,10 @@ Now you can test your deployed service.
 
     ![Screenshot of an example of testing the model with sample data in the test tab.](media/use-automated-machine-learning/workaround-test1.png)
 
-Let's review what you have done. You used a dataset of historical bicycle rental data to train a model. The model predicts the number of bicycle rentals expected on a given day, based on seasonal and meteorological *features*. In this case, the *labels* are number of bicycle rentals.
+<validation step="2e4871a4-3e69-40a1-bbd1-dc026b54d5ac" />
 
-You have just tested a service that is ready to be connected to a client application using the credentials in the **Consume** tab. We will end the lab here. You are welcome to continue to experiment with the service you just deployed.
+### Summary
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-   > - Hit the Validate button for the corresponding task.  
-   > - If you receive a success message, you can proceed to the next task.If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+In this lab, you’ll create an Azure Machine Learning workspace, set up compute resources, register datasets, run automated ML jobs, review and deploy the best model, and test the deployed service.
 
 ### You have successfully completed this lab.
