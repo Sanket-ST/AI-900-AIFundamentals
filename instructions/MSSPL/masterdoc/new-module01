@@ -24,7 +24,7 @@ Deploy and Test Predictive Services: Gain the ability to deploy models as predic
 
 This architecture flow demonstrates how various Azure components work together to handle, process, analyze, and visualize data, providing a comprehensive and intelligent system tailored to business needs. You’ll start by creating an Azure Machine Learning workspace to manage resources, followed by provisioning compute resources for experiments. Next, you’ll create and register datasets, run automated machine learning jobs to identify the best model, and review model performance. The best model is then deployed as a predictive service, which is tested to ensure accuracy. This integrated approach showcases Azure’s AI and data analysis capabilities, enhancing productivity and delivering personalized experiences.
 
-(../media/GettingStarted/ArchD.png)
+![Architectural Diagram](../media/GettingStarted/ArchD.png)
 
 
 ## Getting Started with Lab
