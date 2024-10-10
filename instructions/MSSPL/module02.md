@@ -1,6 +1,22 @@
 # Hands-on Lab: Explore Automated Machine Learning in Azure ML
 
-In this exercise, you will use a dataset of historical bicycle rental details to train a model that predicts the number of bicycle rentals that should be expected on a given day, based on seasonal and meteorological features.
+## Lab scenario
+
+The model will use a dataset of historical bicycle rental details to predict the number of rentals expected on a given day. It leverages seasonal and meteorological features to enhance the accuracy of its forecasts
+
+## Lab objectives
+
+In this lab, you will complete the following tasks:
+
+- Task 1: Create an Azure Machine Learning workspace
+- Task 2: Create compute
+- Task 3: Create a dataset
+- Task 4: Run an automated machine learning job
+- Task 5: Review the best model
+- Task 6: Deploy a predictive service
+- Task 7: Test the deployed service
+
+## Estimated time: 60 minutes
 
 ## Exercise 1: Create an Azure Machine Learning workspace  
 
