@@ -87,7 +87,9 @@ In this lab, you will complete the following tasks:
 
 ### Task 3: Create a dataset
 
-1. View the comma-separated data at [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true) in your web browser.
+1. Download the zip file from the link [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true) in your web browser and extract the file.
+
+       ![Picture12](../media/12.png)
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the menu icon at the top left of the screen. View the **Data** page (under **Assets**). The Data page contains specific data files or tables that you plan to work with in Azure ML. You can create datasets from this page as well.
 
@@ -98,12 +100,11 @@ In this lab, you will complete the following tasks:
         * **Type**: Tabular
     * Click on **Next**.
     
-    * **Data source**: From Web Files
-    * * Click on **Next**.
-    
-    * **Web URL**:
-        * **Web URL**: [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true)
-        * **Skip data validation**: *do not select*
+    * **Data source**: From local files.
+    * Click on **Next**.
+    * In the **Select a datastore** pane, make sure that **workspaceblobstore** is selected and click on **Next**.
+    * In the **Choose a file or folder** pane, select **Upload files or folder** and select the **Upload folder**.
+    * Now, select the extracted **bike-data** folder.
     * Click on **Next**.
      
     * **Settings**:
@@ -135,53 +136,38 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 1. Click on **+ New Automated ML job**. Create an Automated ML job with the following settings:
 
-    - **Select data asset**:
-        - **Dataset**: bike-rentals
-    - Click on **Next**
-    
-    - **Configure job**:
+    - **Basic settings**:
+        - **Job name**: bike-rentals
         - **New experiment name**: mslearn-bike-rental
-        - **Target column**: rentals(Integer) (*this is the label that the model is trained to predict)*
-        - **Select compute type**: *Compute cluster*
-        - **Select Azure ML compute cluster**: **ai900compute-<inject key="DeploymentID" enableCopy="false"/>**
     - Click on **Next**.
     
-    - **Select task and settings**: 
-        - **Task type**: Regression *(the model predicts a numeric value)* 
-   
-     - Notice under task type there are settings *View additional configuration settings* and *View featurization settings*. Now configure these settings. Click on **View additional configuration settings**.
-
-       ![Screenshot of a selection pane with boxes around the Regression task type and additional configuration settings.](../media/use-automated-machine-learning/ai-900-regression.png)
-
-    - **Additional configuration settings:**
+    - **Task type & data**: 
+        - **Task type**: Regression *(the model predicts a numeric value).
+        - **Select data**: Select **bike-rentals**.
+     - Click on **Next**.
+       
+    - **Task settings**:
+        - **Target column**: rentals(Integer) (*this is the label that the model is trained to predict*)(1)
+        - Select **Additional configuration settings:**(2)
         - **Primary metric**: Select **Normalized root mean squared error**
         - **Explain best model**: Selected — *this option causes automated machine learning to calculate feature importance for the best model which makes it possible to determine the influence of each feature on the predicted label.*
-        - **Use all supported models**: <u>Un</u>selected. *You'll restrict the job to try only a few specific algorithms.*
+        - **Use all supported models**: Unselected. *You'll restrict the job to try only a few specific algorithms.*
         - **Allowed models**: *Select only **RandomForest** and **LightGBM** — normally you'd want to try as many as possible, but each model added increases the time it takes to run the job.*
-        - **Exit criterion**:
-            - **Training job time (hours)**: 0.5 — *ends the job after a maximum of 30 minutes.*
-            - **Metric score threshold**: 0.085 — *if a model achieves a normalized root mean squared error metric score of 0.085 or less, the job ends.*
-        - **Concurrency**: *do not change*
-    - Click on **Save**.
-  
-      ![Screenshot of additional configurations with a box around the allowed models.](../media/use-automated-machine-learning/ai-900-add-cong01.png)
-      
-    - Now click on **View featurization settings:**
-        - **Enable featurization**: Selected — *automatically preprocess the features before training.*
-    - Click on **Save**.
-
-    - Click **Next** to go to the next selection pane.
-
-    - **Select the validation and test type**
-        - **Validation type**: Auto
-        - **Test data asset (preview)**: No test data asset required
-    - Click on **Finish**.
-
+        - Click on **Save**.
+     
+        - Expand **Limits**
+            - **Metric score threshold**: 0.085 — *if a model achieves a normalized root mean squared error metric score of 0.085 or less, the job ends.*(3)
+   
+     - Click on **Next**(4).
+          
+    - **Compute**:
+        - **Select compute type**: *Compute cluster*
+        - **Select Azure ML compute cluster**: **ai900compute-<inject key="DeploymentID" enableCopy="false"/>**
+     - Click on **Next** and Click on **Finish**
+              
 1. When you finish submitting the automated machine learning job details, it starts automatically. Wait for the status to change from *Preparing* to *Running*.
 
 1. When the status changes to *Running*, view the **Models** tab and observe as each possible combination of training algorithm and pre-processing steps is tried and the performance of the resulting model is evaluated. The page automatically refreshes periodically, but you can also select **Refresh**. It might take 10 minutes or so before models start to appear, as the cluster nodes must be initialized before training can begin.
-
-      ![Picture1](../media/ai900lab2img3.png)
 
 1. Wait for the job to finish. It might take a while — now might be a good time for a coffee break!
 
@@ -193,10 +179,6 @@ Follow the next steps to run a job that uses automated machine learning to train
     >**NOTE:**
     > You may see a message under the status "Warning: User specified exit score reached...". This is an expected message. Please continue to the next step.  
 1. Select the text under **Algorithm name** for the best model to view its details.
-
-1. Next to the *Normalized root mean squared error* value, select **View all other metrics** to see values of other possible evaluation metrics for a regression model.
-
-    ![Screenshot of how to locate view all other metrics on the Model tab.](../media/use-automated-machine-learning/ai-900-overview-02.png)
 
 1. Select the **Metrics** tab, use the arrows icon to expand the panel if it is not already expanded and select the **residuals** and **predicted_true** charts if they are not already selected. 
 
