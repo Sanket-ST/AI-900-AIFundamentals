@@ -87,9 +87,9 @@ In this lab, you will complete the following tasks:
 
 ### Task 3: Create a dataset
 
-1. Download the zip file from the link [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true) in your web browser and extract the file.
+1. Download the zip file from the link [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true) in your web browser and extract the file. 
 
-       ![Picture12](../media/12.png)
+   ![Picture1](../media/extract.png)
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the menu icon at the top left of the screen. View the **Data** page (under **Assets**). The Data page contains specific data files or tables that you plan to work with in Azure ML. You can create datasets from this page as well.
 
@@ -99,14 +99,21 @@ In this lab, you will complete the following tasks:
         * **Description**: Bicycle rental data
         * **Type**: Tabular
     * Click on **Next**.
-    
+
+      ![Picture1](../media/step1.png)    
+
     * **Data source**: From local files.
     * Click on **Next**.
     * In the **Select a datastore** pane, make sure that **workspaceblobstore** is selected and click on **Next**.
-    * In the **Choose a file or folder** pane, select **Upload files or folder** and select the **Upload folder**.
-    * Now, select the extracted **bike-data** folder.
+  
+      ![Picture1](../media/step31.png)
+
+    * In the **Choose a file or folder** pane, select **Upload files or folder** and select the **Upload file**.
+    * Now, open the extracted **bike-data** folder and select the **.csv** file.
     * Click on **Next**.
-     
+      
+      ![Picture1](../media/datasrc.png)
+
     * **Settings**:
         * **File format**: Delimited
         * **Delimiter**: Comma
@@ -148,13 +155,18 @@ Follow the next steps to run a job that uses automated machine learning to train
        
     - **Task settings**:
         - **Target column**: rentals(Integer) (*this is the label that the model is trained to predict*)(1)
+          
+            ![Picture1](../media/step41.png)
+          
         - Select **Additional configuration settings:**(2)
         - **Primary metric**: Select **Normalized root mean squared error**
         - **Explain best model**: Selected — *this option causes automated machine learning to calculate feature importance for the best model which makes it possible to determine the influence of each feature on the predicted label.*
         - **Use all supported models**: Unselected. *You'll restrict the job to try only a few specific algorithms.*
         - **Allowed models**: *Select only **RandomForest** and **LightGBM** — normally you'd want to try as many as possible, but each model added increases the time it takes to run the job.*
         - Click on **Save**.
-     
+
+            ![Picture1](../media/step42.png)
+
         - Expand **Limits**
             - **Metric score threshold**: 0.085 — *if a model achieves a normalized root mean squared error metric score of 0.085 or less, the job ends.*(3)
    
@@ -225,44 +237,6 @@ Now you can test your deployed service.
     ![Screenshot of location of Endpoints on the left hand menu.](../media/use-automated-machine-learning/endpoints-2.png)
 
 > **Note**: The realtime endpoint may be in unhealthy state, wait for another 30 minutes for the endpoint state to change the deployment state to **Healthy**, or else perform the steps from Task 5.
-
-### Learn more
-
-**Azure Machine Learning Endpoints** provide an improved, simpler deployment experience. To learn more about what you can do with this service, see the [Understanding_Service_State](https://learn.microsoft.com/en-us/azure/machine-learning/v1/how-to-deploy-and-where?tabs=azcli&view=azureml-api-1#understanding-service-state).
-
-1. When the **predict-rentals** endpoint opens, view the **Test** tab.
-
-1. In the **Input data to test real-time endpoint** pane, replace the template JSON with the following input data:
-
-    ```JSON
-    {
-      "Inputs": { 
-        "data": [
-          {
-            "day": 1,
-            "mnth": 1,   
-            "year": 2022,
-            "season": 2,
-            "holiday": 0,
-            "weekday": 1,
-            "workingday": 1,
-            "weathersit": 2, 
-            "temp": 0.3, 
-            "atemp": 0.3,
-            "hum": 0.3,
-            "windspeed": 0.3 
-          }
-        ]    
-      },   
-      "GlobalParameters": 1.0
-    }
-    ```
-
-1. Click on the **Test** button.
-
-1. Review the test results, which include a predicted number of rentals based on the input features. The test pane took the input data and used the model you trained to return the predicted number of rentals.
-
-    ![Screenshot of an example of testing the model with sample data in the test tab.](../media/use-automated-machine-learning/workaround-test1.png)
 
 <validation step="2e4871a4-3e69-40a1-bbd1-dc026b54d5ac" />
 
