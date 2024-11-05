@@ -110,9 +110,10 @@ In this lab, you will complete the following tasks:
 
     * In the **Choose a file or folder** pane, select **Upload files or folder** and select the **Upload file**.
     * Now, open the extracted **bike-data** folder and select the **.csv** file.
+
+      ![Picture1](../media/datasrc1.png)
+
     * Click on **Next**.
-      
-      ![Picture1](../media/datasrc.png)
 
     * **Settings**:
         * **File format**: Delimited
