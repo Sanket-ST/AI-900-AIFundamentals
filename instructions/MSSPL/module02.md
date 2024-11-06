@@ -63,25 +63,16 @@ In this lab, you will complete the following tasks:
 1. On the **Compute** page, select the **Compute clusters** tab and to add a new compute cluster, click on **+ New** with the following settings. You'll use this to train a machine learning model:
 
       ![Picture1](../media/ai900mod2cimg5.png)
-      
-    - **Location**: Select <inject key="location" enableCopy="false" />
-    - **Virtual machine tier**: Dedicated
-    - **Virtual machine type**: CPU
+   
+- Under **Required settings**.
+    - **Compute name**: Enter **ai900compute<inject key="DeploymentID" enableCopy="false"/>** (1)
+    - **Virtual machine type**: CPU (2)
     - **Virtual machine size**:
-        - Choose **Select from all options**
-        - Search for and select **Standard_DS11_v2**
-    - Select **Next**
+        - Choose **Select from recommended options** (3)
+        - Search for and select **Standard_DS11_v2** (4)
+    - Select **Review + Create** (5)
     
-      ![Picture1](../media/ai900mod2cimg6.png)
-      
-    - **Compute name**: Enter **ai900compute-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Minimum number of nodes**: 0
-    - **Maximum number of nodes**: 2
-    - **Idle seconds before scale down**: 120
-    - **Enable SSH access**: keep it as default
-    - Select **Create**
-
-       ![Picture1](../media/ai900mod2cimg7.png)
+      ![Picture1](../media/compute1.png)
        
    > **Note**:The compute cluster will take some time to be created. You can move onto the next step while you wait.
 
