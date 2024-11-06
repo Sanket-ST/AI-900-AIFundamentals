@@ -177,7 +177,7 @@ Follow the next steps to run a job that uses automated machine learning to train
     - **Compute**:
         - **Select compute type**: *Compute cluster*
         - **Select Azure ML compute cluster**: **ai900compute-<inject key="DeploymentID" enableCopy="false"/>**
-     - Click on **Next** and Click on **Finish**
+     - Click on **Next** and Click on **Submit training job**
               
 1. When you finish submitting the automated machine learning job details, it starts automatically. Wait for the status to change from *Preparing* to *Running*.
 
