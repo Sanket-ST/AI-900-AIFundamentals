@@ -80,54 +80,28 @@ In this lab, you will complete the following tasks:
 
 ### Task 3: Create a dataset
 
-1. Download the zip file from the link [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true) in your web browser and extract the file. 
-
-   ![Picture1](../media/extract.png)
-
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the menu icon at the top left of the screen. View the **Data** page (under **Assets**). The Data page contains specific data files or tables that you plan to work with in Azure ML. You can create datasets from this page as well.
-
-1. On the **Data** page, under the **Data assets** tab, select **+ Create**. Then configure a data asset with the following settings:
-    * **Data type**:
-        * **Name**: bike-rentals
-        * **Description**: Bicycle rental data
-        * **Type**: Tabular
-    * Click on **Next**.
-
-      ![Picture1](../media/step1.png)    
-
-    * **Data source**: From local files.
-    * Click on **Next**.
-    * In the **Select a datastore** pane, make sure that **workspaceblobstore** is selected and click on **Next**.
-  
-      ![Picture1](../media/step31.png)
-
-    * In the **Choose a file or folder** pane, select **Upload files or folder** and select the **Upload file**.
-    * Now, open the extracted **bike-data** folder and select the **.csv** file.
-
-      ![Picture1](../media/datasrc1.png)
-
-    * Click on **Next**.
-
-    * **Settings**:
-        * **File format**: Delimited
-        * **Delimiter**: Comma
-        * **Encoding**: UTF-8
-        * **Column headers**: Only first file has headers
-        * **Skip rows**: None
-        * **Dataset contains multi-line data**: *do not select*
-    * Click on **Next**.
-
-    * **Schema**:
-        * Include all columns other than **Path**
-        * Review the automatically detected types
-    * Click on **Next**.
-
-    * **Review**
-        * Select **Create**
-
-1. After the dataset has been created, open it and view the **Explore** page to see a sample of the data. This data contains historical features and labels for bike rentals.
-
-> **Citation**: *This data is derived from [Capital Bikeshare](https://www.capitalbikeshare.com/system-data) and is used in accordance with the published data [license agreement](https://www.capitalbikeshare.com/data-license-agreement)*.
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), select the **&#8801;** icon (a menu icon that looks like a stack of three lines) at the top left to view the various pages in the interface (you may need to maximize the size of your screen). You can use these pages in the left hand pane to manage the resources in your workspace. Select **Compute**(under **Manage**).
+ 
+1. On the **Compute** page, select the **Compute clusters** tab and to add a new compute cluster, click on **+ New** with the following settings. You'll use this to train a machine learning model:
+ 
+      ![Picture1](../media/ai900mod2cimg5.png)
+    - **Location**: Select <inject key="location" enableCopy="false" />
+    - **Virtual machine tier**: Dedicated
+    - **Virtual machine type**: CPU
+    - **Virtual machine size**:
+        - Choose **Select from all options**
+        - Search for and select **Standard_DS11_v2**
+    - Select **Next**
+      ![Picture1](../media/ai900mod2cimg6.png)
+    - **Compute name**: Enter **ai900compute-<inject key="DeploymentID" enableCopy="false"/>**
+    - **Minimum number of nodes**: 0
+    - **Maximum number of nodes**: 2
+    - **Idle seconds before scale down**: 120
+    - **Enable SSH access**: keep it as default
+    - Select **Create**
+ 
+       ![Picture1](../media/ai900mod2cimg7.png)
+> **Note**:The compute cluster will take some time to be created. You can move onto the next step while you wait.
 
 ### Task 4: Run an automated machine learning job
 
