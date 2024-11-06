@@ -101,6 +101,7 @@ In this lab, you will complete the following tasks:
     - Select **Create**
  
        ![Picture1](../media/ai900mod2cimg7.png)
+
 > **Note**:The compute cluster will take some time to be created. You can move onto the next step while you wait.
 
 ### Task 4: Run an automated machine learning job
