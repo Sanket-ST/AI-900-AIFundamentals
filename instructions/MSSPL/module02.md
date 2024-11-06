@@ -45,6 +45,8 @@ In this lab, you will complete the following tasks:
     - **Application insights**: *Note the default new application insights resource that will be created for your workspace*
     - **Container registry**: None (*one will be created automatically the first time you deploy a model to a container*)
 
+   ![Picture1](../media/amlconfig.png)
+
 1. Select **Review + create**.
 1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
    
