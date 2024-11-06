@@ -137,20 +137,24 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 1. Click on **+ New Automated ML job**. Create an Automated ML job with the following settings:
 
+      ![Picture1](../media/aml.png)
+
     - **Basic settings**:
-        - **Job name**: bike-rentals
-        - **New experiment name**: mslearn-bike-rental
-    - Click on **Next**.
-    
+        - **Job name**: bike-rentals (1)
+        - **New experiment name**: mslearn-bike-rental (2)
+    - Click on **Next** (3).
+      
+       ![Picture1](../media/aml1.png)
+      
     - **Task type & data**: 
         - **Task type**: Regression *(the model predicts a numeric value).
         - **Select data**: Select **bike-rentals**.
      - Click on **Next**.
-       
+        
     - **Task settings**:
         - **Target column**: rentals(Integer) (*this is the label that the model is trained to predict*)(1)
           
-            ![Picture1](../media/step41.png)
+       ![Picture1](../media/step41.png)
           
         - Select **Additional configuration settings:**(2)
         - **Primary metric**: Select **Normalized root mean squared error**
