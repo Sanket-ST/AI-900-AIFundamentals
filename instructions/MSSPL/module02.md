@@ -238,15 +238,16 @@ Now you can test your deployed service.
     ![Screenshot of location of Endpoints on the left hand menu.](../media/use-automated-machine-learning/endpoints-2.png)
 
 > **Note**: The realtime endpoint may be in unhealthy state, wait for another 30 minutes for the endpoint state to change the deployment state to **Healthy**, or else perform the steps from Task 5.
-> **Note**: Since Azure Machine Learning Studio doesn’t support V1 deployment testing, we’ll use the `predict.ipynb` notebook to send data to the "predict-rental" model endpoint in Azure Machine Learning and obtain predictions.
+
+> **Note**: Since Azure Machine Learning Studio doesn’t support V1 deployment testing, we’ll use the `predict.ipynb` notebook to send data to the "predict-rentals" model endpoint in Azure Machine Learning and obtain predictions.
 
 1. In Azure Machine Learning studio, on the left hand menu, select **Notebooks**.
 
 1. In the left hand pane of Notebooks click on **Add files** and select **Upload files**.
 
-1. Selct **Click to browse and select file(s)** (1) and navigate to **C:\AllFiles** (2) and select both **input and predict** files and click on Open.
+1. Selct **Click to browse and select file(s)** (1) and navigate to **C:\AllFiles** (2) and select both **"input.json" and "predict.ipynb"** files and click on Open.
 
-1. Select the checkbox **I trust the content of these files** and select **Upload**.
+1. Select the checkbox **"I trust the content of these files"** and select **Upload**.
 
 1. Now, open the predict.ipynb file and click on **run** the individual code snippets.
 
