@@ -279,11 +279,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 6. Tick the checkbox that says **"I trust the content of these files"** and then click **Upload**.
 
-7. Once uploaded, open the **predict.ipynb** notebook. This file contains the Python code that enables interaction with the deployed endpoint in Azure Machine Learning. It will send the input data (from `input.json`) to the endpoint and retrieve the predictions.
-
-   ![code](../media/kernels.png)
-
-   > **Note:** Make sure that **Python 3.10 SDK-v2** is selected in the kernels.
+7. Once uploaded, open the **predict.ipynb** notebook. Make sure that **Python 3.10 SDK-v2** is selected in the kernels.
 
 8. Run each code snippet in the notebook.
 
