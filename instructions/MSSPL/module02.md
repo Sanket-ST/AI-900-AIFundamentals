@@ -80,7 +80,7 @@ In this lab, you will complete the following tasks:
 
    ![Picture](../media/instance1.png)
 
-1. The compute instance will start provisioning, and will take some time to be created. You can move onto the next step while you wait
+1. The compute instance will start provisioning, and will take some time to be created. You can move onto the next step while you wait.
  
 1. On the **Compute** page, select the **Compute clusters** tab and to add a new compute cluster, click on **+ New** with the following settings. You'll use this to train a machine learning model:
  
@@ -260,25 +260,27 @@ Now you can test your deployed service.
 
 > **Note**: The realtime endpoint may be in unhealthy state, wait for another 30 minutes for the endpoint state to change the deployment state to **Healthy**, or else perform the steps from Task 5.
 
+3. In Azure Machine Learning studio, on the left hand menu, select **Notebooks**.
+
 > **Note**: Since Azure Machine Learning Studio doesn’t support V1 deployment testing, we’ll use the `predict.ipynb` notebook to send data to the "predict-rentals" model endpoint in Azure Machine Learning and obtain predictions.
 
-1. In Azure Machine Learning studio, on the left hand menu, select **Notebooks**.
-
-1. In the left hand pane of Notebooks click on **Add files** and select **Upload files**.
+4. In the left hand pane of Notebooks click on **Add files** and select **Upload files**.
 
     ![upload](../media/upload1.png)
 
-1. Selct **Click to browse and select file(s)** (1) and navigate to **C:\AllFiles** (2) and select both **input.json** and **predict.ipynb** files and click on Open.
+5. Selct **Click to browse and select file(s)** (1) and navigate to **C:\AllFiles** (2) and select both **input.json** and **predict.ipynb** files and click on Open.
 
     ![upload](../media/upload2.png)
 
-1. Select the checkbox **"I trust the content of these files"** and select **Upload**.
+6. Select the checkbox **"I trust the content of these files"** and select **Upload**.
 
-1. Now, open the **predict.ipynb** file and you will see a python code. This code allows you to interact with a deployed endpoint in Azure ML, enabling you to send input data **input.json**, make predictions. 
+7. Now, open the **predict.ipynb** file and you will see a python code. This code allows you to interact with a deployed endpoint in Azure ML, enabling you to send input data **(input.json)** and make predictions. 
 
     ![code](../media/jupyter.png)
    
-1. Click on **Run** the individual code snippets. Observe the output of the last code snipet which shows the prediction of rentals. 
+8. Click on **Run** the individual code snippets. Observe the output of the last code snipet which shows the prediction of rentals.
+
+    ![code](../media/result.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
