@@ -55,6 +55,8 @@ In this lab, you will complete the following tasks:
 
 1. Select **Launch studio** (or open a new browser tab and navigate to [https://ml.azure.com](https://ml.azure.com?azure-portal=true), and sign into Azure Machine Learning studio using your Microsoft account).
 
+   ![upload](../media/launchstudio.png)
+
 1. Close any messages that are displayed.
 
 1. In Azure Machine Learning studio, you should see your newly created workspace. If that is not the case, select your Azure directory in the left-hand menu. Then from the new left-hand menu select **Workspaces**, where all the workspaces associated to your directory are listed, and **select the one you created for this exercise**.
@@ -179,7 +181,7 @@ Follow the next steps to run a job that uses automated machine learning to train
     - **Task settings**:
         - **Target column**: rentals(Integer) (*this is the label that the model is trained to predict*)(1)
           
-       ![Picture1](../media/step41.png)
+       ![Picture1](../media/step412.png)
           
         - Select **Additional configuration settings:**(2)
         - **Primary metric**: Select **Normalized root mean squared error**
