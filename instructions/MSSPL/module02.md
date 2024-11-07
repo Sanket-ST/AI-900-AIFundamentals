@@ -58,9 +58,28 @@ In this lab, you will complete the following tasks:
 
 1. In Azure Machine Learning studio, you should see your newly created workspace. If that is not the case, select your Azure directory in the left-hand menu. Then from the new left-hand menu select **Workspaces**, where all the workspaces associated to your directory are listed, and **select the one you created for this exercise**.
 
-### Task 2: Create compute
+### Task 2: Create Compute cluster and Compute instance
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), select the **&#8801;** icon (a menu icon that looks like a stack of three lines) at the top left to view the various pages in the interface (you may need to maximize the size of your screen). You can use these pages in the left hand pane to manage the resources in your workspace. Select **Compute**(under **Manage**).
+
+1. Under **Compute instances** tab. To add a new compute instance, click on **+ New** to crteate new compute instance.
+
+   ![Picture](../media/instance.png)
+
+1. In the **Create compute instance** pane, configure the following settings:
+
+   - **Virtual machine type**: CPU
+   - **Virtual machine size**:
+      - Choose **Select from all options**
+      - Search for and select **Standard_DS11_v2** (or select a size appropriate for your needs)
+   
+   - **Compute name**: Enter a unique name, such as **ai900instance-<inject key="DeploymentID" enableCopy="false"/>**
+
+1. Click **Review + Create** to initialize the compute instance.
+
+   ![Picture](../media/instance1.png)
+
+The compute instance will start provisioning, and will take some time to be created. You can move onto the next step while you wait
  
 1. On the **Compute** page, select the **Compute clusters** tab and to add a new compute cluster, click on **+ New** with the following settings. You'll use this to train a machine learning model:
  
@@ -81,6 +100,7 @@ In this lab, you will complete the following tasks:
     - Select **Create**
  
        ![Picture1](../media/ai900mod2cimg7.png)
+
 > **Note**:The compute cluster will take some time to be created. You can move onto the next step while you wait.
 
 ### Task 3: Create a dataset
@@ -253,7 +273,7 @@ Now you can test your deployed service.
 
     ![code](../media/use-automated-machine-learning/jupyter.png)
    
-1. Click on **Run** the individual code snippets.
+1. Click on **Run** the individual code snippets. Observe the output of the last code snipet which shows the prediction of rentals 
 
 <validation step="2e4871a4-3e69-40a1-bbd1-dc026b54d5ac" />
 
