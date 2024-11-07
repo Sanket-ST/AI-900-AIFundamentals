@@ -80,7 +80,7 @@ In this lab, you will complete the following tasks:
 
    ![Picture](../media/instance1.png)
 
-The compute instance will start provisioning, and will take some time to be created. You can move onto the next step while you wait
+1. The compute instance will start provisioning, and will take some time to be created. You can move onto the next step while you wait
  
 1. On the **Compute** page, select the **Compute clusters** tab and to add a new compute cluster, click on **+ New** with the following settings. You'll use this to train a machine learning model:
  
