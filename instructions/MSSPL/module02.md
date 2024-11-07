@@ -293,6 +293,6 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 ### Summary
 
-In this lab, you have created an Azure Machine Learning workspace, set up compute resources, register datasets, run automated ML jobs, reviewed and deployed the best model, and tested the deployed service.
+In this lab, you have created an Azure Machine Learning workspace, set up compute resources, registered datasets, ran automated ML jobs, reviewed and deployed the best model, and tested the deployed service.
 
 ### You have successfully completed this lab.
