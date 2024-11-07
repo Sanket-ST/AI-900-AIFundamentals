@@ -73,7 +73,7 @@ In this lab, you will complete the following tasks:
       - Choose **Select from all options**
       - Search for and select **Standard_DS11_v2** (or select a size appropriate for your needs)
    
-   - **Compute name**: Enter a unique name, such as **ai900instance-<inject key="DeploymentID" enableCopy="false"/>**
+   - **Compute name**: Enter a unique name, such as **ai900instance<inject key="DeploymentID" enableCopy="false"/>**
 
 1. Click **Review + Create** to initialize the compute instance.
 
