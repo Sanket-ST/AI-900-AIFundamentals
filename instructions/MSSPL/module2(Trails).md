@@ -129,7 +129,7 @@ In this lab, you will complete the following tasks:
       ![Picture1](../media/step312.png)
  
     * In the **Choose a file or folder** pane, select **Upload files or folder** and select the **Upload file**.
-    * Now, open the extracted **bike-data** folder and select the **.csv** file.
+    * Now, open the extracted **bike-data** folder and select the **daily-bike-share.csv** file.
  
       ![Picture1](../media/datasrc1.png)
  
