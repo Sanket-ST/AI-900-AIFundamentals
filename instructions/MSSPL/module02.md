@@ -281,7 +281,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 8. Run each code snippet in the notebook. Once you execute the final code cell, you should see the prediction output, which will display the rental predictions.
 
-   ![code](../media/result1.png)
+   ![code](../media/result12.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
