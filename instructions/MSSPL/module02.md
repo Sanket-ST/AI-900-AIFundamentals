@@ -108,7 +108,7 @@ In this lab, you will complete the following tasks:
 
 ### Task 3: Create a dataset
 
-1. Download the zip file from the link [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true) in your web browser and extract the file.
+1. Download the zip file from the link [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true) in your web browser, open the file location and extract the file.
  
    ![Picture1](../media/extract.png)
  
@@ -129,7 +129,7 @@ In this lab, you will complete the following tasks:
       ![Picture1](../media/step312.png)
  
     * In the **Choose a file or folder** pane, select **Upload files or folder** and select the **Upload file**.
-    * Now, open the extracted **bike-data** folder and select the **.csv** file.
+    * Now, open the extracted **bike-data** folder and select the **daily-bike-share.csv** file and click on **Open**.
  
       ![Picture1](../media/datasrc1.png)
  
@@ -143,6 +143,8 @@ In this lab, you will complete the following tasks:
         * **Skip rows**: None
         * **Dataset contains multi-line data**: *do not select*
     * Click on **Next**.
+
+      ![Picture1](../media/settings.png)
  
     * **Schema**:
         * Include all columns other than **Path**
@@ -177,7 +179,9 @@ Follow the next steps to run a job that uses automated machine learning to train
         - **Task type**: Regression *(the model predicts a numeric value).
         - **Select data**: Select **bike-rentals**.
      - Click on **Next**.
-        
+
+       ![code](../media/datatype.png)
+
     - **Task settings**:
         - **Target column**: rentals(Integer) (*this is the label that the model is trained to predict*)(1)
           
@@ -277,9 +281,17 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 7. Once uploaded, open the **predict.ipynb** notebook. This file contains the Python code that enables interaction with the deployed endpoint in Azure Machine Learning. It will send the input data (from `input.json`) to the endpoint and retrieve the predictions.
 
+   ![code](../media/kernels.png)
+
+   > **Note:** Make sure that **Python 3.10 SDK-v2** is selected in the kernels.
+
+8. Run each code snippet in the notebook.
+
    ![code](../media/jupyter.png)
 
-8. Run each code snippet in the notebook. Once you execute the final code cell, you should see the prediction output, which will display the rental predictions.
+   > **Note:** The **predict.ipynb** file contains the Python code that enables interaction with the deployed endpoint in Azure Machine Learning. It will send the input data (from `input.json`) to the endpoint and retrieve the predictions.
+
+9. Once you execute the final code cell, you should see the prediction output, which will display the rental predictions.
 
    ![code](../media/result12.png)
 
