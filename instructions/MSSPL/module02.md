@@ -245,7 +245,7 @@ Now you can test your deployed service.
 
 1. In the left hand pane of Notebooks click on **Add files** and select **Upload files**.
 
-1. Selct **Click to browse and select file(s)** (1) and navigate to **C:\AllFiles** (2) and select both **"input.json" and "predict.ipynb"** files and click on Open.
+1. Selct **Click to browse and select file(s)** (1) and navigate to **C:\AllFiles** (2) and select both **input.json** and **predict.ipynb** files and click on Open.
 
 1. Select the checkbox **"I trust the content of these files"** and select **Upload**.
 
