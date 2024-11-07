@@ -48,6 +48,7 @@ In this lab, you will complete the following tasks:
    ![Picture1](../media/amlconfig.png)
 
 1. Select **Review + create**.
+
 1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
    
 1. Wait for deployment to complete, and then click on the **Go to resource** button, this will take you to your workspace resource.
@@ -58,7 +59,7 @@ In this lab, you will complete the following tasks:
 
 1. In Azure Machine Learning studio, you should see your newly created workspace. If that is not the case, select your Azure directory in the left-hand menu. Then from the new left-hand menu select **Workspaces**, where all the workspaces associated to your directory are listed, and **select the one you created for this exercise**.
 
-### Task 2: Create Compute cluster and Compute instance
+### Task 2: Create Compute instance and Compute cluster
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), select the **&#8801;** icon (a menu icon that looks like a stack of three lines) at the top left to view the various pages in the interface (you may need to maximize the size of your screen). You can use these pages in the left hand pane to manage the resources in your workspace. Select **Compute**(under **Manage**).
 
@@ -265,20 +266,30 @@ Now you can test your deployed service.
 
 1. In the left hand pane of Notebooks click on **Add files** and select **Upload files**.
 
+    ![upload](../media/upload1.png)
+
 1. Selct **Click to browse and select file(s)** (1) and navigate to **C:\AllFiles** (2) and select both **input.json** and **predict.ipynb** files and click on Open.
+
+    ![upload](../media/upload2.png)
 
 1. Select the checkbox **"I trust the content of these files"** and select **Upload**.
 
-1. Now, open the **predict.ipynb** file and you will see a python code. This code allows you to interact with a deployed model in Azure ML, enabling you to send input data, make predictions, and retrieve responses programmatically. 
+1. Now, open the **predict.ipynb** file and you will see a python code. This code allows you to interact with a deployed endpoint in Azure ML, enabling you to send input data **input.json**, make predictions. 
 
-    ![code](../media/use-automated-machine-learning/jupyter.png)
+    ![code](../media/jupyter.png)
    
-1. Click on **Run** the individual code snippets. Observe the output of the last code snipet which shows the prediction of rentals 
+1. Click on **Run** the individual code snippets. Observe the output of the last code snipet which shows the prediction of rentals. 
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Hit the Validate button for the corresponding task. If you receive a success message.
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="2e4871a4-3e69-40a1-bbd1-dc026b54d5ac" />
 
 ### Summary
 
-In this lab, you’ll create an Azure Machine Learning workspace, set up compute resources, register datasets, run automated ML jobs, review and deploy the best model, and test the deployed service.
+In this lab, you have created an Azure Machine Learning workspace, set up compute resources, register datasets, run automated ML jobs, reviewed and deployed the best model, and tested the deployed service.
 
 ### You have successfully completed this lab.
