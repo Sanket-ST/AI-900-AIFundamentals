@@ -72,7 +72,7 @@ In this lab, you will complete the following tasks:
    - **Virtual machine type**: CPU
    - **Virtual machine size**:
       - Choose **Select from all options**
-      - Search for and select **Standard_DS11_v2** (or select a size appropriate for your needs)
+      - Search for and select **Standard_DS11_v2**
    
    - **Compute name**: Enter a unique name, such as **ai900instance<inject key="DeploymentID" enableCopy="false"/>**
 
