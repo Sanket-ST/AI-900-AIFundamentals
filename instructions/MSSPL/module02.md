@@ -126,7 +126,7 @@ In this lab, you will complete the following tasks:
     * **Data source**: From local files.
     * Click on **Next**.
     * In the **Select a datastore** pane, make sure that **workspaceblobstore** is selected and click on **Next**.
-      ![Picture1](../media/step31.png)
+      ![Picture1](../media/step312.png)
  
     * In the **Choose a file or folder** pane, select **Upload files or folder** and select the **Upload file**.
     * Now, open the extracted **bike-data** folder and select the **.csv** file.
