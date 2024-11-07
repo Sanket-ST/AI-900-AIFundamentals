@@ -16,7 +16,7 @@ In this lab, you will complete the following tasks:
 - Task 6: Deploy a predictive service
 - Task 7: Test the deployed service
 
-## Estimated time: 60 minutes
+## Estimated time: 4 hours
 
 ## Exercise 1: Create an Azure Machine Learning workspace  
 
@@ -78,7 +78,7 @@ In this lab, you will complete the following tasks:
 
 1. Click **Review + Create** to initialize the compute instance.
 
-   ![Picture](../media/instance1.png)
+   ![Picture](../media/instance12.png)
 
 1. The compute instance will start provisioning, and will take some time to be created. You can move onto the next step while you wait.
  
@@ -249,38 +249,37 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 ### Task 7: Test the deployed service
 
-Now you can test your deployed service.
-1. In Azure Machine Learning studio, on the left hand menu, select **Endpoints**.
+1. In Azure Machine Learning Studio, navigate to the **Endpoints** section from the left-hand menu.
 
-    ![Screenshot of location of Endpoints on the left hand menu.](../media/endpoints1-02.png)
+   ![Screenshot of location of Endpoints on the left hand menu.](../media/endpoints1-02.png)
 
-1. On the **Endpoints** page, open the **predict-rentals** real-time endpoint.
+2. On the **Endpoints** page, locate and open the **predict-rentals** real-time endpoint.
 
-    ![Screenshot of location of Endpoints on the left hand menu.](../media/use-automated-machine-learning/endpoints-2.png)
+   ![Screenshot of location of Endpoints on the left hand menu.](../media/use-automated-machine-learning/endpoints-2.png)
 
-> **Note**: The realtime endpoint may be in unhealthy state, wait for another 30 minutes for the endpoint state to change the deployment state to **Healthy**, or else perform the steps from Task 5.
+   > **Note:** If the endpoint is in an unhealthy state, it may take up to 30 minutes for the deployment status to change to **Healthy**. If the status doesn't update, you can follow the steps from Task 5 to troubleshoot.
 
-3. In Azure Machine Learning studio, on the left hand menu, select **Notebooks**.
+3. On the left-hand menu of Azure Machine Learning Studio, select **Notebooks**.
 
-> **Note**: Since Azure Machine Learning Studio doesn’t support V1 deployment testing, we’ll use the `predict.ipynb` notebook to send data to the "predict-rentals" model endpoint in Azure Machine Learning and obtain predictions.
+   > **Note:** Since Azure Machine Learning Studio doesn’t support V1 deployment testing, we’ll use the `predict.ipynb` notebook to send data to the "predict-rentals" model endpoint in Azure Machine Learning and receive predictions.
 
-4. In the left hand pane of Notebooks click on **Add files** and select **Upload files**.
+4. In the Notebooks section, click on **Add files** and select **Upload files**.
 
-    ![upload](../media/upload1.png)
+   ![upload](../media/upload1.png)
 
-5. Selct **Click to browse and select file(s)** (1) and navigate to **C:\AllFiles** (2) and select both **input.json** and **predict.ipynb** files and click on Open.
+5. Select **Click to browse and select file(s)** and navigate to **C:\AllFiles**. Choose both the **input.json** and **predict.ipynb** files and click **Open**.
 
-    ![upload](../media/upload2.png)
+   ![upload](../media/upload2.png)
 
-6. Select the checkbox **"I trust the content of these files"** and select **Upload**.
+6. Tick the checkbox that says **"I trust the content of these files"** and then click **Upload**.
 
-7. Now, open the **predict.ipynb** file and you will see a python code. This code allows you to interact with a deployed endpoint in Azure ML, enabling you to send input data **(input.json)** and make predictions. 
+7. Once uploaded, open the **predict.ipynb** notebook. This file contains the Python code that enables interaction with the deployed endpoint in Azure Machine Learning. It will send the input data (from `input.json`) to the endpoint and retrieve the predictions.
 
-    ![code](../media/jupyter.png)
-   
-8. Click on **Run** the individual code snippets. Observe the output of the last code snipet which shows the prediction of rentals.
+   ![code](../media/jupyter.png)
 
-    ![code](../media/result.png)
+8. Run each code snippet in the notebook. Once you execute the final code cell, you should see the prediction output, which will display the rental predictions.
+
+   ![code](../media/result1.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
