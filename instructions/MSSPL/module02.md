@@ -226,19 +226,33 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 1. Wait for the deployment to start - this may take a few seconds. Then, in the **Model summary** section, observe the **Deploy status** for the **predict-rentals** service, which should be **Running**. Wait for this status to change to **Succeeded**, which may take some time. You may need to select **Refresh** periodically.
 
-1. In Azure Machine Learning studio, on the left hand menu, select **Endpoints**.
-
-    ![Screenshot of location of Endpoints on the left hand menu.](../media/endpoints1-02.png)
-
 ### Task 7: Test the deployed service
 
 Now you can test your deployed service.
+1. In Azure Machine Learning studio, on the left hand menu, select **Endpoints**.
+
+    ![Screenshot of location of Endpoints on the left hand menu.](../media/endpoints1-02.png)
 
 1. On the **Endpoints** page, open the **predict-rentals** real-time endpoint.
 
     ![Screenshot of location of Endpoints on the left hand menu.](../media/use-automated-machine-learning/endpoints-2.png)
 
 > **Note**: The realtime endpoint may be in unhealthy state, wait for another 30 minutes for the endpoint state to change the deployment state to **Healthy**, or else perform the steps from Task 5.
+> **Note**: Since Azure Machine Learning Studio doesn’t support V1 deployment testing, we’ll use the `predict.ipynb` notebook to send data to the "predict-rental" model endpoint in Azure Machine Learning and obtain predictions.
+
+1. In Azure Machine Learning studio, on the left hand menu, select **Notebooks**.
+
+1. In the left hand pane of Notebooks click on **Add files** and select **Upload files**.
+
+1. Selct **Click to browse and select file(s)** (1) and navigate to **C:\AllFiles** (2) and select both **input and predict** files and click on Open.
+
+1. Select the checkbox **I trust the content of these files** and select **Upload**.
+
+1. Now, open the predict.ipynb file and click on **run** the individual code snippets.
+
+    ![code](../media/use-automated-machine-learning/jupyter.png)
+   
+1. 
 
 <validation step="2e4871a4-3e69-40a1-bbd1-dc026b54d5ac" />
 
