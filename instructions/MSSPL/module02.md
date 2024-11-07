@@ -180,7 +180,7 @@ Follow the next steps to run a job that uses automated machine learning to train
         - **Select data**: Select **bike-rentals**.
      - Click on **Next**.
 
-       ![code](../media/datatype.png)
+       ![code](../media/datatype1.png)
 
     - **Task settings**:
         - **Target column**: rentals(Integer) (*this is the label that the model is trained to predict*)(1)
