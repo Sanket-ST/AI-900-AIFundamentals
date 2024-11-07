@@ -249,7 +249,7 @@ Now you can test your deployed service.
 
 1. Select the checkbox **"I trust the content of these files"** and select **Upload**.
 
-1. Now, open the predict.ipynb file and you will see a python code. This code allows you to interact with a deployed model in Azure ML, enabling you to send input data, make predictions, and retrieve responses programmatically. 
+1. Now, open the **predict.ipynb** file and you will see a python code. This code allows you to interact with a deployed model in Azure ML, enabling you to send input data, make predictions, and retrieve responses programmatically. 
 
     ![code](../media/use-automated-machine-learning/jupyter.png)
    
