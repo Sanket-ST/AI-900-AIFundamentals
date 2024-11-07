@@ -108,7 +108,7 @@ In this lab, you will complete the following tasks:
 
 ### Task 3: Create a dataset
 
-1. Download the zip file from the link [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true) in your web browser and extract the file.
+1. Download the zip file from the link [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true) in your web browser, open the file location and extract the file.
  
    ![Picture1](../media/extract.png)
  
