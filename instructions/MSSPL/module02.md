@@ -63,11 +63,11 @@ In this lab, you will complete the following tasks:
 
 ### Task 2: Create Compute instance and Compute cluster
 
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), select the **&#8801;** icon (a menu icon that looks like a stack of three lines) at the top left to view the various pages in the interface (you may need to maximize the size of your screen). You can use these pages in the left hand pane to manage the resources in your workspace. Select **Compute**(under **Manage**).
+1. Open [Azure Machine Learning Studio](https://ml.azure.com?azure-portal=true) and click the **menu icon (≡)** in the top left corner. This icon opens a navigation pane where you can access different sections of the interface. Make sure your screen is maximized to view all available options. From this pane, go to the **Manage** section and select **Compute**.
 
-1. Under **Compute instances** tab. To add a new compute instance, click on **+ New** to create new compute instance.
+1. Within the **Compute** section, navigate to the **Compute instances** tab. To create a new instance, click on **+ New**, which will open the setup options for a new compute instance.
 
-   ![computeinstance](../media/instance.png)
+   ![Compute Instance](../media/instance.png)
 
 1. In the **Create compute instance** pane, configure the following settings:
 
