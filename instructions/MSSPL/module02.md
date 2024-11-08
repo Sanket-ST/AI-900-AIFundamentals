@@ -28,11 +28,11 @@ In this lab, you will complete the following tasks:
 
 1. In the Marketplace page search for **Azure Machine Learning** and Select **Azure Machine Learning**.
  
-    ![Picture1](../media/ai900mod2cimg1.png)
+    ![Picture2](../media/ai900mod2cimg1.png)
 
 1. On **Azure Machine Learning** Page Click on **Create**.
 
-   ![Picture1](../media/ai900mod2cimg2.png)
+   ![Picture3](../media/ai900mod2cimg2.png)
    
 1. create a new **Azure Machine Learning** resource with an *Azure Machine Learning* plan. Use the following settings:
 
@@ -45,7 +45,7 @@ In this lab, you will complete the following tasks:
     - **Application insights**: *Note the default new application insights resource that will be created for your workspace*
     - **Container registry**: None (*one will be created automatically the first time you deploy a model to a container*)
 
-   ![Picture1](../media/amlconfig.png)
+   ![Picture4](../media/amlconfig.png)
 
 1. Select **Review + create**.
 
@@ -55,7 +55,7 @@ In this lab, you will complete the following tasks:
 
 1. Select **Launch studio** (or open a new browser tab and navigate to [https://ml.azure.com](https://ml.azure.com?azure-portal=true), and sign into Azure Machine Learning studio using your Microsoft account).
 
-   ![upload](../media/launchstudio.png)
+   ![amlstudio](../media/launchstudio.png)
 
 1. Close any messages that are displayed.
 
@@ -67,7 +67,7 @@ In this lab, you will complete the following tasks:
 
 1. Under **Compute instances** tab. To add a new compute instance, click on **+ New** to create new compute instance.
 
-   ![Picture](../media/instance.png)
+   ![computeinstance](../media/instance.png)
 
 1. In the **Create compute instance** pane, configure the following settings:
 
@@ -80,9 +80,9 @@ In this lab, you will complete the following tasks:
 
 1. Click **Review + Create** to initialize the compute instance.
 
-   ![Picture](../media/instance12.png)
+   ![compute](../media/instance12.png)
 
-1. The compute instance will start provisioning, and will take some time to be created. You can move onto the next step while you wait.
+> **Note**:The compute instance will start provisioning, and will take some time to be created. You can move onto the next step while the instance is provisioning.
  
 1. On the **Compute** page, select the **Compute clusters** tab and to add a new compute cluster, click on **+ New** with the following settings. You'll use this to train a machine learning model:
  
@@ -94,7 +94,7 @@ In this lab, you will complete the following tasks:
         - Choose **Select from all options**
         - Search for and select **Standard_DS11_v2**
     - Select **Next**
-      ![Picture1](../media/ai900mod2cimg6.png)
+      ![Picture2](../media/ai900mod2cimg6.png)
     - **Compute name**: Enter **ai900compute-<inject key="DeploymentID" enableCopy="false"/>**
     - **Minimum number of nodes**: 0
     - **Maximum number of nodes**: 2
@@ -102,7 +102,7 @@ In this lab, you will complete the following tasks:
     - **Enable SSH access**: keep it as default
     - Select **Create**
  
-       ![Picture1](../media/ai900mod2cimg7.png)
+       ![Picture3](../media/ai900mod2cimg7.png)
 
 > **Note**:The compute cluster will take some time to be created. You can move onto the next step while you wait.
 
@@ -121,17 +121,17 @@ In this lab, you will complete the following tasks:
         * **Type**: Tabular
     * Click on **Next**.
  
-      ![Picture1](../media/step1.png)    
+      ![Step 1](../media/step1.png)    
  
     * **Data source**: From local files.
     * Click on **Next**.
     * In the **Select a datastore** pane, make sure that **workspaceblobstore** is selected and click on **Next**.
-      ![Picture1](../media/step312.png)
+      ![Step3](../media/step312.png)
  
     * In the **Choose a file or folder** pane, select **Upload files or folder** and select the **Upload file**.
     * Now, open the extracted **bike-data** folder and select the **daily-bike-share.csv** file and click on **Open**.
  
-      ![Picture1](../media/datasrc1.png)
+      ![Data](../media/datasrc1.png)
  
     * Click on **Next**.
  
@@ -144,7 +144,7 @@ In this lab, you will complete the following tasks:
         * **Dataset contains multi-line data**: *do not select*
     * Click on **Next**.
 
-      ![Picture1](../media/settings.png)
+      ![Settings](../media/settings.png)
  
     * **Schema**:
         * Include all columns other than **Path**
@@ -166,26 +166,26 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 1. Click on **+ New Automated ML job**. Create an Automated ML job with the following settings:
 
-      ![Picture1](../media/aml.png)
+      ![Aml model](../media/aml.png)
 
     - **Basic settings**:
         - **Job name**: bike-rentals (1)
         - **New experiment name**: mslearn-bike-rental (2)
     - Click on **Next** (3).
       
-       ![Picture1](../media/aml1.png)
+       ![Step2](../media/aml1.png)
       
     - **Task type & data**: 
         - **Task type**: Regression *(the model predicts a numeric value).
         - **Select data**: Select **bike-rentals**.
      - Click on **Next**.
 
-       ![code](../media/datatype1.png)
+       ![Step3](../media/datatype1.png)
 
     - **Task settings**:
         - **Target column**: rentals(Integer) (*this is the label that the model is trained to predict*)(1)
           
-       ![Picture1](../media/step412.png)
+       ![Step4](../media/step412.png)
           
         - Select **Additional configuration settings:**(2)
         - **Primary metric**: Select **Normalized root mean squared error**
@@ -194,7 +194,7 @@ Follow the next steps to run a job that uses automated machine learning to train
         - **Allowed models**: *Select only **RandomForest** and **LightGBM** — normally you'd want to try as many as possible, but each model added increases the time it takes to run the job.*
         - Click on **Save**.
 
-            ![Picture1](../media/step42.png)
+            ![Step 5](../media/step42.png)
 
         - Expand **Limits**
             - **Metric score threshold**: 0.085 — *if a model achieves a normalized root mean squared error metric score of 0.085 or less, the job ends.*(3)
@@ -241,7 +241,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 1. On the **Model** tab, select the **Deploy** button and use the **web service** option.
 
-      ![Picture1](../media/ai900lab2img2.png)
+      ![Step1](../media/ai900lab2img2.png)
       
 3. To deploy the model with the following settings and then click on **Deploy**.
     - **Name**: predict-rentals
@@ -249,9 +249,11 @@ Follow the next steps to run a job that uses automated machine learning to train
     - **Compute type**: Azure Container Instance
     - **Enable authentication**: Selected
 
-       ![Picture1](../media/ai900lab2img1.png)
+       ![Step2](../media/ai900lab2img1.png)
 
 1. Wait for the deployment to start - this may take a few seconds. Then, in the **Model summary** section, observe the **Deploy status** for the **predict-rentals** service, which should be **Running**. Wait for this status to change to **Succeeded**, which may take some time. You may need to select **Refresh** periodically.
+
+1. After the deployment status changes to **Succeeded**, an endpoint will be created. This endpoint is a web-accessible URL that serves as an interface to your deployed machine learning model, allowing you to send data to the model and receive real-time predictions.
 
 ### Task 7: Test the deployed service
 
@@ -263,7 +265,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 
    ![Screenshot of location of Endpoints on the left hand menu.](../media/use-automated-machine-learning/endpoints-2.png)
 
-   > **Note:** If the endpoint is in an unhealthy state, it may take up to 30 minutes for the deployment status to change to **Healthy**. If the status doesn't update, you can follow the steps from Task 5 to troubleshoot.
+   > **Note:** If the endpoint remains in an unhealthy state, it may take up to 30 minutes for the deployment status to change to **Healthy**. If the status still doesn’t update, delete the endpoint and repeat the steps from Task 5.
 
 3. On the left-hand menu of Azure Machine Learning Studio, select **Notebooks**.
 
@@ -271,11 +273,11 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 4. In the Notebooks section, click on **Add files** and select **Upload files**.
 
-   ![upload](../media/upload1.png)
+   ![uploadfiles](../media/upload1.png)
 
 5. Select **Click to browse and select file(s)** and navigate to **C:\AllFiles**. Choose both the **input.json** and **predict.ipynb** files and click **Open**.
 
-   ![upload](../media/upload2.png)
+   ![uploadstep2](../media/upload2.png)
 
 6. Tick the checkbox that says **"I trust the content of these files"** and then click **Upload**.
 
@@ -283,17 +285,16 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 8. Run each code snippet in the notebook.
 
-   ![code](../media/jupyter.png)
+   ![ipynbfile](../media/jupyter.png)
 
    > **Note:** The **predict.ipynb** file contains the Python code that enables interaction with the deployed endpoint in Azure Machine Learning. It will send the input data (from `input.json`) to the endpoint and retrieve the predictions.
 
 9. Once you execute the final code cell, you should see the prediction output, which will display the rental predictions.
 
-   ![code](../media/result12.png)
+   ![Result](../media/result12.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
- 
-- Hit the Validate button for the corresponding task. If you receive a success message.
+ - Hit the Validate button for the corresponding task. If you receive a success message.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
