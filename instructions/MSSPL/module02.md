@@ -65,11 +65,11 @@ In this lab, you will complete the following tasks:
 
 1. Open [Azure Machine Learning Studio](https://ml.azure.com?azure-portal=true) and click the **menu icon (≡)** in the top left corner. This icon opens a navigation pane where you can access different sections of the interface. Make sure your screen is maximized to view all available options. From this pane, go to the **Manage** section and select **Compute**.
 
-1. Within the **Compute** section, navigate to the **Compute instances** tab. To create a new instance, click on **+ New**, which will open the setup options for a new compute instance.
+2. Within the **Compute** section, navigate to the **Compute instances** tab. To create a new instance, click on **+ New**, which will open the setup options for a new compute instance.
 
    ![Compute Instance](../media/instance.png)
 
-1. In the **Create compute instance** pane, configure the following settings:
+3. In the **Create compute instance** pane, configure the following settings:
 
    - **Virtual machine type**: CPU
    - **Virtual machine size**:
@@ -78,13 +78,13 @@ In this lab, you will complete the following tasks:
    
    - **Compute name**: Enter a unique name, such as **ai900instance<inject key="DeploymentID" enableCopy="false"/>**
 
-1. Click **Review + Create** to initialize the compute instance.
+4. Click **Review + Create** to initialize the compute instance.
 
    ![compute](../media/instance12.png)
 
 > **Note**:The compute instance will start provisioning, and will take some time to be created. You can move onto the next step while the instance is provisioning.
  
-1. On the **Compute** page, select the **Compute clusters** tab and to add a new compute cluster, click on **+ New** with the following settings. You'll use this to train a machine learning model:
+5. On the **Compute** page, select the **Compute clusters** tab and to add a new compute cluster, click on **+ New** with the following settings. You'll use this to train a machine learning model:
  
       ![Picture1](../media/ai900mod2cimg5.png)
     - **Location**: Select <inject key="location" enableCopy="false" />
