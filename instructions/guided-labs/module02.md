@@ -84,7 +84,7 @@ In this lab, you will complete the following tasks:
 
 > **Note**:The compute instance will start provisioning, and will take some time to be created. You can move onto the next step while the instance is provisioning.
  
-5. On the **Compute** page, select the **Compute clusters** tab and to add a new compute cluster, click on **+ New** with the following settings. You'll use this to train a machine learning model:
+5. On the **Compute** page, select the **Compute clusters** tab, and to add a new compute cluster, click on **+ New** with the following settings. You'll use this to train a machine learning model:
  
       ![Picture1](../media/ai900mod2cimg5.png)
     - **Location**: Select <inject key="location" enableCopy="false" />
