@@ -298,7 +298,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="2e4871a4-3e69-40a1-bbd1-dc026b54d5ac" />
+<validation step="e28cc967-211c-4695-a2de-b05eade53786" />
 
 ### Summary
 
