@@ -16,7 +16,7 @@ In this lab, you will complete the following tasks:
 - Task 6: Deploy a predictive service
 - Task 7: Test the deployed service
 
-## Estimated time: 6 hours
+## Estimated time: 90 minutes
 
 ## Exercise 1: Create an Azure Machine Learning workspace  
 
