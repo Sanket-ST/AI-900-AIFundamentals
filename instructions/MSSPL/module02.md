@@ -1,4 +1,4 @@
-# Hands-on Lab: Explore Automated Machine Learning in Azure ML
+![image](https://github.com/user-attachments/assets/a1143075-ac6d-4537-986c-62fe892a03d0)# Hands-on Lab: Explore Automated Machine Learning in Azure ML
 
 ## Lab scenario
 
@@ -36,16 +36,16 @@ In this lab, you will complete the following tasks:
    
 1. create a new **Azure Machine Learning** resource with an *Azure Machine Learning* plan. Use the following settings:
 
-    - **Subscription**: *Use the existing Azure subscription*
-    - **Resource group**: Select **AI-900-Module-02-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Workspace name**: Enter **ai900workspace-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Region**: Select **<inject key="location" enableCopy="false"/>**
-    - **Storage account**: *Note the default new storage account that will be created for your workspace*
-    - **Key vault**: *Note the default new key vault that will be created for your workspace*
-    - **Application insights**: *Note the default new application insights resource that will be created for your workspace*
+    - **Subscription**: *Use the existing Azure subscription* 
+    - **Resource group**: Select **AI-900-Module-02-<inject key="DeploymentID" enableCopy="false"/>** (1)
+    - **Workspace name**: Enter **ai900workspace-<inject key="DeploymentID" enableCopy="false"/>** (2)
+    - **Region**: Select **<inject key="location" enableCopy="false"/>** (3)
+    - **Storage account**: *Note the default new storage account that will be created for your workspace* (4)
+    - **Key vault**: *Note the default new key vault that will be created for your workspace* (5)
+    - **Application insights**: *Note the default new application insights resource that will be created for your workspace* (6)
     - **Container registry**: None (*one will be created automatically the first time you deploy a model to a container*)
 
-   ![Picture4](../media/amlconfig.png)
+   ![Picture4](../media/amlconfig1.png)
 
 1. Select **Review + create**.
 
@@ -67,42 +67,43 @@ In this lab, you will complete the following tasks:
 
 2. Within the **Compute** section, navigate to the **Compute instances** tab. To create a new instance, click on **+ New**, which will open the setup options for a new compute instance.
 
-   ![Compute Instance](../media/instance.png)
+   ![Compute Instance](../media/instance1.png)
 
 3. In the **Create compute instance** pane, configure the following settings:
 
-   - **Virtual machine type**: CPU
+   - **Compute name**: Enter a unique name, such as **ai900instance<inject key="DeploymentID" enableCopy="false"/>** (1)
+   - **Virtual machine type**: CPU (2)
    - **Virtual machine size**:
-      - Choose **Select from all options**
-      - Search for and select **Standard_DS11_v2**
-   
-   - **Compute name**: Enter a unique name, such as **ai900instance<inject key="DeploymentID" enableCopy="false"/>**
+      - Choose **Select from all options** (3)
+      - Search for and select **Standard_DS11_v2** (4)
 
 4. Click **Review + Create** to initialize the compute instance.
 
-   ![compute](../media/instance12.png)
+   ![compute](../media/instance121.png)
 
 > **Note**:The compute instance will start provisioning, and will take some time to be created. You can move onto the next step while the instance is provisioning.
  
 5. On the **Compute** page, select the **Compute clusters** tab and to add a new compute cluster, click on **+ New** with the following settings. You'll use this to train a machine learning model:
  
-      ![Picture1](../media/ai900mod2cimg5.png)
-    - **Location**: Select <inject key="location" enableCopy="false" />
-    - **Virtual machine tier**: Dedicated
-    - **Virtual machine type**: CPU
+      ![Picture1](../media/ai900mod2cimg51.png)
+
+    - **Virtual machine tier**: Dedicated (1)
+    - **Virtual machine type**: CPU (2)
     - **Virtual machine size**:
         - Choose **Select from all options**
-        - Search for and select **Standard_DS11_v2**
+        - Search for and select **Standard_DS11_v2** (3)
     - Select **Next**
-      ![Picture2](../media/ai900mod2cimg6.png)
-    - **Compute name**: Enter **ai900compute-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Minimum number of nodes**: 0
-    - **Maximum number of nodes**: 2
-    - **Idle seconds before scale down**: 120
-    - **Enable SSH access**: keep it as default
+
+      ![Picture2](../media/ai900mod2cimg61.png)
+
+    - **Compute name**: Enter **ai900compute-<inject key="DeploymentID" enableCopy="false"/>** (1)
+    - **Minimum number of nodes**: 0 (2)
+    - **Maximum number of nodes**: 2 (3)
+    - **Idle seconds before scale down**: 120 (4)
+    - **Enable SSH access**: keep it as default (5)
     - Select **Create**
  
-       ![Picture3](../media/ai900mod2cimg7.png)
+       ![Picture3](../media/ai900mod2cimg71.png)
 
 > **Note**:The compute cluster will take some time to be created. You can move onto the next step while you wait.
 
