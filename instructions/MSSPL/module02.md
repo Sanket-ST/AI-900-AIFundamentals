@@ -230,7 +230,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 1. Select the **Explanations(preview)** tab. Select an Explanation ID and then select **Aggregate feature importance** tab. This chart shows how much each feature in the dataset influences the label prediction, like this:
 
-    ![Screenshot of the feature importance chart on the Explanations tab.](../media/use-automated-machine-learning/feature-importance11.png)
+    ![Screenshot of the feature importance chart on the Explanations tab.](../media/feature-importance11.png)
 
 ### Task 6: Deploy a predictive service
 
