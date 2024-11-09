@@ -215,8 +215,8 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 ### Task 5: Review the best model
 
-1. On the **Overview** tab of the automated machine learning job, note the best model summary.
-    ![Screenshot of the best model summary of the automated machine learning job with a box around the algorithm name.](../media/ai-900-overview.png)
+1. On the **Overview** tab of the automated machine learning job, note the best model summary.z
+    ![Screenshot of the best model summary of the automated machine learning job with a box around the algorithm name.](../media/use-automated-machine-learning/ai-900-overview.png)
 
     >**NOTE:**
     > You may see a message under the status "Warning: User specified exit score reached...". This is an expected message. Please continue to the next step.  
