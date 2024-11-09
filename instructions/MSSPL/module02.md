@@ -216,7 +216,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 ### Task 5: Review the best model
 
 1. On the **Overview** tab of the automated machine learning job, note the best model summary.
-    ![Screenshot of the best model summary of the automated machine learning job with a box around the algorithm name.](../media/use-automated-machine-learning/ai-900-overview.png)
+    ![Screenshot of the best model summary of the automated machine learning job with a box around the algorithm name.](../media/ai-900-overview.png)
 
     >**NOTE:**
     > You may see a message under the status "Warning: User specified exit score reached...". This is an expected message. Please continue to the next step.  
@@ -224,7 +224,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 1. Select the **Metrics** tab, use the arrows icon to expand the panel if it is not already expanded and select the **residuals** and **predicted_true** charts if they are not already selected. 
 
-    ![Screenshot of the metrics tab with the residuals and predicted_true charts selected.](../media/use-automated-machine-learning/ai-900-matrix11.png)
+    ![Screenshot of the metrics tab with the residuals and predicted_true charts selected.](../media/ai-900-matrix11.png)
 
 1. Scroll down and review the charts which show the performance of the model. The first chart shows the *residuals*, the differences between predicted and actual values, as a histogram, the second chart compares the predicted values against the true values.
 
