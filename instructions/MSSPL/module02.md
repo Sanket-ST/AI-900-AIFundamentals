@@ -195,7 +195,7 @@ Follow the next steps to run a job that uses automated machine learning to train
         - **Allowed models**: *Select only **RandomForest** (3) and **LightGBM** (4)— normally you'd want to try as many as possible, but each model added increases the time it takes to run the job.* 
         - Click on **Save**.
 
-            ![Step 5](../media/step42.png)
+            ![Step 5](../media/step421.png)
 
         - Expand **Limits**
             - **Metric score threshold**: 0.085 — *if a model achieves a normalized root mean squared error metric score of 0.085 or less, the job ends.*(3)
