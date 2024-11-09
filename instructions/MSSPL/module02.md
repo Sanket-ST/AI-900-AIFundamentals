@@ -224,13 +224,13 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 1. Select the **Metrics** tab, use the arrows icon to expand the panel if it is not already expanded and select the **residuals** and **predicted_true** charts if they are not already selected. 
 
-    ![Screenshot of the metrics tab with the residuals and predicted_true charts selected.](../media/use-automated-machine-learning/ai-900-matrix1.png)
+    ![Screenshot of the metrics tab with the residuals and predicted_true charts selected.](../media/use-automated-machine-learning/ai-900-matrix11.png)
 
 1. Scroll down and review the charts which show the performance of the model. The first chart shows the *residuals*, the differences between predicted and actual values, as a histogram, the second chart compares the predicted values against the true values.
 
 1. Select the **Explanations(preview)** tab. Select an Explanation ID and then select **Aggregate feature importance** tab. This chart shows how much each feature in the dataset influences the label prediction, like this:
 
-    ![Screenshot of the feature importance chart on the Explanations tab.](../media/use-automated-machine-learning/feature-importance1.png)
+    ![Screenshot of the feature importance chart on the Explanations tab.](../media/use-automated-machine-learning/feature-importance11.png)
 
 ### Task 6: Deploy a predictive service
 
