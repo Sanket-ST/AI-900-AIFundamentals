@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/a1143075-ac6d-4537-986c-62fe892a03d0)# Hands-on Lab: Explore Automated Machine Learning in Azure ML
+# Hands-on Lab: Explore Automated Machine Learning in Azure ML
 
 ## Lab scenario
 
@@ -185,14 +185,14 @@ Follow the next steps to run a job that uses automated machine learning to train
 
     - **Task settings**:
         - **Target column**: rentals(Integer) (*this is the label that the model is trained to predict*)(1)
-          
+        - Select **Additional configuration settings:**(2)
+
        ![Step4](../media/step412.png)
           
-        - Select **Additional configuration settings:**(2)
-        - **Primary metric**: Select **Normalized root mean squared error**
-        - **Explain best model**: Selected — *this option causes automated machine learning to calculate feature importance for the best model which makes it possible to determine the influence of each feature on the predicted label.*
+        - **Primary metric**: Select **Normalized root mean squared error** (1)
+        - **Explain best model**: Selected — *this option causes automated machine learning to calculate feature importance for the best model which makes it possible to determine the influence of each feature on the predicted label.* (2)
         - **Use all supported models**: Unselected. *You'll restrict the job to try only a few specific algorithms.*
-        - **Allowed models**: *Select only **RandomForest** and **LightGBM** — normally you'd want to try as many as possible, but each model added increases the time it takes to run the job.*
+        - **Allowed models**: *Select only **RandomForest** (3) and **LightGBM** (4)— normally you'd want to try as many as possible, but each model added increases the time it takes to run the job.* 
         - Click on **Save**.
 
             ![Step 5](../media/step42.png)
@@ -240,17 +240,17 @@ Follow the next steps to run a job that uses automated machine learning to train
 
     ![Screenshot of the best model summary with a box around the algorithm name on the details tab.](../media/use-automated-machine-learning/ai-900-algorithm.png)
 
-1. On the **Model** tab, select the **Deploy** button and use the **web service** option.
+1. On the **Model** tab, select the **Deploy**  button and use the **web service** option.
 
-      ![Step1](../media/ai900lab2img2.png)
+      ![Step1](../media/ai900lab2img21.png)
       
 3. To deploy the model with the following settings and then click on **Deploy**.
-    - **Name**: predict-rentals
+    - **Name**: predict-rentals 
     - **Description**: Predict cycle rentals
     - **Compute type**: Azure Container Instance
     - **Enable authentication**: Selected
 
-       ![Step2](../media/ai900lab2img1.png)
+       ![Step2](../media/ai900lab2img11.png)
 
 1. Wait for the deployment to start - this may take a few seconds. Then, in the **Model summary** section, observe the **Deploy status** for the **predict-rentals** service, which should be **Running**. Wait for this status to change to **Succeeded**, which may take some time. You may need to select **Refresh** periodically.
 
