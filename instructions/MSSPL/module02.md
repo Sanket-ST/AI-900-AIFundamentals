@@ -36,16 +36,16 @@ In this lab, you will complete the following tasks:
    
 1. create a new **Azure Machine Learning** resource with an *Azure Machine Learning* plan. Use the following settings:
 
-    - **Subscription**: *Use the existing Azure subscription*
-    - **Resource group**: Select **AI-900-Module-02-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Workspace name**: Enter **ai900workspace-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Region**: Select **<inject key="location" enableCopy="false"/>**
-    - **Storage account**: *Note the default new storage account that will be created for your workspace*
-    - **Key vault**: *Note the default new key vault that will be created for your workspace*
-    - **Application insights**: *Note the default new application insights resource that will be created for your workspace*
+    - **Subscription**: *Use the existing Azure subscription* 
+    - **Resource group**: Select **AI-900-Module-02-<inject key="DeploymentID" enableCopy="false"/>** (1)
+    - **Workspace name**: Enter **ai900workspace-<inject key="DeploymentID" enableCopy="false"/>** (2)
+    - **Region**: Select **<inject key="location" enableCopy="false"/>** (3)
+    - **Storage account**: *Note the default new storage account that will be created for your workspace* (4)
+    - **Key vault**: *Note the default new key vault that will be created for your workspace* (5)
+    - **Application insights**: *Note the default new application insights resource that will be created for your workspace* (6)
     - **Container registry**: None (*one will be created automatically the first time you deploy a model to a container*)
 
-   ![Picture4](../media/amlconfig.png)
+   ![Picture4](../media/amlconfig1.png)
 
 1. Select **Review + create**.
 
@@ -67,42 +67,43 @@ In this lab, you will complete the following tasks:
 
 2. Within the **Compute** section, navigate to the **Compute instances** tab. To create a new instance, click on **+ New**, which will open the setup options for a new compute instance.
 
-   ![Compute Instance](../media/instance.png)
+   ![Compute Instance](../media/instance1.png)
 
 3. In the **Create compute instance** pane, configure the following settings:
 
-   - **Virtual machine type**: CPU
+   - **Compute name**: Enter a unique name, such as **ai900instance<inject key="DeploymentID" enableCopy="false"/>** (1)
+   - **Virtual machine type**: CPU (2)
    - **Virtual machine size**:
-      - Choose **Select from all options**
-      - Search for and select **Standard_DS11_v2**
-   
-   - **Compute name**: Enter a unique name, such as **ai900instance<inject key="DeploymentID" enableCopy="false"/>**
+      - Choose **Select from all options** (3)
+      - Search for and select **Standard_DS11_v2** (4)
 
 4. Click **Review + Create** to initialize the compute instance.
 
-   ![compute](../media/instance12.png)
+   ![compute](../media/instance121.png)
 
 > **Note**:The compute instance will start provisioning, and will take some time to be created. You can move onto the next step while the instance is provisioning.
  
 5. On the **Compute** page, select the **Compute clusters** tab and to add a new compute cluster, click on **+ New** with the following settings. You'll use this to train a machine learning model:
  
-      ![Picture1](../media/ai900mod2cimg5.png)
-    - **Location**: Select <inject key="location" enableCopy="false" />
-    - **Virtual machine tier**: Dedicated
-    - **Virtual machine type**: CPU
+      ![Picture1](../media/ai900mod2cimg51.png)
+
+    - **Virtual machine tier**: Dedicated (1)
+    - **Virtual machine type**: CPU (2)
     - **Virtual machine size**:
         - Choose **Select from all options**
-        - Search for and select **Standard_DS11_v2**
+        - Search for and select **Standard_DS11_v2** (3)
     - Select **Next**
-      ![Picture2](../media/ai900mod2cimg6.png)
-    - **Compute name**: Enter **ai900compute-<inject key="DeploymentID" enableCopy="false"/>**
-    - **Minimum number of nodes**: 0
-    - **Maximum number of nodes**: 2
-    - **Idle seconds before scale down**: 120
-    - **Enable SSH access**: keep it as default
+
+      ![Picture2](../media/ai900mod2cimg61.png)
+
+    - **Compute name**: Enter **ai900compute-<inject key="DeploymentID" enableCopy="false"/>** (1)
+    - **Minimum number of nodes**: 0 (2)
+    - **Maximum number of nodes**: 2 (3)
+    - **Idle seconds before scale down**: 120 (4)
+    - **Enable SSH access**: keep it as default (5)
     - Select **Create**
  
-       ![Picture3](../media/ai900mod2cimg7.png)
+       ![Picture3](../media/ai900mod2cimg71.png)
 
 > **Note**:The compute cluster will take some time to be created. You can move onto the next step while you wait.
 
@@ -184,17 +185,17 @@ Follow the next steps to run a job that uses automated machine learning to train
 
     - **Task settings**:
         - **Target column**: rentals(Integer) (*this is the label that the model is trained to predict*)(1)
-          
+        - Select **Additional configuration settings:**(2)
+
        ![Step4](../media/step412.png)
           
-        - Select **Additional configuration settings:**(2)
-        - **Primary metric**: Select **Normalized root mean squared error**
-        - **Explain best model**: Selected — *this option causes automated machine learning to calculate feature importance for the best model which makes it possible to determine the influence of each feature on the predicted label.*
+        - **Primary metric**: Select **Normalized root mean squared error** (1)
+        - **Explain best model**: Selected — *this option causes automated machine learning to calculate feature importance for the best model which makes it possible to determine the influence of each feature on the predicted label.* (2)
         - **Use all supported models**: Unselected. *You'll restrict the job to try only a few specific algorithms.*
-        - **Allowed models**: *Select only **RandomForest** and **LightGBM** — normally you'd want to try as many as possible, but each model added increases the time it takes to run the job.*
+        - **Allowed models**: *Select only **RandomForest** (3) and **LightGBM** (4)— normally you'd want to try as many as possible, but each model added increases the time it takes to run the job.* 
         - Click on **Save**.
 
-            ![Step 5](../media/step42.png)
+            ![Step 5](../media/step421.png)
 
         - Expand **Limits**
             - **Metric score threshold**: 0.085 — *if a model achieves a normalized root mean squared error metric score of 0.085 or less, the job ends.*(3)
@@ -214,7 +215,7 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 ### Task 5: Review the best model
 
-1. On the **Overview** tab of the automated machine learning job, note the best model summary.
+1. On the **Overview** tab of the automated machine learning job, note the best model summary.z
     ![Screenshot of the best model summary of the automated machine learning job with a box around the algorithm name.](../media/use-automated-machine-learning/ai-900-overview.png)
 
     >**NOTE:**
@@ -223,13 +224,13 @@ Follow the next steps to run a job that uses automated machine learning to train
 
 1. Select the **Metrics** tab, use the arrows icon to expand the panel if it is not already expanded and select the **residuals** and **predicted_true** charts if they are not already selected. 
 
-    ![Screenshot of the metrics tab with the residuals and predicted_true charts selected.](../media/use-automated-machine-learning/ai-900-matrix1.png)
+    ![Screenshot of the metrics tab with the residuals and predicted_true charts selected.](../media/ai-900-matrix11.png)
 
-    Scroll down and review the charts which show the performance of the model. The first chart shows the *residuals*, the differences between predicted and actual values, as a histogram, the second chart compares the predicted values against the true values.
+1. Scroll down and review the charts which show the performance of the model. The first chart shows the *residuals*, the differences between predicted and actual values, as a histogram, the second chart compares the predicted values against the true values.
 
 1. Select the **Explanations(preview)** tab. Select an Explanation ID and then select **Aggregate feature importance** tab. This chart shows how much each feature in the dataset influences the label prediction, like this:
 
-    ![Screenshot of the feature importance chart on the Explanations tab.](../media/use-automated-machine-learning/feature-importance1.png)
+    ![Screenshot of the feature importance chart on the Explanations tab.](../media/feature-importance11.png)
 
 ### Task 6: Deploy a predictive service
 
@@ -239,17 +240,17 @@ Follow the next steps to run a job that uses automated machine learning to train
 
     ![Screenshot of the best model summary with a box around the algorithm name on the details tab.](../media/use-automated-machine-learning/ai-900-algorithm.png)
 
-1. On the **Model** tab, select the **Deploy** button and use the **web service** option.
+1. On the **Model** tab, select the **Deploy**  button and use the **web service** option.
 
-      ![Step1](../media/ai900lab2img2.png)
+      ![Step1](../media/ai900lab2img21.png)
       
 3. To deploy the model with the following settings and then click on **Deploy**.
-    - **Name**: predict-rentals
+    - **Name**: predict-rentals 
     - **Description**: Predict cycle rentals
     - **Compute type**: Azure Container Instance
     - **Enable authentication**: Selected
 
-       ![Step2](../media/ai900lab2img1.png)
+       ![Step2](../media/ai900lab2img11.png)
 
 1. Wait for the deployment to start - this may take a few seconds. Then, in the **Model summary** section, observe the **Deploy status** for the **predict-rentals** service, which should be **Running**. Wait for this status to change to **Succeeded**, which may take some time. You may need to select **Refresh** periodically.
 
