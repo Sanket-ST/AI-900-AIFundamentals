@@ -30,8 +30,7 @@ Participants should have the following prerequisites:
 The architecture for integrating Azure AI services into applications involves using **Azure Cognitive Services**, such as **Computer Vision** for image analysis and **Anomaly Detector** for time-series data analysis. A client application communicates with these services via REST APIs, sending data for processing (images or time-series). The services are provisioned within an **Azure Resource Group** and interact with **Azure Blob Storage** for data storage. Results are returned to the application for further use, such as generating insights or triggering notifications. This architecture leverages Azure's managed services to provide scalable, intelligent capabilities for real-world applications.
 
 ## Architechture Diagram
-
-![](../media/archdiagram.png)
+![](../media/archdiagram.JPG)
 
 ## Explanation of Components
 
