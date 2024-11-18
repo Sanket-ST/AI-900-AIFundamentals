@@ -31,6 +31,7 @@ The architecture for integrating Azure AI services into applications involves us
 
 ## Architechture Diagram
 
+![](../media/archdiagram.png)
 
 ## Explanation of Components
 
