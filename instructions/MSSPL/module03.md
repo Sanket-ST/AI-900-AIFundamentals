@@ -1,6 +1,6 @@
 # Lab 01: Explore Computer Vision
 
-### Estimated Duration:
+### Estimated Duration: 60 minutes
 
 ## Overview
 
