@@ -1,10 +1,14 @@
 # Lab 02: Explore Cognitive Services
 
-### Estimated Duration:
+### Estimated Duration: 60 minutes
 
 ## Overview:
 
-Azure Cognitive Services offers a range of AI-powered tools to enhance applications with capabilities such as vision, speech, language, and decision-making. In this lab, you explored the **Anomaly Detector** service, which helps identify unusual patterns in time-series data. This service is useful for detecting anomalies in environments like temperature sensors or system logs. You created an Anomaly Detector resource in the Azure portal, configured it, and ran a simple client application through Azure Cloud Shell. This exercise provided hands-on experience in provisioning and utilizing a cognitive service, specifically for anomaly detection, in real-world applications.
+Azure Cognitive Services encapsulate common AI functionality that can be categorized into four main pillars: vision, speech, language, and decision services. In this exercise, you will take a look at one of the decision services to get a general sense of how to provision and use a cognitive services resource in a software application.
+
+The specific cognitive service you will explore in this exercise is Anomaly Detector. Anomaly Detector is used to analyze data values over time and to detect any unusual values that might indicate a problem or an issue for further investigation. For example, a sensor in a temperature-controlled storage facility might monitor the temperature every minute and log the measured values. You can use the Anomaly Detector service to analyze the logged temperature values and flag any that fall significantly outside of the normal range of expected temperatures.
+
+To test the capabilities of the Anomaly Detection service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or phone apps.
 
 ## Lab Objectives
 
