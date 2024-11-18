@@ -149,7 +149,7 @@ In this task, you will modify a sample client application with your resource det
   > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at [labs-support@spektrasystems.com](cloudlabs-support@spektrasystems.com).We are available 24/7 to help you out.
+  > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
 
 In this lab you have covered the following:
