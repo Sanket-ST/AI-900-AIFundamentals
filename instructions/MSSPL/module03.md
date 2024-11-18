@@ -4,7 +4,9 @@
 
 ## Overview
 
-The Computer Vision service in Azure Cognitive Services uses pre-trained machine learning models to analyze images and extract meaningful insights. It provides capabilities like generating image captions, identifying objects, and extracting relevant tags, enabling developers to build intelligent solutions. This service can be integrated into applications to enhance scenarios such as monitoring, content tagging, or real-time image analysis, making it a powerful tool for adding AI-driven visual understanding to workflows.
+The Computer Vision cognitive service uses pre-trained machine learning models to analyze images and extract information about them.
+
+For example, suppose the fictitious retailer Northwind Traders has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. By using the Computer Vision service, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
 
 ## Lab Objectives
 
