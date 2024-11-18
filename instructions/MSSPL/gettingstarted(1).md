@@ -10,8 +10,8 @@ Azure AI services offer a comprehensive set of tools that allow you to integrate
 
 This lab is designed to equip participants with hands-on experience in exploring Azure AI services, such as Computer Vision and Cognitive Services, to enhance applications with capabilities like image recognition, text analysis, and speech processing.
 
--   **Explore Computer Vision :** Implement a Cognitive Services resource to enable image analysis through the Computer Vision service. You will configure and run a client application to analyze images, extracting insights such as captions, identified objects, and relevant tags, demonstrating how the service can be leveraged for understanding visual content.
--   **Explore Cognitive Services :** Implement an Anomaly Detector resource to analyze time-series data and detect anomalies that may signify unusual behavior or potential issues. You will configure a client application to interact with the service, gaining practical experience in identifying data anomalies for real-world use cases.
+-   **Explore Computer Vision :** Implement a Cognitive Services resource to analyze images using the Computer Vision service. Configure and run a client app to extract captions, objects, and tags for visual insights.
+-   **Explore Cognitive Services :** Implement an Anomaly Detector resource to analyze time-series data and detect anomalies. Configure a client app to identify unusual patterns for real-world insights.
 
 ## Prerequisites
 
@@ -30,6 +30,7 @@ Participants should have the following prerequisites:
 The architecture for integrating Azure AI services into applications involves using **Azure Cognitive Services**, such as **Computer Vision** for image analysis and **Anomaly Detector** for time-series data analysis. A client application communicates with these services via REST APIs, sending data for processing (images or time-series). The services are provisioned within an **Azure Resource Group** and interact with **Azure Blob Storage** for data storage. Results are returned to the application for further use, such as generating insights or triggering notifications. This architecture leverages Azure's managed services to provide scalable, intelligent capabilities for real-world applications.
 
 ## Architechture Diagram
+
 ![](../media/archdiagram.JPG)
 
 ## Explanation of Components
@@ -74,6 +75,19 @@ For convenience, you can open the lab guide in a separate window by selecting th
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
   ![](../media/GS5.png)
+
+## Lab Validation
+
+1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
+
+   ![Inline Validation](../media/inline-validation.png)
+
+1. You can also validate the task by navigating to the **Lab Validation** tab, from the upper right corner in the lab guide section.
+
+   ![Lab Validation](../media/lab-validation.png)
+
+1. If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+
  
 ## Let's Get Started with Azure Portal
  
