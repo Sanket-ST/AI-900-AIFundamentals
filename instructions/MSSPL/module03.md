@@ -1,16 +1,24 @@
-# Hand-on Lab: Explore Computer Vision
+# Lab 01: Explore Computer Vision
 
-The ***Computer Vision*** cognitive service uses pre-trained machine learning models to analyze images and extract information about them.
+### Estimated Duration: 60 minutes
 
-For example, suppose the fictitious retailer *Northwind Traders* has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. By using the Computer Vision service, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
+## Overview
 
-In this lab, you'll use a simple command-line application to see the Computer Vision service in action. The same principles and functionality apply in real-world solutions, such as web sites or phone apps. This includes:
-- Creating Azure Cognitive Services and Azure Storage Account.
-- Configuring and running a client application.
+The Computer Vision cognitive service uses pre-trained machine learning models to analyze images and extract information about them.
 
-## Task 1: Create a *Cognitive Services* resource
+For example, suppose the fictitious retailer Northwind Traders has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. By using the Computer Vision service, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
 
-You can use the Computer Vision service by creating either a **Computer Vision** resource or a **Cognitive Services** resource.
+## Lab Objectives
+
+You will be able to complete the following tasks:
+
+  - Task 1: Cognitive Services resource
+  - Task 2: Run Cloud Shell
+  - Task 3: Configure and run a client application
+
+## Task 1: Create a Cognitive Services resource
+
+In this task, you will create a Cognitive Services resource in the Azure portal and retrieve its keys and endpoint for integration.
 
 1. In the Azure Portal, select the **&#65291;Create a resource** button, search for *Cognitive Services*, and create a **Cognitive Services** resource with the following settings:
     - **Subscription**: *Your Azure subscription*
@@ -33,7 +41,7 @@ You can use the Computer Vision service by creating either a **Computer Vision**
 
 ## Task 2: Run Cloud Shell
 
-To test the capabilities of the Computer Vision service, we'll use a simple command-line application that runs in the Cloud Shell on Azure.
+In this task, you will set up Azure Cloud Shell with PowerShell to prepare the environment for running the client application.
 
 1. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
 
@@ -55,7 +63,7 @@ To test the capabilities of the Computer Vision service, we'll use a simple comm
 
 ## Task 3: Configure and run a client application
 
-Now that you have a Cloud Shell environment, you can run a simple application that uses the Computer Vision service to analyze an image.
+In this task, you will modify a sample client application with your resource details and use it to analyze images with the Computer Vision service.
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
 
@@ -141,8 +149,13 @@ Now that you have a Cloud Shell environment, you can run a simple application th
   > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at [labs-support@spektrasystems.com](labs-support@spektrasystems.com).We are available 24/7 to help you out.
+  > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
-### Learn more
 
-This simple app shows only some of the capabilities of the Computer Vision service. To learn more about what you can do with this service, see the [Computer Vision page](https://azure.microsoft.com/services/cognitive-services/computer-vision/).
+In this lab you have covered the following:
+  
+-    Explored the Cognitive Services resource configuration.
+-    Set up and utilized Azure Cloud Shell.
+-    Configured and executed a client application for image analysis.
+
+### You have successfully completed the lab

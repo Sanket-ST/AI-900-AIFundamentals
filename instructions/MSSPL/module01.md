@@ -1,19 +1,26 @@
-# Hands-on Lab: Explore Cognitive Services
+# Lab 02: Explore Cognitive Services
+
+### Estimated Duration: 60 minutes
+
+## Overview:
 
 Azure Cognitive Services encapsulate common AI functionality that can be categorized into four main pillars: vision, speech, language, and decision services. In this exercise, you will take a look at one of the decision services to get a general sense of how to provision and use a cognitive services resource in a software application.
 
-The specific cognitive service you will explore in this exercise is **Anomaly Detector**. Anomaly Detector is used to analyze data values over time and to detect any unusual values that might indicate a problem or an issue for further investigation. For example, a sensor in a temperature-controlled storage facility might monitor the temperature every minute and log the measured values. You can use the Anomaly Detector service to analyze the logged temperature values and flag any that fall significantly outside of the normal range of expected temperatures.
+The specific cognitive service you will explore in this exercise is Anomaly Detector. Anomaly Detector is used to analyze data values over time and to detect any unusual values that might indicate a problem or an issue for further investigation. For example, a sensor in a temperature-controlled storage facility might monitor the temperature every minute and log the measured values. You can use the Anomaly Detector service to analyze the logged temperature values and flag any that fall significantly outside of the normal range of expected temperatures.
 
 To test the capabilities of the Anomaly Detection service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or phone apps.
 
-> **Note :**
-> The goal of this exercise is to get a general sense of how cognitive services are provisioned and used. Anomaly Detector is used as an example, but you are not expected to gain a comprehensive knowledge of anomaly detection in this exercise!
+## Lab Objectives
 
-## Exercise 1: Create an Anomaly Detector resource
+You will be able to complete the following tasks:
 
-### Task 1: Create an Anomaly Detector resource
+   -   Task 1: Create an Anomaly Detector resource
+   -   Task 2: Run Cloud Shell
+   -   Task 3: Configure and run a client application
 
-Let us start by creating an **Anomaly Detector** resource in your Azure subscription:
+## Task 1: Create an Anomaly Detector resource
+
+In this task, you will create an Anomaly Detector resource in the Azure portal, which will be used to analyze time-series data for detecting anomalies.
 
 1. In the Azure Portal click the **&#65291;Create a resource** button.
 
@@ -49,9 +56,9 @@ Let us start by creating an **Anomaly Detector** resource in your Azure subscrip
       >**Note :** 
       > Copy and save the **KEY 1** and **Enpoint** value to NotePad for future reference to connect from client applications. 
 
-### Task 2: Run Cloud Shell
+## Task 2: Run Cloud Shell
 
-To test the capabilities of the Anomaly Detector service, we'll use a simple command-line application that runs in the Cloud Shell on Azure.
+In this task, you will run Cloud Shell in the Azure portal to access the command-line interface and prepare your environment for executing the necessary scripts.
 
 1. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
 
@@ -77,9 +84,9 @@ To test the capabilities of the Anomaly Detector service, we'll use a simple com
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/ai900mod1img10.png)
      
-### Task 3: Configure and run a client application
+## Task 3: Configure and run a client application
 
-Now that you have a Cloud Shell environment, you can run a simple application that uses the Anomaly Detector service to analyze data.
+In this task, you will configure and run a client application in Cloud Shell that will interact with the Anomaly Detector resource to detect anomalies in data.
 
 1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
 
@@ -147,9 +154,14 @@ Now that you have a Cloud Shell environment, you can run a simple application th
   > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+  > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
+## Summary
+ 
+In this lab you have covered the following:
+  
+-   Created an Anomaly Detector resource in Azure
+-   Ran Cloud Shell to set up the environment
+-   Configured and ran a client application to detect anomalies in data
 
-## Learn more
-
-This simple app shows only some of the capabilities of the Anomaly Detector service. To learn more about what you can do with this service, see the [Anomaly Detector page](https://learn.microsoft.com/en-us/azure/cognitive-services/anomaly-detector/overview).
+### You have successfully completed the lab
