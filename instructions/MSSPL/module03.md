@@ -151,6 +151,7 @@ In this task, you will modify a sample client application with your resource det
   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
 
+## Summary
 
 In this lab you have covered the following:
   

@@ -44,7 +44,7 @@ The architecture for this lab involves several key components:
 -   **Output Insights :** Processed results from the AI services are returned to the client application for further action, such as generating insights or triggering automated responses.
 
 
-# Getting Started with Lab
+## Getting Started with Lab
 
 Welcome to your Getting started with Azure AI services Lab! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
 
