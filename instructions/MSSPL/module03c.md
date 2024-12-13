@@ -58,7 +58,7 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 
     ![How to find the left hand drop down menu to switch to PowerShell](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-3.png)
 
-Now that you have a custom model, you can run a simple client application that uses the Face service.`
+1. Now that you have a custom model, you can run a simple client application that uses the Face service.`
 
 1. The files are downloaded to a folder named **ai-search** in previous lab. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
 
