@@ -1,10 +1,10 @@
-# Lab 01: Analyze images with Azure AI service
+# Lab 01: Analyze images with Azure AI Computer Vision
 
 ### Estimated Duration: 60 minutes
 
 ## Overview
 
-The Computer Vision cognitive service uses pre-trained machine learning models to analyze images and extract information about them.
+The Computer Vision Azure AI service uses pre-trained machine learning models to analyze images and extract information about them.
 
 For example, suppose the fictitious retailer Northwind Traders has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. By using the Computer Vision service, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
 
@@ -12,13 +12,13 @@ For example, suppose the fictitious retailer Northwind Traders has decided to im
 
 You will be able to complete the following tasks:
 
-  - Task 1: Cognitive Services resource
+  - Task 1: Azure AI Services resource
   - Task 2: Run Cloud Shell
   - Task 3: Configure and run a client application
 
-## Task 1: Create a Cognitive Services resource
+## Task 1: Create a Azure AI Services resource
 
-In this task, you will create a Cognitive Services resource in the Azure portal and retrieve its keys and endpoint for integration.
+In this task, you will create a Azure AI Services resource in the Azure portal and retrieve its keys and endpoint for integration.
 
 1. In the Azure Portal, select the **&#65291;Create a resource** button, search for *Azure AI services*, and select it . Select **Create** under **Azure AI services**. On  Create Azure AI services tab provide the following settings:
     - **Subscription**: *Your Azure subscription*
@@ -164,8 +164,8 @@ In this task, you will modify a sample client application with your resource det
 
 In this lab you have covered the following:
   
--    Explored the Cognitive Services resource configuration.
+-    Explored the Azure AI Services resource configuration.
 -    Set up and utilized Azure Cloud Shell.
 -    Configured and executed a client application for image analysis.
 
-### You have successfully completed the lab
+### You have successfully completed the lab. Click on Next from the bottom right corner.
