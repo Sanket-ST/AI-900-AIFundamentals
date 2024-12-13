@@ -1,6 +1,10 @@
 
 # Lab 04: Translate text and audio with Azure AI Translator
 
+### Estimated Duration: 60 minutes
+
+## Overview
+
 One of the driving forces that has enabled human civilization to develop is the ability to communicate with one another. In most human endeavors, communication is key.
 
 Artificial Intelligence (AI) can help simplify communication by translating text or speech between languages, helping to remove barriers to communication across countries and cultures.
