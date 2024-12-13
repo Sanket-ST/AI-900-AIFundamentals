@@ -20,7 +20,7 @@ You will be able to complete the following tasks:
 
 In this task, you will create a Azure AI Services resource in the Azure portal and retrieve its keys and endpoint for integration.
 
-1. In the Azure Portal, select the **&#65291;Create a resource** button, search for *Azure AI services*, and select it . Select **Create** under **Azure AI services**. On  Create Azure AI services tab provide the following settings:
+1. In the Azure Portal, select the **&#65291;Create a resource** button, search for *Azure AI services*, and select it . Select **Create** under **Azure AI services** and select it. On  Create Azure AI services tab provide the following settings:
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: Select **ai-service-<inject key="DeploymentID" enableCopy="false"/>**
     - **Region**:  **<inject key="Region" enableCopy="false"/>**
@@ -60,16 +60,16 @@ In this task, you will set up Azure Cloud Shell with PowerShell to prepare the e
     | Subscription | **Existing subscription**|
     | Storage account name | **blob<inject key="DeploymentID" enableCopy="false"/>**|
     | Resource group | **ai-service-<inject key="DeploymentID" enableCopy="false"/>**|
-    | Region | **Region**: **<inject key="Region" enableCopy="false"/>**|
+    | Region | **<inject key="Region" enableCopy="false"/>**|
     | File share | **none**|
 
 1. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is *Switch to Bash*. If it is *Switch to PowerShell*, select it to Switch into PowerShell.
 
-    ![How to find the left hand drop down menu to switch to PowerShell](../media/analyze-images-computer-vision-service/powershell-portal-guide-3(1).png)
+    ![How to find the left hand drop down menu to switch to PowerShell](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-3.png)
 
 1. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
 
-    ![Wait for PowerShell to start.](../media/analyze-images-computer-vision-service/powershell-prompt(1).png)
+    ![Wait for PowerShell to start.](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-3.png)
 
 ## Task 3: Configure and run a client application
 

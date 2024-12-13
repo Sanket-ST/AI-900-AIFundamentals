@@ -1,5 +1,5 @@
 
-# Hands-on Lab: Explore translation
+# Lab 04: Translate text and audio with Azure AI Translator
 
 One of the driving forces that has enabled human civilization to develop is the ability to communicate with one another. In most human endeavors, communication is key.
 
