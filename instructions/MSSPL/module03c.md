@@ -1,24 +1,31 @@
-# Hands-on Lab: Explore face recognition
+# Lab 03: Analyze images with Azure AI Face API
+
+## Estimated Duration: 60 minutes
+
+## Overview
 
 Computer vision solutions often require an artificial intelligence (AI) solution to be able to detect human faces. For example, suppose the retail company Northwind Traders wants to locate where customers are standing in a store to best assist them. One way to accomplish this is to determine if there are any faces in the images, and if so, to identify the bounding box coordinates around the faces.
 
 To test the capabilities of the Face service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
-In this lab, you will:
-- Create a Face API resource and a Azure Storage Account.
-- Configure and run a client application.
+## Lab Objectives
 
-## Task 1 : Create a *Face API* resource
+You will be able to complete the following tasks:
 
-You can use the Face service by creating a **Face** resource. (Face API is no longer available in Cognitive Services)
+  - Task 1: Create a Face API resource
+  - Task 2: Configure and run a client application
+
+## Task 1 : Create a Face API resource
+
+You can use the Face service by creating a **Face** resource. (Face API is no longer available in Azure AI Services)
 
 If you haven't already done so, create a **Face API** resource in your Azure subscription.
 
 1. Click the **&#65291;Create a resource** button, search for *Face*, and create a **Face** resource with the following settings:
     - **Subscription**: *Use existing Azure subscription*.
-    - **Resource group**: **AI-900-Module-03c-<inject key="DeploymentID" enableCopy="false" />**
-    - **Region**: Select **<inject key="location" enableCopy="false"/>**
-    - **Name**: Enter **ai900face-<inject key="DeploymentID" enableCopy="false"/>**
+    - **Resource group**: **ai-service-<inject key="DeploymentID" enableCopy="false"/>**
+    - **Region**:  **<inject key="Region" enableCopy="false"/>**
+    - **Name**: Enter **aiface-<inject key="DeploymentID" enableCopy="false"/>**
     - **Pricing tier**: **Standard S0**
 
 1.  Click on **Review and create**.
@@ -27,13 +34,13 @@ If you haven't already done so, create a **Face API** resource in your Azure sub
    
 1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Face API.
 
-1. View the **Keys and Endpoint** page for your Face resource. click on Show keys, you will need the endpoint and keys to connect from client applications.
+1. Select **Keys and Endpoint** under Resource Management for your Face resource. click on Show keys, you will need the endpoint and keys to connect from client applications.
 
       >**Note :** 
-      > Copy and save the **KEY 1** and **Enpoint** value to NotePad for future reference to connect from client applications. 
+      > Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications. 
 
 
-## Task 2: Run Cloud Shell
+## Task 2: Configure and run a client application
 
 To test the capabilities of the Face service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
 
@@ -41,31 +48,19 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/create-face-solutions/ai900_03c-1.png)
 
-1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
+1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.      
 
-1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AI-900-Module-03c-<inject key="DeploymentID" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name**. Next, enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
+1. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is *Switch to Bash*. If it is *Switch to PowerShell*, select it to Switch into PowerShell.
 
-    ![Create storage by clicking confirm.](../media/create-face-solutions/create-a-storage.png)       
-
-1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu.
-
-    ![How to find the left hand drop down menu to switch to PowerShell](../media/create-face-solutions/ai900_03c-3.png) 
+    ![How to find the left hand drop down menu to switch to PowerShell](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-3.png) 
 
 1. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
 
-    ![Wait for PowerShell to start.](../media/create-face-solutions/ai900_03c-4.png)
+    ![How to find the left hand drop down menu to switch to PowerShell](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-3.png)
 
-## Task 3: Configure and run a client application
+1. Now that you have a custom model, you can run a simple client application that uses the Face service.`
 
-Now that you have a custom model, you can run a simple client application that uses the Face service.
-
-1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
-
-    ```PowerShell
-    git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
-    ```
-
-1. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
+1. The files are downloaded to a folder named **ai-search** in previous lab. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
 
      ```PowerShell
     code .
@@ -75,7 +70,7 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The code editor.](../media/create-face-solutions/ai900_03c-5.png) 
 
-1. In the **Files** pane on the left, expand **ai-900** and select **find-faces.ps1**. This file contains some code that uses the Face service to detect and analyze faces in an image, as shown here:
+1. In the **Files** pane on the left, expand **ai-search** and select **find-faces.ps1**. This file contains some code that uses the Face service to detect and analyze faces in an image, as shown here:
 
     ![The editor containing code to detect faces in an image](../media/create-face-solutions/ai900_03c-6.png)
 
@@ -99,7 +94,7 @@ Now that you have a custom model, you can run a simple client application that u
 1. In the PowerShell pane, enter the following commands to run the code:
 
     ```PowerShell
-    cd ai-900
+    cd ai-search
     ```
 
      ```PowerShell
@@ -137,13 +132,15 @@ Now that you have a custom model, you can run a simple client application that u
 
 1. Review the results of the face analysis for the third image.
 
-**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+## Summary
 
-   - Click on the **Lab Validation tab** located at the upper right corner of the lab guide section and navigate to the **Lab Validation** Page.
-   - Hit the **Validate** button for the corresponding task.
-   - If you receive a success message, you can proceed to the next task. If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at [labs-support@spektrasystems.com](labs-support@spektrasystems.com).We are available 24/7 to help you out.
+In this lab you have covered the following:
+  
+  - Created a Face API resource
+  - Configured and run a client application
 
 ## Learn more
 
-This simple app shows only some of the capabilities of the Face service. To learn more about what you can do with this service, see the [Face API page](https://azure.microsoft.com/services/cognitive-services/face/).
+This simple app shows only some of the capabilities of the Face service. To learn more about what you can do with this service, see the [Face API page](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-identity).
+
+### You have successfully completed the lab. Click on Next from the bottom right corner.

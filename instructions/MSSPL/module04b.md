@@ -1,5 +1,9 @@
 
-# Hands-on Lab: Explore translation
+# Lab 04: Translate text and audio with Azure AI Translator
+
+### Estimated Duration: 60 minutes
+
+### Overview
 
 One of the driving forces that has enabled human civilization to develop is the ability to communicate with one another. In most human endeavors, communication is key.
 
@@ -7,79 +11,28 @@ Artificial Intelligence (AI) can help simplify communication by translating text
 
 To test the capabilities of the Translator service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or phone apps.
 
-## Exercise 1:Create a *Cognitive Services* resource
+### Lab Objectives
 
-### Task-1: Create a *Cognitive Services* resource
+You will be able to complete the following tasks:
 
-You can use the Computer Vision service by creating either a **Translator** resource or a **Cognitive Services** resource.
+  - Task 1: Run Cloud Shell
+  - Task 2: Configure and run a client application
 
-If you haven't already done so, create a **Cognitive Services** resource in your Azure subscription.
-
-1. In the Azure Portal click the **&#65291;Create a resource** button.
-
-     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/ai900mod1img1.png)
-   
-1. In the Marketplace page search for **Cognitive Services** and Select **Cognitive Services** 
-
-     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/ai900mod3bimg1.png)
-     
-1. On Cognitive Services Page Click on **Create**. 
-     
-     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/ai900mod3bimg2.png)
-
-1. Create a **Cognitive Services** resource with the following settings:
-
-    - **Subscription**: Retain the Existing Subscription **(1)**.
-    - **Resource group**: Select **AI-900-Module-04b-<inject key="DeploymentID" enableCopy="false"/> (2)**
-    - **Region**: Select **<inject key="location" enableCopy="false"/> (3)**
-    - **Name**: Enter **ai900cognitive-<inject key="DeploymentID" enableCopy="false"/> (4)**
-    - **Pricing tier**: Standard S0 **(5)**
-    - **By checking this box I acknowledge that I have read and understood all the terms below**: Select the checkbox. **(6)**
-
-1. Click on **Review + Create (7)**.
-   
-     ![](../media/ai900mod4bimg.png)
-   
-1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page, and wait for deployment to complete. Then go to the deployed resource.
-   
-1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Cognitive Service.
-
-1. View the **Keys and Endpoint** page for your resource. You will need the **location/region** and **key** to connect from client applications.
-
-
-### Task-2: Run Cloud Shell
+### Task 1: Run Cloud Shell
 
 To test the capabilities of the Translation service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
 
 1. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
 
-    ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/powershell-portal-guide-1.png)
+    ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/analyze-images-computer-vision-service/powershell-portal-guide-1(1).png)
 
-1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
+1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.
 
-1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AI-900-Module-04b-<inject key="DeploymentID" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
-
-    ![Create storage by clicking confirm.](../media/translate-text-and-speech/create-a-storage.png)
-
-1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is switched to *PowerShell*. If it is *Bash*, switch to *PowerShell* by using the drop-down menu. 
-
-    ![How to find the left hand drop down menu to switch to PowerShell](../media/powershell-portal-guide-3.png) 
-
-1. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
-
-    ![Wait for PowerShell to start.](../media/powershell-prompt.png)
-
-### Task-3: Configure and run a client application
+### Task 2: Configure and run a client application
 
 Now that you have a custom model, you can run a simple client application that uses the Translation service.
 
-1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
-
-    ```PowerShell
-    git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
-    ```
-
-1. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
+1. The required files are downloaded to a folder named **ai-search** in previous lab. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 
      ```PowerShell
     code .
@@ -89,14 +42,15 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The code editor.](../media/powershell-portal-guide-4.png)
 
-1. In the **Files** pane on the left, expand **ai-900** and select **translator.ps1**. This file contains some code that uses the Translator service:
+1. In the **Files** pane on the left, expand **ai-search** and select **translator.ps1**. This file contains some code that uses the Translator service:
 
     ![The editor containing code to use the Translator service](../media/translate-code-4b.png)
 
-1. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Cognitive Services resource. Copy the values of **KEY 1** and **Location/Region** value from *Keys and Endpoints* page for your resource from the Azure portal and paste them into the code editor.
-     ![Find the key and endpoint tab in your Cognitive Services resource's left hand pane.](../media/lab4b-1.png)
+1. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Azure AI Services resource. Copy the values of **KEY 1** and **Location/Region** value from *Keys and Endpoints* page for your resource from the Azure portal and paste them into the code editor.
 
-> **Note:** The Translator service does not require the use of the Cognitive Service endpoint, so there is no need to modify the Translator service endpoint. Instead, a dedicated global endpoint is available specifically for the Translator service. 
+    ![Find the key and endpoint tab in your Azure AI Services resource's left hand pane.](../media/lab4b-1.png)
+
+    > **Note:** The Translator service does not require the use of the Azure AI Service endpoint, so there is no need to modify the Translator service endpoint. Instead, a dedicated global endpoint is available specifically for the Translator service. 
 
 1. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 
@@ -115,21 +69,20 @@ Now that you have a custom model, you can run a simple client application that u
 1. In the Cloud Shell pane, enter the following command to run the code:
 
     ```PowerShell
-    cd ai-900
+    cd ai-search
     ./translator.ps1
     ```
 
 1. Review the output. Did you see the translation from the text in English to French, Italian, and Chinese?  Did you see the English audio "hello" translated into text in French?
 
-**Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+### Summary
 
-  > - Navigate to the Lab Validation tab, from the upper right corner in the lab guide section.
-  > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  > - If you need any assistance, please contact us at labs-support@spektrasystems.com.
+In this lab you have covered the following:
+  - Run Cloud Shell
+  - Configured and run a client application
 
-### You have successfully completed this lab.
+### Learn more
 
-## Learn more
+This simple app shows only some of the capabilities of the Translator service. To learn more about what you can do with this service, see the [Translator page](https://learn.microsoft.com/en-us/azure/ai-services/translator/).
 
-This simple app shows only some of the capabilities of the Translator service. To learn more about what you can do with this service, see the [Translator page](https://docs.microsoft.com/azure/cognitive-services/translator/translator-overview).
+### You have successfully completed the lab.
