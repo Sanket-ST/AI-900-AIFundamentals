@@ -18,7 +18,7 @@ You will be able to complete the following tasks:
   - Task 1: Run Cloud Shell
   - Task 2: Configure and run a client application
 
-### Task-1: Run Cloud Shell
+### Task 1: Run Cloud Shell
 
 To test the capabilities of the Translation service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
 
@@ -28,7 +28,7 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
 1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.
 
-### Task-2: Configure and run a client application
+### Task 2: Configure and run a client application
 
 Now that you have a custom model, you can run a simple client application that uses the Translation service.
 
