@@ -12,12 +12,12 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 
 You will be able to complete the following tasks:
 
-  - Task 1: Create a *Face API* resource
+  - Task 1: Create a Face API resource
   - Task 2: Configure and run a client application
 
-## Task 1 : Create a *Face API* resource
+## Task 1 : Create a Face API resource
 
-You can use the Face service by creating a **Face** resource. (Face API is no longer available in Cognitive Services)
+You can use the Face service by creating a **Face** resource. (Face API is no longer available in Azure AI Services)
 
 If you haven't already done so, create a **Face API** resource in your Azure subscription.
 
@@ -136,11 +136,11 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 
 In this lab you have covered the following:
   
-  - Created a *Face API* resource
+  - Created a Face API resource
   - Configured and run a client application
 
 ## Learn more
 
-This simple app shows only some of the capabilities of the Face service. To learn more about what you can do with this service, see the [Face API page](https://azure.microsoft.com/services/cognitive-services/face/).
+This simple app shows only some of the capabilities of the Face service. To learn more about what you can do with this service, see the [Face API page](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-identity).
 
 ### You have successfully completed the lab. Click on Next from the bottom right corner.
