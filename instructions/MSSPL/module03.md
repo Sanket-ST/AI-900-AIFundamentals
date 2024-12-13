@@ -129,6 +129,8 @@ In this task, you will modify a sample client application with your resource det
     - A list of objects identified in the image.
     - A list of "tags" that are relevant to the image.
 
+        ![An image of person with a shopping basket in a supermarket](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-5.png)
+
 1. Now let's try another image:
 
     ![An image of person with a shopping basket in a supermarket](../media/analyze-images-computer-vision-service/store-camera-2.jpg)
@@ -141,6 +143,8 @@ In this task, you will modify a sample client application with your resource det
 
 1. Review the results of the image analysis for the second image.
 
+    ![An image of person with a shopping basket in a supermarket](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-6.png)
+
 1. Let's try one more:
 
     ![An image of person with a shopping cart](../media/analyze-images-computer-vision-service/store-camera-3.jpg)
@@ -152,6 +156,8 @@ In this task, you will modify a sample client application with your resource det
     ```
 
 1. Review the results of the image analysis for the third image.
+
+    ![An image of person with a shopping basket in a supermarket](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-7.png)
 
  **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 
