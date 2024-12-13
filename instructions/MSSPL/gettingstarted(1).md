@@ -10,10 +10,10 @@ Azure AI services offer a comprehensive set of tools that allow you to integrate
 
 This lab is designed to equip participants with hands-on experience in exploring Azure AI services, such as Computer Vision and Azure AI Services, to enhance applications with capabilities like image recognition, text analysis, and speech processing.
 
--   **Explore Computer Vision :** Implement a Azure AI Services resource to analyze images using the Computer Vision service. Configure and run a client app to extract captions, objects, and tags for visual insights.
--   **Explore Custom Vision :** Azure AI’s Custom Vision service allows you to build and deploy image recognition models tailored to your needs. It supports image classification and object detection, enabling you to label images, train models, and test their accuracy without requiring machine learning expertise.
--   **Explore Azure AI Face API :** Azure AI’s Face API provides advanced algorithms for detecting, recognizing, and analyzing human faces in images. It supports various functionalities such as face detection, verification, identification, and grouping, making it useful for applications like identity verification, touchless access control, and privacy protection through automatic face blurring.
--   **Explore Azure AI Translator :** Azure AI Translator is a cloud-based neural machine translation service that enables you to translate text and documents across more than 100 languages using a simple REST API call. It supports various use cases, such as real-time translation for call centers, multilingual conversational agents, and in-app communication.
+-   **Analyze images with Azure AI Computer Vision :** Implement a Azure AI Services resource to analyze images using the Computer Vision service. Configure and run a client app to extract captions, objects, and tags for visual insights.
+-   **Detect objects with Azure AI Custom Vision :** Azure AI’s Custom Vision service allows you to build and deploy image recognition models tailored to your needs. It supports image classification and object detection, enabling you to label images, train models, and test their accuracy without requiring machine learning expertise.
+-   **Analyze images with Azure AI Face API :** Azure AI’s Face API provides advanced algorithms for detecting, recognizing, and analyzing human faces in images. It supports various functionalities such as face detection, verification, identification, and grouping, making it useful for applications like identity verification, touchless access control, and privacy protection through automatic face blurring.
+-   **Translate text and audio with Azure AI Translator :** Azure AI Translator is a cloud-based neural machine translation service that enables you to translate text and documents across more than 100 languages using a simple REST API call. It supports various use cases, such as real-time translation for call centers, multilingual conversational agents, and in-app communication.
 
 ## Prerequisites
 
@@ -39,9 +39,12 @@ The lab architecture leverages a range of Microsoft Azure services and tools to 
 
 The architecture for this lab involves several key components:
 
--   **Computer Vision :** Provides image analysis capabilities, including object detection, text extraction, and image tagging.
 -   **Azure Resource Group :** A container that organizes and manages Azure resources, including Cognitive Services, for efficient deployment and scaling.
 -   **Azure Blob Storage :** Stores images or time-series data, providing scalable storage for input data used by the AI services.
+-   **Azure AI Computer Vision :** Implement a Azure AI Services resource to analyze images using the Computer Vision service. Configure and run a client app to extract captions, objects, and tags for visual insights.
+-   **Azure AI Custom Vision :** Azure AI’s Custom Vision service allows you to build and deploy image recognition models tailored to your needs.
+-   **Azure AI Face API :** Azure AI’s Face API provides advanced algorithms for detecting, recognizing, and analyzing human faces in images.
+-   **Azure AI Translator :** Azure AI Translator is a cloud-based neural machine translation service that enables you to translate text and documents across more than 100 languages using a simple REST API call.
 
 ## Getting Started with Lab
 
