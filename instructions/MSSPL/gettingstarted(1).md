@@ -1,24 +1,26 @@
 # Getting started with Azure AI services
 
-### Overall Estimated Duration: 2 hours
+### Overall Estimated Duration: 4 hours
 
 ## Overview
 
-Azure AI services offer a comprehensive set of tools that allow you to integrate intelligent features into your applications, such as image recognition, text analysis, and language processing. With services like Azure Cognitive Services, Azure Machine Learning, and Azure OpenAI, you can leverage advanced AI capabilities to streamline workflows, solve complex problems, and enhance the functionality of your applications. These services enable you to build powerful AI-driven solutions, making it easier to address real-world challenges and drive innovation in the cloud.
+Azure AI services offer a comprehensive set of tools that allow you to integrate intelligent features into your applications, such as image recognition, text analysis, and language processing. With services like Azure AI Services, Azure Machine Learning, and Azure OpenAI, you can leverage advanced AI capabilities to streamline workflows, solve complex problems, and enhance the functionality of your applications. These services enable you to build powerful AI-driven solutions, making it easier to address real-world challenges and drive innovation in the cloud.
 
 ## Objective
 
-This lab is designed to equip participants with hands-on experience in exploring Azure AI services, such as Computer Vision and Cognitive Services, to enhance applications with capabilities like image recognition, text analysis, and speech processing.
+This lab is designed to equip participants with hands-on experience in exploring Azure AI services, such as Computer Vision and Azure AI Services, to enhance applications with capabilities like image recognition, text analysis, and speech processing.
 
--   **Explore Computer Vision :** Implement a Cognitive Services resource to analyze images using the Computer Vision service. Configure and run a client app to extract captions, objects, and tags for visual insights.
--   **Explore Cognitive Services :** Implement an Anomaly Detector resource to analyze time-series data and detect anomalies. Configure a client app to identify unusual patterns for real-world insights.
+-   **Explore Computer Vision :** Implement a Azure AI Services resource to analyze images using the Computer Vision service. Configure and run a client app to extract captions, objects, and tags for visual insights.
+-   **Explore Custom Vision :** Azure AI’s Custom Vision service allows you to build and deploy image recognition models tailored to your needs. It supports image classification and object detection, enabling you to label images, train models, and test their accuracy without requiring machine learning expertise.
+-   **Explore Azure AI Face API :** Azure AI’s Face API provides advanced algorithms for detecting, recognizing, and analyzing human faces in images. It supports various functionalities such as face detection, verification, identification, and grouping, making it useful for applications like identity verification, touchless access control, and privacy protection through automatic face blurring.
+-   **Explore Azure AI Translator :** Azure AI Translator is a cloud-based neural machine translation service that enables you to translate text and documents across more than 100 languages using a simple REST API call. It supports various use cases, such as real-time translation for call centers, multilingual conversational agents, and in-app communication.
 
 ## Prerequisites
 
 Participants should have the following prerequisites:
 
 -   **Basic Understanding of Cloud Computing :** Familiarity with fundamental cloud concepts and services, particularly in the context of Microsoft Azure.
--   **Knowledge of Azure Cognitive Services :** Understanding of the Azure Cognitive Services suite, including how to provision and use services like Computer Vision and Anomaly Detector.
+-   **Knowledge of Azure AI Services :** Understanding of the Azure AI Services suite, including how to provision and use services like Computer Vision, Custom Vision, Azure AI Translator and Azure AI Face.
 -   **Experience with the Azure Portal**: Proficiency in navigating and using the Azure Portal to manage and configure cloud resources.
 -   **Familiarity with PowerShell or Cloud Shell :** Basic knowledge of using PowerShell or Cloud Shell for running commands and scripts within Azure.
 -   **Basic Programming Knowledge :** Understanding of scripting or programming languages like PowerShell, which are used for configuring and running client applications in Azure.
@@ -27,7 +29,7 @@ Participants should have the following prerequisites:
 
 ## Architechture
 
-The architecture for integrating Azure AI services into applications involves using **Azure Cognitive Services**, such as **Computer Vision** for image analysis and **Anomaly Detector** for time-series data analysis. A client application communicates with these services via REST APIs, sending data for processing (images or time-series). The services are provisioned within an **Azure Resource Group** and interact with **Azure Blob Storage** for data storage. Results are returned to the application for further use, such as generating insights or triggering notifications. This architecture leverages Azure's managed services to provide scalable, intelligent capabilities for real-world applications.
+The lab architecture leverages a range of Microsoft Azure services and tools to provide hands-on experience with cloud computing, AI, and security practices. Using the Azure Portal, users can provision and manage resources like **Azure AI Services**, which include **Computer Vision**, **Custom Vision**, **Face API**, and **Translator**. PowerShell or Cloud Shell is used to execute scripts for provisioning and managing these resources. The lab encourages interaction with APIs and endpoints to connect client applications with Azure services, enabling real-time data processing and analysis. Additionally, a focus on security best practices ensures proper handling of authentication, keys, and resource protection. Participants will build, deploy, and test AI models and applications for various use cases, such as image recognition, face detection, and language translation, while developing a deeper understanding of cloud architecture, AI tools, and secure cloud operations..
 
 ## Architechture Diagram
 
@@ -38,11 +40,8 @@ The architecture for integrating Azure AI services into applications involves us
 The architecture for this lab involves several key components:
 
 -   **Computer Vision :** Provides image analysis capabilities, including object detection, text extraction, and image tagging.
--   **Anomaly Detector :** Analyzes time-series data to identify unusual patterns or anomalies.
 -   **Azure Resource Group :** A container that organizes and manages Azure resources, including Cognitive Services, for efficient deployment and scaling.
 -   **Azure Blob Storage :** Stores images or time-series data, providing scalable storage for input data used by the AI services.
--   **Output Insights :** Processed results from the AI services are returned to the client application for further action, such as generating insights or triggering automated responses.
-
 
 ## Getting Started with Lab
 
@@ -60,9 +59,9 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 ## Exploring Your Lab Resources
  
-To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
-   ![Create storage by clicking confirm.](../media/GettingStarted/ai-900-gettingstarted-04.png)
+![Create storage by clicking confirm.](../media/GettingStarted/azure-ai-search-getting%20started-1.png)
  
 ## Utilizing the Split Window Feature
  
@@ -74,19 +73,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-  ![](../media/GS5.png)
-
-## Lab Validation
-
-1. After completing the task, hit the **Validate** button under Validation tab integrated within your lab guide. If you receive a success message, you can proceed to the next task, if not, carefully read the error message and retry the step, following the instructions in the lab guide.
-
-   ![Inline Validation](../media/inline-validation.png)
-
-1. You can also validate the task by navigating to the **Lab Validation** tab, from the upper right corner in the lab guide section.
-
-   ![Lab Validation](../media/lab-validation.png)
-
-1. If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com.
+![Create storage by clicking confirm.](../media/GettingStarted/azure-ai-search-getting%20started-2.png)
 
  
 ## Let's Get Started with Azure Portal
@@ -119,7 +106,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
 ## Support Contact
  
