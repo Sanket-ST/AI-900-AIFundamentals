@@ -1,6 +1,6 @@
 # Lab 02: Detect objects with Azure AI Custom Vision
 
-### Estimated Duration: 60 minutes
+## Estimated Duration: 60 minutes
 
 ## Overview
 
