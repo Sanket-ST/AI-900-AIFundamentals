@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Explore Cognitive Services",
+    "Name": "Explore Azure AI Services",
     "Language": "English",
     "Files": [
 	    {
@@ -8,8 +8,20 @@
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/MS-SPL/instructions/MSSPL/module01.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Prajwal5180/AI-900-AIFundamentals/refs/heads/MS-Innovation/instructions/MSSPL/module03.md",
         "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Prajwal5180/AI-900-AIFundamentals/refs/heads/MS-Innovation/instructions/MSSPL/module03b.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Prajwal5180/AI-900-AIFundamentals/refs/heads/MS-Innovation/instructions/MSSPL/module03c.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/Prajwal5180/AI-900-AIFundamentals/refs/heads/MS-Innovation/instructions/MSSPL/module04b.md",
+        "Order": 5
       }
     ]
   }
