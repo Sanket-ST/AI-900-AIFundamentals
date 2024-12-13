@@ -4,9 +4,12 @@ Computer vision solutions often require an artificial intelligence (AI) solution
 
 To test the capabilities of the Face service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
-In this lab, you will:
-- Create a Face API resource and a Azure Storage Account.
-- Configure and run a client application.
+## Lab Objectives
+
+You will be able to complete the following tasks:
+
+  - Task 1: Create a *Face API* resource
+  - Task 2: Configure and run a client application
 
 ## Task 1 : Create a *Face API* resource
 
@@ -33,7 +36,7 @@ If you haven't already done so, create a **Face API** resource in your Azure sub
       > Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications. 
 
 
-## Task 2: Run Cloud Shell
+## Task 2: Configure and run a client application
 
 To test the capabilities of the Face service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
 
@@ -49,19 +52,11 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 
 1. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
 
-    ![How to find the left hand drop down menu to switch to PowerShell](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-3.png) 
+    ![How to find the left hand drop down menu to switch to PowerShell](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-3.png)
 
-## Task 3: Configure and run a client application
+Now that you have a custom model, you can run a simple client application that uses the Face service.`
 
-Now that you have a custom model, you can run a simple client application that uses the Face service.
-
-1. In the command shell, enter the following command to download the sample application and save it to a folder called ai-900.
-
-    ```PowerShell
-    git clone https://github.com/CloudLabs-MOC/AI-900-AIFundamentals ai-search
-    ```
-
-1. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
+1. The files are downloaded to a folder named **ai-search** in previous lab. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
 
      ```PowerShell
     code .
@@ -71,7 +66,7 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The code editor.](../media/create-face-solutions/ai900_03c-5.png) 
 
-1. In the **Files** pane on the left, expand **ai-900** and select **find-faces.ps1**. This file contains some code that uses the Face service to detect and analyze faces in an image, as shown here:
+1. In the **Files** pane on the left, expand **ai-search** and select **find-faces.ps1**. This file contains some code that uses the Face service to detect and analyze faces in an image, as shown here:
 
     ![The editor containing code to detect faces in an image](../media/create-face-solutions/ai900_03c-6.png)
 
@@ -133,6 +128,15 @@ Now that you have a custom model, you can run a simple client application that u
 
 1. Review the results of the face analysis for the third image.
 
+## Summary
+
+In this lab you have covered the following:
+  
+  - Created a *Face API* resource
+  - Configured and run a client application
+
 ## Learn more
 
 This simple app shows only some of the capabilities of the Face service. To learn more about what you can do with this service, see the [Face API page](https://azure.microsoft.com/services/cognitive-services/face/).
+
+### You have successfully completed the lab. Click on Next from the bottom right corner.
