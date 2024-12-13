@@ -1,6 +1,6 @@
 # Lab 01: Analyze images with Azure AI Computer Vision
 
-### Estimated Duration: 60 minutes
+## Estimated Duration: 60 minutes
 
 ## Overview
 
