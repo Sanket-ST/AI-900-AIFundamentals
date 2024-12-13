@@ -51,7 +51,7 @@ Welcome to your Getting started with Azure AI services Lab! We've prepared a sea
  
 Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
 
-   ![Create storage by clicking confirm.](../media/GettingStarted/gspage01.png)  
+![Create storage by clicking confirm.](../media/GettingStarted/azure-ai-search-getting%20started-4.png) 
 
 ### Virtual Machine & Lab Guide
  
@@ -67,7 +67,7 @@ To get a better understanding of your lab resources and credentials, navigate to
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![](../media/GS8.png)
+![Create storage by clicking confirm.](../media/GettingStarted/azure-ai-search-getting%20started-5.png)
  
 ## Managing Your Virtual Machine
  
@@ -118,7 +118,6 @@ Learner Support Contacts:
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
-![](../media/GS4.png)
+![Create storage by clicking confirm.](../media/GettingStarted/azure-ai-search-getting%20started-3.png)
 
 ### Happy Learning!!
-
