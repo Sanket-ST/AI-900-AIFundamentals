@@ -1,6 +1,6 @@
 # Lab 03: Analyze images with Azure AI Face API
 
-### Estimated Duration: 60 minutes
+## Estimated Duration: 60 minutes
 
 ## Overview
 
