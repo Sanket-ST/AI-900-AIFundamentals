@@ -20,8 +20,7 @@ You will be able to complete the following tasks:
   - Task 2: Add and tag images
   - Task 3: Train and test a model
   - Task 4: Publish the object detection model
-  - Task 5: Publish the object detection model
-  - Task 6: Prepare a client application
+  - Task 5: Prepare a client application
   - Task 6: Test the client application
 
 ### Task 1: Create a Custom Vision project
@@ -228,7 +227,6 @@ In this lab you have covered the following:
   - Created a Custom Vision project
   - Added and tag images
   - Trained and test a model
-  - Published the object detection model
   - Published the object detection model
   - Prepared a client application
   - Tested the client application
