@@ -29,7 +29,7 @@ Participants should have the following prerequisites:
 
 ## Architechture
 
-The lab architecture leverages a range of Microsoft Azure services and tools to provide hands-on experience with cloud computing, AI, and security practices. Using the Azure Portal, users can provision and manage resources like **Azure AI Services**, which include **Computer Vision**, **Custom Vision**, **Face API**, and **Translator**. PowerShell or Cloud Shell is used to execute scripts for provisioning and managing these resources. The lab encourages interaction with APIs and endpoints to connect client applications with Azure services, enabling real-time data processing and analysis. Additionally, a focus on security best practices ensures proper handling of authentication, keys, and resource protection. Participants will build, deploy, and test AI models and applications for various use cases, such as image recognition, face detection, and language translation, while developing a deeper understanding of cloud architecture, AI tools, and secure cloud operations..
+The lab architecture leverages a range of Microsoft Azure services and tools to provide hands-on experience with cloud computing, AI, and security practices. Using the Azure Portal, users can provision and manage resources like **Azure AI Services**, which include **Custom Vision**, **Face API**, and **Azure AI services multi-service**. PowerShell or Cloud Shell is used to execute scripts for provisioning and managing these resources. The lab encourages interaction with APIs and endpoints to connect client applications with Azure services, enabling real-time data processing and analysis. Additionally, a focus on security best practices ensures proper handling of authentication, keys, and resource protection. Participants will build, deploy, and test AI models and applications for various use cases, such as image recognition, face detection, and language translation, while developing a deeper understanding of cloud architecture, AI tools, and secure cloud operations..
 
 ## Architechture Diagram
 
@@ -41,10 +41,9 @@ The architecture for this lab involves several key components:
 
 -   **Azure Resource Group :** A container that organizes and manages Azure resources, including Cognitive Services, for efficient deployment and scaling.
 -   **Azure Blob Storage :** Stores images or time-series data, providing scalable storage for input data used by the AI services.
--   **Azure AI Computer Vision :** Implement a Azure AI Services resource to analyze images using the Computer Vision service. Configure and run a client app to extract captions, objects, and tags for visual insights.
+-   **Azure AI services multi-service :** Azure AI services multi-service resource allows you to access multiple Azure AI services using a single set of credentials, simplifying management and billing. This resource supports various services like language understanding, speech recognition, computer vision, and more, enabling you to integrate multiple AI capabilities into your applications seamlessly
 -   **Azure AI Custom Vision :** Azure AI’s Custom Vision service allows you to build and deploy image recognition models tailored to your needs.
 -   **Azure AI Face API :** Azure AI’s Face API provides advanced algorithms for detecting, recognizing, and analyzing human faces in images.
--   **Azure AI Translator :** Azure AI Translator is a cloud-based neural machine translation service that enables you to translate text and documents across more than 100 languages using a simple REST API call.
 
 ## Getting Started with Lab
 
