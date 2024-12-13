@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "Explore Cognitive Services",
+    "Language": "English",
+    "Files": [
+	    {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/MS-SPL/instructions/MSSPL/gs.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/AI-900-AIFundamentals/MS-SPL/instructions/MSSPL/module01.md",
+        "Order": 2
+      }
+    ]
+  }
+]
