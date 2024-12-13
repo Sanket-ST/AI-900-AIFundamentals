@@ -48,9 +48,10 @@ Now that you have a custom model, you can run a simple client application that u
     ![The editor containing code to use the Translator service](../media/translate-code-4b.png)
 
 1. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Cognitive Services resource. Copy the values of **KEY 1** and **Location/Region** value from *Keys and Endpoints* page for your resource from the Azure portal and paste them into the code editor.
-     ![Find the key and endpoint tab in your Cognitive Services resource's left hand pane.](../media/lab4b-1.png)
 
-> **Note:** The Translator service does not require the use of the Cognitive Service endpoint, so there is no need to modify the Translator service endpoint. Instead, a dedicated global endpoint is available specifically for the Translator service. 
+    ![Find the key and endpoint tab in your Cognitive Services resource's left hand pane.](../media/lab4b-1.png)
+
+    > **Note:** The Translator service does not require the use of the Cognitive Service endpoint, so there is no need to modify the Translator service endpoint. Instead, a dedicated global endpoint is available specifically for the Translator service. 
 
 1. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
 
