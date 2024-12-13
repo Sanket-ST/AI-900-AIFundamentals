@@ -1,9 +1,9 @@
 
 # Lab 04: Translate text and audio with Azure AI Translator
 
-## Estimated Duration: 60 minutes
+### Estimated Duration: 60 minutes
 
-## Overview
+### Overview
 
 One of the driving forces that has enabled human civilization to develop is the ability to communicate with one another. In most human endeavors, communication is key.
 
@@ -11,7 +11,7 @@ Artificial Intelligence (AI) can help simplify communication by translating text
 
 To test the capabilities of the Translator service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or phone apps.
 
-## Lab Objectives
+### Lab Objectives
 
 You will be able to complete the following tasks:
 
@@ -75,13 +75,13 @@ Now that you have a custom model, you can run a simple client application that u
 
 1. Review the output. Did you see the translation from the text in English to French, Italian, and Chinese?  Did you see the English audio "hello" translated into text in French?
 
-## Summary
+### Summary
 
 In this lab you have covered the following:
   - Run Cloud Shell
   - Configured and run a client application
 
-## Learn more
+### Learn more
 
 This simple app shows only some of the capabilities of the Translator service. To learn more about what you can do with this service, see the [Translator page](https://learn.microsoft.com/en-us/azure/ai-services/translator/).
 
