@@ -1,7 +1,7 @@
 
 # Lab 04: Translate text and audio with Azure AI Translator
 
-### Estimated Duration: 60 minutes
+## Estimated Duration: 60 minutes
 
 ## Overview
 
@@ -85,4 +85,4 @@ In this lab you have covered the following:
 
 This simple app shows only some of the capabilities of the Translator service. To learn more about what you can do with this service, see the [Translator page](https://docs.microsoft.com/azure/cognitive-services/translator/translator-overview).
 
-### You have successfully completed the lab. Click on Next from the bottom right corner.
+### You have successfully completed the lab.
