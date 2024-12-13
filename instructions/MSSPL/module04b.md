@@ -11,6 +11,12 @@ Artificial Intelligence (AI) can help simplify communication by translating text
 
 To test the capabilities of the Translator service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply to real-world solutions, such as websites or phone apps.
 
+## Lab Objectives
+
+You will be able to complete the following tasks:
+
+  - Task 1: Run Cloud Shell
+  - Task 2: Configure and run a client application
 
 ### Task-1: Run Cloud Shell
 
@@ -72,7 +78,7 @@ Now that you have a custom model, you can run a simple client application that u
 ## Summary
 
 In this lab you have covered the following:
-  
+  - Run Cloud Shell
   - Configured and run a client application
 
 ## Learn more
