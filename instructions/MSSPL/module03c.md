@@ -19,9 +19,7 @@ You will be able to complete the following tasks:
 
 You can use the Face service by creating a **Face** resource. (Face API is no longer available in Azure AI Services)
 
-If you haven't already done so, create a **Face API** resource in your Azure subscription.
-
-1. Click the **&#65291;Create a resource** button, search for *Face*, and create a **Face** resource with the following settings:
+1. In the Azure portal, click the **&#65291;Create a resource** button, search for *Face*, and create a **Face** resource with the following settings:
     - **Subscription**: *Use existing Azure subscription*.
     - **Resource group**: **ai-service-<inject key="DeploymentID" enableCopy="false"/>**
     - **Region**:  **<inject key="Region" enableCopy="false"/>**
@@ -44,31 +42,15 @@ If you haven't already done so, create a **Face API** resource in your Azure sub
 
 To test the capabilities of the Face service, we'll use a simple command-line application that runs in the Cloud Shell on Azure. 
 
-1. In the Azure portal, select the **[>_]** (*Cloud Shell*) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal. 
+1. In the same cloud-shell window from the previous lab, enter the following command:
 
-    ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/create-face-solutions/ai900_03c-1.png)
-
-1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.      
-
-1. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is *Switch to Bash*. If it is *Switch to PowerShell*, select it to Switch into PowerShell.
-
-    ![How to find the left hand drop down menu to switch to PowerShell](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-3.png) 
-
-1. Wait for PowerShell to start. You should see the following screen in the Azure portal:  
-
-    ![How to find the left hand drop down menu to switch to PowerShell](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-3.png)
-
-1. Now that you have a custom model, you can run a simple client application that uses the Face service.`
-
-1. The files are downloaded to a folder named **ai-search** in previous lab. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
-
-     ```PowerShell
+    ```PowerShell
     code .
     ```
 
-    Notice how this opens up an editor like the one in the image below: 
+1. Now that you have a custom model, you can run a simple client application that uses the Face service.
 
-    ![The code editor.](../media/create-face-solutions/ai900_03c-5.png) 
+1. The files are downloaded in the folder named **ai-search**. Now we want to see all of the files in your Cloud Shell storage and work with them. 
 
 1. In the **Files** pane on the left, expand **ai-search** and select **find-faces.ps1**. This file contains some code that uses the Face service to detect and analyze faces in an image, as shown here:
 

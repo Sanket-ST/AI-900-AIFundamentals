@@ -108,13 +108,13 @@ In this task, you will modify a sample client application with your resource det
      > $key="1a2b3c4d5e6f7g8h9i0j...."    
      > $endpoint="https..."
 
-1. After making the changes to the variables in the code, press **CTRL+S** to save the file. Then press **CTRL+Q** to close the code editor.
+1. After making the changes to the variables in the code, press **CTRL+S** to save the file. 
 
 1. The sample client application will use your Computer Vision service to analyze the following image, taken by a camera in the Northwind Traders store:
 
     ![An image of a parent using a cellphone camera to take a picture of a child in in a store](../media/analyze-images-computer-vision-service/store-camera-1.jpg)
 
-    In the PowerShell pane, enter the following commands to run the code:
+    In the PowerShell terminal pane, enter the following commands to run the code:
 
     ```PowerShell
     cd ai-search

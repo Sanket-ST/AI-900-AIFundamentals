@@ -32,7 +32,7 @@ To test the capabilities of the Translation service, we'll use a simple command-
 
 Now that you have a custom model, you can run a simple client application that uses the Translation service.
 
-1. The required files are downloaded to a folder named **ai-search** in previous lab. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
+1. The required files are downloaded to a folder named **ai-search** in the previous lab. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 
      ```PowerShell
     code .
@@ -46,13 +46,13 @@ Now that you have a custom model, you can run a simple client application that u
 
     ![The editor containing code to use the Translator service](../media/translate-code-4b.png)
 
-1. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Azure AI Services resource. Copy the values of **KEY 1** and **Location/Region** value from *Keys and Endpoints* page for your resource from the Azure portal and paste them into the code editor.
+1. Don't worry too much about the details of the code, the important thing is that it needs the region/location and either of the keys for your Azure AI Services resource. Copy the values of **KEY 1** and **Location/Region** value from *Keys and Endpoints* page for your **aiservice-<inject key="DeploymentID" enableCopy="false"/>*** resource from the Azure portal and paste them into the code editor.
 
     ![Find the key and endpoint tab in your Azure AI Services resource's left hand pane.](../media/lab4b-1.png)
 
     > **Note:** The Translator service does not require the use of the Azure AI Service endpoint, so there is no need to modify the Translator service endpoint. Instead, a dedicated global endpoint is available specifically for the Translator service. 
 
-1. At the top right of the editor pane, use the **...** button to open the menu and select **Save** to save your changes. Then open the menu again and select **Close Editor**.
+1. Hit **Ctrl+S** to save the changes that are done. Press **Ctrl+Q** to close the code editor window.
 
     The sample client application will use the Translator service to do several tasks:
     - Translate text from English into French, Italian, and Chinese.
@@ -62,7 +62,7 @@ Now that you have a custom model, you can run a simple client application that u
    
        https://www.microsoft.com/videoplayer/embed/RWORN0
 
-    >**Note**: Copy the above link to your browser, and listen to the audio file. Do not use the Lab VM browser.
+    >**Note**: Copy the above link to your browser, and listen to the audio file. Do not use the **Lab VM browser**.
 
     >**Note**: A real application could accept the input from a microphone and send the response to a speaker, but in this simple example, we'll use pre-recorded input in an audio file.
     
