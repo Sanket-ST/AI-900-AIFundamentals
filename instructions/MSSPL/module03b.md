@@ -181,13 +181,13 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
      > $predictionKey ="1a2b3c4d5e6f7g8h9i0j...."
 
 
-6. After making the changes to the variables in the code, press **CTRL+S** to save the file. Then press **CTRL+Q** to close the code editor.
+6. After making the changes to the variables in the code, press **CTRL+S** to save the file. 
 
 ### Task 6: Test the client application
 
 Now you can use the sample client application to detect cyclists and pedestrians in images.
 
-1. In the powershell window, enter the following commands to change to the **ai-900** directory and edit the code file for this exercise:
+1. In the powershell terminal window, enter the following commands to change to the **ai-900** directory and edit the code file for this exercise:
 
     ```PowerShell
     cd ai-search
