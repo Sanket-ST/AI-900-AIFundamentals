@@ -151,24 +151,23 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
     git clone https://github.com/CloudLabs-MOC/AI-900-AIFundamentals ai-search
     ```
 
-3. After the files have been downloaded, enter the following commands to change to the **ai-900** directory and edit the code file for this exercise:
+1. The files are downloaded to a folder named **ai-search**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell:
 
     ```PowerShell
-    cd ai-search
-    ```
-    ```PowerShell
-    code detect-objects.ps1
+    code .
     ```
 
-    Notice how this opens an editor like the one in the image below:
+    >**Note**: If you get Switch to Classic Cloud Shell, click on **Confirm** and run the previous command again.
 
-      ![Screenshot of the code editor in the cloud shell.](../media/code-editor-3b.png)
+    Notice how this opens up an editor like the one in the image below:
 
-      >**Note:** If you get a pop-up stating to switch back to the classic version, click confirm and run the above command again.
+    ![The code editor.](../media/analyze-images-computer-vision-service/powershell-portal-guide-4(2).png)
 
-      > **Tip**: You can use the separator bar between the cloud shell command line and the code editor to resize the panes.
+    > **Tip**: You can use the separator bar between the cloud shell command line and the code editor to resize the panes.
 
-5. Don't worry too much about the details of the code. The important thing is that it starts with some code to specify the prediction URL and key for your Custom Vision model. You'll need to update these so that the rest of the code uses your model.
+1. In the **Files** pane on the left, expand **ai-search** and select **detect-objects.ps1**. 
+
+1. Don't worry too much about the details of the code. The important thing is that it starts with some code to specify the prediction URL and key for your Custom Vision model. You'll need to update these so that the rest of the code uses your model.
 
     Click on the **Prediction URL** to get the **Prediction URL (1)** and **Prediction key (2)** from the dialog box you left open in the browser tab for your Custom Vision project. You need the versions to be used *if you have an image URL*.
 
@@ -187,6 +186,12 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 ### Task 6: Test the client application
 
 Now you can use the sample client application to detect cyclists and pedestrians in images.
+
+1. In the powershell window, enter the following commands to change to the **ai-900** directory and edit the code file for this exercise:
+
+    ```PowerShell
+    cd ai-search
+    ```
 
 1. In the PowerShell pane, enter the following command to run the code:
 
