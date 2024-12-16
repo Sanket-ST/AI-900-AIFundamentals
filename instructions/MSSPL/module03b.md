@@ -142,10 +142,6 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
     ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/powershell-portal-guide-1.png)
 
-1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). If so, select **PowerShell**.
-
-    ![Start Cloud Shell by clicking on the icon to the right of the top search box](../media/ai900mod1img6.png)
-
 2. In the command shell, enter the following commands to download the files for this exercise and save them in a folder named **ai-900** (after removing that folder if it already exists)
 
     ```PowerShell
@@ -168,9 +164,11 @@ To test the capabilities of the Custom Vision service, we'll use a simple comman
 
       ![Screenshot of the code editor in the cloud shell.](../media/code-editor-3b.png)
 
-     > **Tip**: You can use the separator bar between the cloud shell command line and the code editor to resize the panes.
+      >**Note:** If you get a pop-up stating to switch back to the classic version, click confirm and run the above command again.
 
-4. Don't worry too much about the details of the code. The important thing is that it starts with some code to specify the prediction URL and key for your Custom Vision model. You'll need to update these so that the rest of the code uses your model.
+      > **Tip**: You can use the separator bar between the cloud shell command line and the code editor to resize the panes.
+
+5. Don't worry too much about the details of the code. The important thing is that it starts with some code to specify the prediction URL and key for your Custom Vision model. You'll need to update these so that the rest of the code uses your model.
 
     Click on the **Prediction URL** to get the **Prediction URL (1)** and **Prediction key (2)** from the dialog box you left open in the browser tab for your Custom Vision project. You need the versions to be used *if you have an image URL*.
 
