@@ -19,9 +19,7 @@ You will be able to complete the following tasks:
 
 You can use the Face service by creating a **Face** resource. (Face API is no longer available in Azure AI Services)
 
-If you haven't already done so, create a **Face API** resource in your Azure subscription.
-
-1. Click the **&#65291;Create a resource** button, search for *Face*, and create a **Face** resource with the following settings:
+1. In the Azure portal, click the **&#65291;Create a resource** button, search for *Face*, and create a **Face** resource with the following settings:
     - **Subscription**: *Use existing Azure subscription*.
     - **Resource group**: **ai-service-<inject key="DeploymentID" enableCopy="false"/>**
     - **Region**:  **<inject key="Region" enableCopy="false"/>**
