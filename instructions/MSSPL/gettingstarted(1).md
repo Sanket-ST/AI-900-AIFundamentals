@@ -102,7 +102,7 @@ Feel free to start, stop, or restart your virtual machine from the **Resources**
 
    >**NOTE:** Do not enable MFA, select **Ask Later**.
  
-1. If you see the pop-up "**Stay Signed in?**" click **No**.
+1. If you see the pop-up "**Stay signed in?**" click **No**.
 
    ![](../media/GS9.png)
 
