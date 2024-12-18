@@ -1,43 +1,43 @@
-# Lab 01: Analyze images with Azure AI Computer Vision
+# Lab 01: Analyze Images with Azure AI Computer Vision
 
-## Estimated Duration: 60 minutes
+## Estimated Duration: 60 Minutes
 
 ## Overview
 
 The Computer Vision Azure AI service uses pre-trained machine learning models to analyze images and extract information about them.
 
-For example, suppose the fictitious retailer Northwind Traders has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. By using the Computer Vision service, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
+For example, suppose the fictitious retailer Northwind Traders has decided to implement a "smart store," in which AI services monitor the store to identify customers requiring assistance and direct employees to help them. By using the Computer Vision service, images taken by cameras throughout the store can be analyzed to provide meaningful descriptions of what they depict.
 
 ## Lab Objectives
 
 You will be able to complete the following tasks:
 
-  - Task 1: Azure AI Services resource
-  - Task 2: Run Cloud Shell
-  - Task 3: Configure and run a client application
+  - **Task 1:** Azure AI Services Resource
+  - **Task 2:** Run Cloud Shell
+  - **Task 3:** Configure and Run a Client Application
 
-## Task 1: Create a Azure AI Services resource
+## Task 1: Create an Azure AI Services Resource
 
-In this task, you will create a Azure AI Services resource in the Azure portal and retrieve its keys and endpoint for integration.
+In this task, you will create an Azure AI Services resource in the Azure portal and retrieve its keys and endpoint for integration.
 
-1. In the Azure Portal, select the **&#65291;Create a resource** button, search for *Azure AI services*, and select it . Select **Create** under **Azure AI services** and select it. On  Create Azure AI services tab provide the following settings:
+1. On the Azure portal, select the **&#65291;Create a resource** button, search for *Azure AI services,* and select it . Select **Create** under **Azure AI services** and select it. On  the **Create Azure AI services** tab, provide the following settings:
     - **Subscription**: *Your Azure subscription*
     - **Resource group**: Select **ai-service-<inject key="DeploymentID" enableCopy="false"/>**
     - **Region**:  **<inject key="Region" enableCopy="false"/>**
     - **Name**: *Enter **aiservice-<inject key="DeploymentID" enableCopy="false"/>***
     - **Pricing tier**: Standard S0
-    - **By checking this box I acknowledge that I have read and understood all the terms below**: Selected
+    - **By checking this box, I acknowledge that I have read and understood all the terms below**: Selected
 
 1. Click **Review + create** 
    
-1. After successfully completing the validation process, click on the **Create** button located in the lower left corner of the page.
+1. After successfully completing the validation process, click the **Create** button in the lower-left corner of the page.
    
-1. Wait for deployment to complete(it can take a few minutes), and then click on the **Go to resource** button, this will take you to your Azure AI services.
+1. Wait for deployment to complete (it can take a few minutes), then click the **Go to resource** button. This will take you to your Azure AI services.
 
-1. View the **Keys and Endpoint** page from the left pane under Resource Management for your Azure AI services resource. You will need the endpoint and keys to connect from client applications.
+1. View the **Keys and Endpoint** page from the left pane under **Resource Management** for your Azure AI services resource. You will need the endpoint and keys to connect from client applications.
 
    >**Note :** 
-      > Copy and save the **KEY 1** and **Endpoint** value to NotePad for future reference to connect from client applications. 
+      > Copy and save the **KEY 1** and **Endpoint** values to NotePad for future reference to connect from client applications. 
 
 ## Task 2: Run Cloud Shell
 
@@ -49,11 +49,11 @@ In this task, you will set up Azure Cloud Shell with PowerShell to prepare the e
 
 1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
 
-1. On the Getting started, select **Mount storage account** and select your subscription under storage account subscription. Click on **Apply**.
+1. On the **Getting started** page, select **Mount storage account** and select your subscription under storage account subscription. Click on **Apply**.
 
-1. On the Mount storage account tab, select **I want to create a storage account**. Click on **Next**.
+1. On the **Mount storage account** tab, select **I want to create a storage account**. Click on **Next**.
 
-1. On the create storage account tab, provide the details and select **Create**
+1. On the **Create Storage account** tab, provide the details and select **Create.**
 
     | Settings | Values |
     |  -- | -- |
@@ -63,7 +63,7 @@ In this task, you will set up Azure Cloud Shell with PowerShell to prepare the e
     | Region | **<inject key="Region" enableCopy="false"/>**|
     | File share | **none**|
 
-1. Make sure the the type of shell indicated on the top left of the Cloud Shell pane is *Switch to Bash*. If it is *Switch to PowerShell*, select it to Switch into PowerShell.
+1. Make sure the type of shell indicated on the top left of the Cloud Shell pane is *Switch to Bash*. If it is *Switch to PowerShell*, select it to Switch into PowerShell.
 
     ![How to find the left hand drop down menu to switch to PowerShell](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-3.png)
 
@@ -71,7 +71,7 @@ In this task, you will set up Azure Cloud Shell with PowerShell to prepare the e
 
     ![Wait for PowerShell to start.](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-3.png)
 
-## Task 3: Configure and run a client application
+## Task 3: Configure and Run a Client Application
 
 In this task, you will modify a sample client application with your resource details and use it to analyze images with the Computer Vision service.
 
@@ -97,7 +97,7 @@ In this task, you will modify a sample client application with your resource det
 
     ![The editor containing code to analyze an image](../media/analyze-images-computer-vision-service/analyze-image-code1.png)
 
-1. Don't worry too much about the code, the important thing is that it needs the endpoint URL and either of the keys for your Azure AI service resource. Use the Keys and Endpoint which you have copied earlier in Task 1. Alternatively, you can copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *Enpoint* placeholder values respectively.
+1. Don't worry too much about the code. The important thing is that it needs the endpoint URL and either of the keys for your Azure AI service resource. Use the keys and endpoint that you copied earlier in Task 1. Alternatively, you can copy these from the **Keys and Endpoints** page for your resource from the Azure portal and paste them into the code editor, replacing the **YOUR_KEY** with *KEY 1* and **YOUR_ENDPOINT** with *endpoint* placeholder values, respectively.
 
     > **Tip:**
     > You may need to use the separator bar to adjust the screen area as you work with the **Keys and Endpoint** and **Editor** panes.
@@ -161,7 +161,7 @@ In this task, you will modify a sample client application with your resource det
 
 ## Summary
 
-In this lab you have covered the following:
+In this lab, you have covered the following:
   
 -    Explored the Azure AI Services resource configuration.
 -    Set up and utilized Azure Cloud Shell.
