@@ -222,6 +222,7 @@ Now you can use the sample client application to detect cyclists and pedestrians
 
    ![Photograph of a group of pedestrians.](../media/ai900mod3bimg12.png)
 
+<validation step="3ee17fce-96a5-444e-8e5d-5e28cd8024a7" />
 
 ## Summary
 
