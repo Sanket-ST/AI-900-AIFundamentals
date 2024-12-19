@@ -114,6 +114,8 @@ To test the capabilities of the Face service, we'll use a simple command-line ap
 
 1. Review the results of the face analysis for the third image.
 
+<validation step="481c05b1-591f-4f2d-b178-8e886446aa22" />
+
 ## Summary
 
 In this lab you have covered the following:
