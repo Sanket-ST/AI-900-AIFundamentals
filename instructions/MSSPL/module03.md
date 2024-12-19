@@ -159,6 +159,8 @@ In this task, you will modify a sample client application with your resource det
 
     ![An image of person with a shopping basket in a supermarket](../media/analyze-images-computer-vision-service/azure-ai-search-lab1-7.png)
 
+<validation step="e2c31f6e-21a8-4d12-a1dd-4484dbf76091" />
+
 ## Summary
 
 In this lab you have covered the following:
